@@ -1,0 +1,391 @@
+2013-12-25 18:21:38: -- ConnectNow: ANALYSIS started by User on 'KEVIN-DESKTOP' (GoodSync 9.6.2.5)
+2013-12-25 18:21:38: C:\xampp\htdocs\connectnow (C:/xampp/htdocs/connectnow) <-> sftp://192.241.154.149/var
+2013-12-25 18:21:38: L: State file does not exist: C:/xampp/htdocs/connectnow/_gsdata_/_file_state._gs
+2013-12-25 18:21:38: L: No State File found, New State will be built
+2013-12-25 18:21:38: L: Files: 126 (excluded 20). Folders: 27 (excluded 7). C: NTFS, Free: 338 GB, Total: 339 GB
+2013-12-25 18:21:38: R: State file does not exist: sftp://192.241.154.149/var/_gsdata_/_file_state._gs
+2013-12-25 18:21:43: R: No State File found, New State will be built
+2013-12-25 18:21:43: R: Files: 130 (excluded 22). Folders: 27 (excluded 18). SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1.1
+2013-12-25 18:21:43: /app/controllers/.gitkeep: Conflict: New files that differ
+2013-12-25 18:21:43: /app/controllers/BaseController.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/controllers/HomeController.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/controllers/PageController.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/database/migrations/.gitkeep: Conflict: New files that differ
+2013-12-25 18:21:43: /app/database/production.sqlite: Conflict: New files that differ
+2013-12-25 18:21:43: /app/database/seeds/.gitkeep: Conflict: New files that differ
+2013-12-25 18:21:43: /app/database/seeds/DatabaseSeeder.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/en/content.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/en/footer.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/en/navigation.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/en/pagination.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/en/reminders.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/en/validation.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/fr/content.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/fr/footer.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/fr/navigation.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/fr/pagination.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/fr/reminders.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/lang/fr/validation.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/models/User.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/views/emails/auth/reminder.blade.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/views/explore.blade.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/views/hello.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/views/home.blade.php: Conflict: New files that differ
+2013-12-25 18:21:43: /app/views/layout.blade.php: Conflict: New files that differ
+2013-12-25 18:21:43: /public/.htaccess: Conflict: New files that differ
+2013-12-25 18:21:43: /public/.htaccess.old: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/bootstrap.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/bootstrap.min - Copy.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/bootstrap.min.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/dmitryf-elements-191754c.zip: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/elements.less: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/explore.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/explore.less: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/glyphicons-ie7.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/home.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/home.less: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/main.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/main.less: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/mixins.css: Conflict: New files that differ
+2013-12-25 18:21:43: /public/css/mixins.less: Conflict: New files that differ
+2013-12-25 18:21:43: /public/favicon-128.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/favicon-32.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/favicon-64.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/favicon.ico: Conflict: New files that differ
+2013-12-25 18:21:43: /public/fonts/glyphicons-halflings-regular.eot: Conflict: New files that differ
+2013-12-25 18:21:43: /public/fonts/glyphicons-halflings-regular.svg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/fonts/glyphicons-halflings-regular.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/fonts/glyphicons-halflings-regular.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/30perc.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/70perc.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/80perc.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/banner/banner1-light.jpg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/banner/banner1.jpg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/banner/banner2-light.jpg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/banner/banner2.jpg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/banner/banner3-light.jpg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/banner/banner3.jpg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/banner/gcn.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/bg/explore.jpg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/cat.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/connectnow.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/blue70.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/bluebottom.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/icons/contest.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/icons/organization.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/icons/volunteering.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/red70.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/redbottom.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/stripe.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/yellow70.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/explore/yellowbottom.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/footer/logo.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/footer/social/fb.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/footer/social/twitter.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/home/bubbles/handshake.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/home/bubbles/hiking.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/home/bubbles/jump.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/home/bubbles/keyboard.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/logo.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/img/trans.png: Conflict: New files that differ
+2013-12-25 18:21:43: /public/index.php: Conflict: New files that differ
+2013-12-25 18:21:43: /public/js/bootstrap.js: Conflict: New files that differ
+2013-12-25 18:21:43: /public/js/bootstrap.min.js: Conflict: New files that differ
+2013-12-25 18:21:43: /public/MyFontsWebfontsKit.zip: Conflict: New files that differ
+2013-12-25 18:21:43: /public/packages/.gitkeep: Conflict: New files that differ
+2013-12-25 18:21:43: /public/robots.txt: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_0_0.eot: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_0_0.svg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_0_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_0_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_0_unhinted_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_0_unhinted_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_1_0.eot: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_1_0.svg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_1_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_1_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_1_unhinted_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_1_unhinted_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_2_0.eot: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_2_0.svg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_2_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_2_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_2_unhinted_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_2_unhinted_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_3_0.eot: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_3_0.svg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_3_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_3_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_3_unhinted_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_3_unhinted_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_4_0.eot: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_4_0.svg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_4_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_4_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_4_unhinted_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_4_unhinted_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_5_0.eot: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_5_0.svg: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_5_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_5_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_5_unhinted_0.ttf: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/2964B3_5_unhinted_0.woff: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts/svg_test.html: Conflict: New files that differ
+2013-12-25 18:21:43: /public/webfonts.js: Conflict: New files that differ
+2013-12-25 18:21:43: Analyze has finished with Conflicts. Resolve Conflicts by selecting the correct sync direction, then click Sync
+2013-12-25 18:21:43: Changes: 130, Conflicts: 126, CopyTime: 0, CopyState: 0/27, Errors: 0
+2013-12-25 18:21:43: Right to Left: Copy File: 4 
+2013-12-25 18:21:43: -- Analysis Completed. Time 00:00:08, Speed: 24 files/s
+2013-12-25 18:21:43: 
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/.gitkeep
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/BaseController.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/HomeController.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/PageController.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/migrations/.gitkeep
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/production.sqlite
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/.gitkeep
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/DatabaseSeeder.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/content.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/footer.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/navigation.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/pagination.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/reminders.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/validation.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/content.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/footer.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/navigation.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/pagination.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/reminders.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/validation.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/models/User.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/emails/auth/reminder.blade.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/explore.blade.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/hello.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/home.blade.php
+2013-12-25 18:21:48: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/layout.blade.php
+2013-12-25 18:21:48: Done.
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/.gitkeep
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/BaseController.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/HomeController.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/PageController.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/migrations/.gitkeep
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/production.sqlite
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/.gitkeep
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/DatabaseSeeder.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/content.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/footer.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/navigation.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/pagination.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/reminders.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/validation.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/content.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/footer.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/navigation.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/pagination.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/reminders.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/validation.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/models/User.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/emails/auth/reminder.blade.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/explore.blade.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/hello.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/home.blade.php
+2013-12-25 18:21:59: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/layout.blade.php
+2013-12-25 18:21:59: Done.
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/.gitkeep
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/BaseController.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/HomeController.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/PageController.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/migrations/.gitkeep
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/production.sqlite
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/.gitkeep
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/DatabaseSeeder.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/content.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/footer.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/navigation.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/pagination.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/reminders.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/validation.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/content.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/footer.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/navigation.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/pagination.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/reminders.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/validation.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/models/User.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/emails/auth/reminder.blade.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/explore.blade.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/hello.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/home.blade.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/layout.blade.php
+2013-12-25 18:22:00: Done.
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/.gitkeep
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/BaseController.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/HomeController.php
+2013-12-25 18:22:00: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/PageController.php
+2013-12-25 18:22:00: Done.
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/.gitkeep
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/BaseController.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/HomeController.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/controllers/PageController.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/migrations/.gitkeep
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/production.sqlite
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/.gitkeep
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/database/seeds/DatabaseSeeder.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/content.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/footer.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/navigation.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/pagination.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/reminders.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/en/validation.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/content.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/footer.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/navigation.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/pagination.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/reminders.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/lang/fr/validation.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/models/User.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/emails/auth/reminder.blade.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/explore.blade.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/hello.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/home.blade.php
+2013-12-25 18:22:03: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /app/views/layout.blade.php
+2013-12-25 18:22:03: Done.
+2013-12-25 18:22:05: === User Changed Action from 'COPY_RIGHT_TO_LEFT' to 'NO_COPY' on item /public/css/elements.css
+2013-12-25 18:22:05: === User Changed Action from 'COPY_RIGHT_TO_LEFT' to 'NO_COPY' on item /public/Explore page.ai
+2013-12-25 18:22:05: === User Changed Action from 'COPY_RIGHT_TO_LEFT' to 'NO_COPY' on item /public/WEBSITE HOMEPAGE 1.ai
+2013-12-25 18:22:05: === User Changed Action from 'COPY_RIGHT_TO_LEFT' to 'NO_COPY' on item /public/WEBSITE HOMEPAGE 1.psd
+2013-12-25 18:22:05: Done.
+2013-12-25 18:22:10: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2013-12-25 18:22:10: == ConnectNow: SYNC started by User on 'KEVIN-DESKTOP'
+2013-12-25 18:22:10: C:\xampp\htdocs\connectnow (C:/xampp/htdocs/connectnow) <-> sftp://192.241.154.149/var
+2013-12-25 18:22:12: Copy Over 'C:/xampp/htdocs/connectnow/app/controllers/.gitkeep' -> 'sftp://192.241.154.149/var/app/controllers/.gitkeep' (User Action)
+2013-12-25 18:22:12: Copy Over 'C:/xampp/htdocs/connectnow/app/controllers/BaseController.php' -> 'sftp://192.241.154.149/var/app/controllers/BaseController.php' (User Action)
+2013-12-25 18:22:13: Copy Over 'C:/xampp/htdocs/connectnow/app/controllers/HomeController.php' -> 'sftp://192.241.154.149/var/app/controllers/HomeController.php' (User Action)
+2013-12-25 18:22:13: Copy Over 'C:/xampp/htdocs/connectnow/app/controllers/PageController.php' -> 'sftp://192.241.154.149/var/app/controllers/PageController.php' (User Action)
+2013-12-25 18:22:13: Copy Over 'C:/xampp/htdocs/connectnow/app/database/migrations/.gitkeep' -> 'sftp://192.241.154.149/var/app/database/migrations/.gitkeep' (User Action)
+2013-12-25 18:22:14: Copy Over 'C:/xampp/htdocs/connectnow/app/database/production.sqlite' -> 'sftp://192.241.154.149/var/app/database/production.sqlite' (User Action)
+2013-12-25 18:22:14: Copy Over 'C:/xampp/htdocs/connectnow/app/database/seeds/.gitkeep' -> 'sftp://192.241.154.149/var/app/database/seeds/.gitkeep' (User Action)
+2013-12-25 18:22:15: Copy Over 'C:/xampp/htdocs/connectnow/app/database/seeds/DatabaseSeeder.php' -> 'sftp://192.241.154.149/var/app/database/seeds/DatabaseSeeder.php' (User Action)
+2013-12-25 18:22:15: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/content.php' -> 'sftp://192.241.154.149/var/app/lang/en/content.php' (User Action)
+2013-12-25 18:22:15: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/footer.php' -> 'sftp://192.241.154.149/var/app/lang/en/footer.php' (User Action)
+2013-12-25 18:22:16: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/navigation.php' -> 'sftp://192.241.154.149/var/app/lang/en/navigation.php' (User Action)
+2013-12-25 18:22:16: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/pagination.php' -> 'sftp://192.241.154.149/var/app/lang/en/pagination.php' (User Action)
+2013-12-25 18:22:17: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/reminders.php' -> 'sftp://192.241.154.149/var/app/lang/en/reminders.php' (User Action)
+2013-12-25 18:22:17: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/validation.php' -> 'sftp://192.241.154.149/var/app/lang/en/validation.php' (User Action)
+2013-12-25 18:22:17: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/content.php' -> 'sftp://192.241.154.149/var/app/lang/fr/content.php' (User Action)
+2013-12-25 18:22:18: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/footer.php' -> 'sftp://192.241.154.149/var/app/lang/fr/footer.php' (User Action)
+2013-12-25 18:22:18: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/navigation.php' -> 'sftp://192.241.154.149/var/app/lang/fr/navigation.php' (User Action)
+2013-12-25 18:22:18: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/pagination.php' -> 'sftp://192.241.154.149/var/app/lang/fr/pagination.php' (User Action)
+2013-12-25 18:22:19: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/reminders.php' -> 'sftp://192.241.154.149/var/app/lang/fr/reminders.php' (User Action)
+2013-12-25 18:22:19: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/validation.php' -> 'sftp://192.241.154.149/var/app/lang/fr/validation.php' (User Action)
+2013-12-25 18:22:20: Copy Over 'C:/xampp/htdocs/connectnow/app/models/User.php' -> 'sftp://192.241.154.149/var/app/models/User.php' (User Action)
+2013-12-25 18:22:20: Copy Over 'C:/xampp/htdocs/connectnow/app/views/emails/auth/reminder.blade.php' -> 'sftp://192.241.154.149/var/app/views/emails/auth/reminder.blade.php' (User Action)
+2013-12-25 18:22:21: Copy Over 'C:/xampp/htdocs/connectnow/app/views/explore.blade.php' -> 'sftp://192.241.154.149/var/app/views/explore.blade.php' (User Action)
+2013-12-25 18:22:21: Copy Over 'C:/xampp/htdocs/connectnow/app/views/hello.php' -> 'sftp://192.241.154.149/var/app/views/hello.php' (User Action)
+2013-12-25 18:22:22: Copy Over 'C:/xampp/htdocs/connectnow/app/views/home.blade.php' -> 'sftp://192.241.154.149/var/app/views/home.blade.php' (User Action)
+2013-12-25 18:22:22: Copy Over 'C:/xampp/htdocs/connectnow/app/views/layout.blade.php' -> 'sftp://192.241.154.149/var/app/views/layout.blade.php' (User Action)
+2013-12-25 18:22:22: /public/.htaccess: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/.htaccess.old: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/bootstrap.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/bootstrap.min - Copy.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/bootstrap.min.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/dmitryf-elements-191754c.zip: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/elements.less: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/explore.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/explore.less: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/glyphicons-ie7.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/home.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/home.less: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/main.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/main.less: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/mixins.css: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/css/mixins.less: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/favicon-128.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/favicon-32.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/favicon-64.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/favicon.ico: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/fonts/glyphicons-halflings-regular.eot: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/fonts/glyphicons-halflings-regular.svg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/fonts/glyphicons-halflings-regular.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/fonts/glyphicons-halflings-regular.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/30perc.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/70perc.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/80perc.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/banner/banner1-light.jpg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/banner/banner1.jpg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/banner/banner2-light.jpg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/banner/banner2.jpg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/banner/banner3-light.jpg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/banner/banner3.jpg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/banner/gcn.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/bg/explore.jpg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/cat.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/connectnow.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/blue70.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/bluebottom.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/icons/contest.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/icons/organization.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/icons/volunteering.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/red70.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/redbottom.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/stripe.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/yellow70.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/explore/yellowbottom.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/footer/logo.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/footer/social/fb.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/footer/social/twitter.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/home/bubbles/handshake.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/home/bubbles/hiking.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/home/bubbles/jump.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/home/bubbles/keyboard.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/logo.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/img/trans.png: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/index.php: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/js/bootstrap.js: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/js/bootstrap.min.js: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/MyFontsWebfontsKit.zip: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/packages/.gitkeep: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/robots.txt: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_0_0.eot: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_0_0.svg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_0_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_0_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_0_unhinted_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_0_unhinted_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_1_0.eot: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_1_0.svg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_1_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_1_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_1_unhinted_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_1_unhinted_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_2_0.eot: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_2_0.svg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_2_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_2_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_2_unhinted_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_2_unhinted_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_3_0.eot: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_3_0.svg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_3_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_3_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_3_unhinted_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_3_unhinted_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_4_0.eot: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_4_0.svg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_4_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_4_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_4_unhinted_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_4_unhinted_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_5_0.eot: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_5_0.svg: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_5_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_5_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_5_unhinted_0.ttf: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/2964B3_5_unhinted_0.woff: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts/svg_test.html: unresolved conflict results in No Copy
+2013-12-25 18:22:22: /public/webfonts.js: unresolved conflict results in No Copy
+2013-12-25 18:22:22: Save State File sftp://192.241.154.149/var/_gsdata_/_file_state_v4._gs
+2013-12-25 18:22:22: Sync finished with 100 unresolved conflicts. Click Conflicts button to see unresolved conflicts
+2013-12-25 18:22:23: Items Synced OK: 53, Errors: 0
+2013-12-25 18:22:23: == Sync Completed. Time: 00:00:15, Speed: 7.92 KB/s (34.5 KB/s)
+2013-12-25 18:22:23: 

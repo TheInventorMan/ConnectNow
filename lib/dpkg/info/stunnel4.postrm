@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+if [ x$1 = "xpurge" ]; then
+	echo You may want to delete the generated stunnel.pem file
+	echo in /etc/ssl/certs.
+
+        # Remove this dir if empty
+        rmdir /var/lib/stunnel4 || true
+fi
+
+# Automatically added by dh_installinit
+if [ "$1" = "purge" ] ; then
+	update-rc.d stunnel4 remove >/dev/null
+fi
+# End automatically added section
+

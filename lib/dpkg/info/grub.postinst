@@ -1,0 +1,33 @@
+#!/bin/sh
+
+if [ "$1" = "configure" ]; then
+	if dpkg --compare-versions "$2" lt-nl "0.97-29ubuntu6"; then
+		update-grub
+	fi
+	if dpkg --compare-versions "$2" lt "0.97-29ubuntu26"; then
+		# This is an old misnamed config file we need to get rid of
+		rm -f /etc/event.d/event.d-last-good-boot
+	fi
+	if dpkg --compare-versions "$2" lt "0.97-29ubuntu38"; then
+		# Remnants of when this was default
+		rm -rf /boot/last-good-boot /lib/modules/last-good-boot
+	fi
+
+        if egrep -q '^[[:space:]]*post(inst|rm)_hook[[:space:]]*=[[:space:]]*(/sbin/|/usr/sbin/)?update-grub' /etc/kernel-img.conf 2>/dev/null; then
+            echo 'Removing update-grub hooks from /etc/kernel-img.conf in favour of' >&2
+            echo '/etc/kernel/ hooks.' >&2
+            sed -ri /etc/kernel-img.conf -e '\%^[[:space:]]*post(inst|rm)_hook[[:space:]]*=[[:space:]]*(/sbin/|/usr/sbin/)?update-grub%d'
+            update-grub
+        fi
+fi
+
+if [ "x$1" = xtriggered ] ; then
+	/usr/sbin/update-grub
+fi
+
+if [ "$1" = "configure" ]; then
+	# Create a last-good-boot if one doesn't exist.
+	/usr/sbin/kernel-helper -i
+fi
+
+

@@ -1,0 +1,178 @@
+Package: python-chardet
+Source: chardet
+Version: 2.0.1-2build1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Piotr Ożarowski <piotr@debian.org>
+Installed-Size: 578
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Homepage: http://chardet.feedparser.org/
+Priority: optional
+Section: python
+Filename: pool/ubuntu/c/chardet/python-chardet_2.0.1-2build1_all.deb
+Size: 175936
+SHA256: 58344f57ed6510ec07830e1e293b83457b135cff3da946c56d63b85f5c425bd7
+SHA1: 73fcc7b2a705e9898f47890510040ef0aa57dff1
+MD5sum: b2946bf97d09a86612337ff66abed5a1
+Description: universal character encoding detector
+ Chardet takes a sequence of bytes in an unknown character encoding, and
+ attempts to determine the encoding.
+ .
+ Supported encodings:
+  * ASCII, UTF-8, UTF-16 (2 variants), UTF-32 (4 variants)
+  * Big5, GB2312, EUC-TW, HZ-GB-2312, ISO-2022-CN (Traditional and Simplified
+    Chinese)
+  * EUC-JP, SHIFT_JIS, ISO-2022-JP (Japanese)
+  * EUC-KR, ISO-2022-KR (Korean)
+  * KOI8-R, MacCyrillic, IBM855, IBM866, ISO-8859-5, windows-1251 (Cyrillic)
+  * ISO-8859-2, windows-1250 (Hungarian)
+  * ISO-8859-5, windows-1251 (Bulgarian)
+  * windows-1252 (English)
+  * ISO-8859-7, windows-1253 (Greek)
+  * ISO-8859-8, windows-1255 (Visual and Logical Hebrew)
+  * TIS-620 (Thai)
+ .
+ This library is a port of the auto-detection code in Mozilla.
+
+Package: python-passlib
+Version: 1.5.3-2
+Architecture: all
+Maintainer: Julien Danjou <acid@debian.org>
+Installed-Size: 797
+Depends: python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8)
+Homepage: http://code.google.com/p/passlib/
+Priority: extra
+Section: python
+Filename: pool/ubuntu/p/python-passlib/python-passlib_1.5.3-2_all.deb
+Size: 155752
+SHA256: c5b00fa91272cf6d070fe22d34c4dae507a77a902d47f1e7e0a78bed189c4eb3
+SHA1: 00545b2d3b65ea340203c8699afd4d77fb3e61fd
+MD5sum: 4af08185686ab3a19549fbd50794bf90
+Description: comprehensive password hashing framework
+ Password hashing library for Python 2 & 3, which provides cross-platform
+ implementations of over 20 password hashing algorithms, as well as a
+ framework for managing existing password hashes. It's designed to be useful
+ for a wide range of tasks; from verifying a hash found in /etc/shadow, to
+ providing full-strength password hashing for multi-user applications.
+
+Package: python-requests
+Source: requests
+Version: 1.1.0-1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 177
+Depends: python (>= 2.7.1-0ubuntu2), python (<< 2.8), ca-certificates, python-chardet, python-urllib3 (>= 1.5)
+Homepage: http://python-requests.org
+Priority: optional
+Section: python
+Filename: pool/ubuntu/r/requests/python-requests_1.1.0-1_all.deb
+Size: 40378
+SHA256: 568a6c049e5a7b5b809463bc51bebc7056182d9543fa57b1453eb6c495606eea
+SHA1: ecd4dc694f9e76a303eb8d925039f01175b4de72
+MD5sum: d900d3169331c3b0b3637e37f95780dd
+Description: elegant and simple HTTP library for Python, built for human beings
+ Requests allow you to send HTTP/1.1 requests. You can add headers, form data,
+ multipart files, and parameters with simple Python dictionaries, and access the
+ response data in the same way. It's powered by httplib and urllib3, but it does
+ all the hard work and crazy hacks for you.
+ .
+ Features
+ .
+   - International Domains and URLs
+   - Keep-Alive & Connection Pooling
+   - Sessions with Cookie Persistence
+   - Browser-style SSL Verification
+   - Basic/Digest Authentication
+   - Elegant Key/Value Cookies
+   - Automatic Decompression
+   - Unicode Response Bodies
+   - Multipart File Uploads
+   - Connection Timeouts
+
+Package: python-six
+Source: six
+Version: 1.2.0-1
+Architecture: all
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 54
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Homepage: http://packages.python.org/six/
+Priority: optional
+Section: python
+Filename: pool/ubuntu/s/six/python-six_1.2.0-1_all.deb
+Size: 6294
+SHA256: 072e31ba081b243805876038e2043213d63d796363e562aaad1781addee239e3
+SHA1: 635e78f120d33364838042cb62dee470f040af7a
+MD5sum: f53e875e52a0459ab98cf0679f13623d
+Description: Python 2 and 3 compatibility library (Python 2 interface)
+ Six is a Python 2 and 3 compatibility library. It provides utility
+ functions for smoothing over the differences between the Python versions
+ with the goal of writing Python code that is compatible on both Python
+ versions.
+ .
+ This package provides Six on the Python 2 module path. It is complemented
+ by python3-six.
+
+Package: python-unidecode
+Source: unidecode
+Version: 0.04.9-1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 884
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Homepage: http://pypi.python.org/pypi/Unidecode
+Priority: optional
+Section: python
+Filename: pool/ubuntu/u/unidecode/python-unidecode_0.04.9-1_all.deb
+Size: 196186
+SHA256: 4aecde0e5e6358ef682219702f4bb3307338532944c1a8ee059aa5d9d4004b83
+SHA1: 60c2b5d66526db6035a6d9505906015f2cb41b30
+MD5sum: 5c64d40b719c6f0d1689f1227c1f8fdc
+Description: ASCII transliterations of Unicode text (Python module)
+ It often happens that you have text data in Unicode, but you need to represent
+ it in ASCII for display. One could represent non-roman Unicode characters as
+ "???" or "\\15BA\\15A0\\1610", but neither is useful to the user reading the
+ text.
+ .
+ Unidecode tries to represent it in ASCII characters (i.e., the universally
+ displayable characters between 0x00 and 0x7F), where the compromises taken
+ when mapping between two character sets are chosen to be near what a human
+ with a US keyboard would choose.
+ .
+ This module generally produces better results than simply stripping accents
+ from characters (which can be done in Python with built-in functions). It is
+ based on hand-tuned character mappings that for example also contain ASCII
+ approximations for symbols and non-Latin alphabets.
+ .
+ unidecode is a Python port of the Text::Unidecode Perl module.
+
+Package: python-urllib3
+Version: 1.5-0ubuntu1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 157
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-six
+Homepage: http://urllib3.readthedocs.org
+Priority: optional
+Section: python
+Filename: pool/ubuntu/p/python-urllib3/python-urllib3_1.5-0ubuntu1_all.deb
+Size: 28320
+SHA256: c66a253a63c61237b195ff1876d452b7a2f3719e8d8dbd6b04a37aa5b0124ed0
+SHA1: ff49cef561e540dbc135c1ff8b126a884343a027
+MD5sum: 4632a251f32fb027118b0e5ce59280d9
+Description: HTTP library with thread-safe connection pooling for Python
+ urllib3 supports features left out of urllib and urllib2 libraries.
+ .
+   - Re-use the same socket connection for multiple requests (HTTPConnectionPool
+     and HTTPSConnectionPool) (with optional client-side certificate
+     verification).
+   - File posting (encode_multipart_formdata).
+   - Built-in redirection and retries (optional).
+   - Supports gzip and deflate decoding.
+   - Thread-safe and sanity-safe.
+   - Small and easy to understand codebase perfect for extending and
+     building upon.
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+

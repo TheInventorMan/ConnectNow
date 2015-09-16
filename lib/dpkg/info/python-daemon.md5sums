@@ -1,0 +1,14 @@
+08782b7c0622cc9d6c219a6fd44b9e23  usr/share/doc/python-daemon/changelog.Debian.gz
+7c48a730c7b812147dc8b7069d321b3a  usr/share/doc/python-daemon/copyright
+53259edd66851b1c185d69e6a3aeb35e  usr/share/pyshared/daemon/__init__.py
+671be8f81c52d6f9fd64c892cbc86d07  usr/share/pyshared/daemon/daemon.py
+dd76e15bfea0f481da1385b97c5b7f5f  usr/share/pyshared/daemon/pidlockfile.py
+e28f288674a6c31c8931ecb66d5aa070  usr/share/pyshared/daemon/runner.py
+5a198312543860a71545aa0e44cb2ca4  usr/share/pyshared/daemon/version/__init__.py
+20ed17d8e944e69d7c49ebcdf654c6b2  usr/share/pyshared/daemon/version/version_info.py
+fc8f3bac3f8bddf86dc7aa422efd4fd9  usr/share/pyshared/python_daemon-1.5.5.egg-info/PKG-INFO
+d122bb828c0d7dc54cfb119e12b6dbc0  usr/share/pyshared/python_daemon-1.5.5.egg-info/SOURCES.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/share/pyshared/python_daemon-1.5.5.egg-info/dependency_links.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/share/pyshared/python_daemon-1.5.5.egg-info/not-zip-safe
+29ed66401925940f538bc99bc411d3a9  usr/share/pyshared/python_daemon-1.5.5.egg-info/requires.txt
+277eb793785c42774c49646114b5a5c5  usr/share/pyshared/python_daemon-1.5.5.egg-info/top_level.txt

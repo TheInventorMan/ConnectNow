@@ -1,0 +1,18 @@
+#!/bin/sh
+# Automatically added by dh_pysupport
+if which update-python-modules >/dev/null 2>&1; then
+	update-python-modules  ajenti.public
+fi
+# End automatically added section
+
+update-rc.d ajenti defaults > /dev/null
+ajenti-ssl-gen `hostname` || true
+service ajenti restart > /dev/null 2>&1
+
+echo ------------------------------------------------
+echo Now start Ajenti with \'service ajenti restart\'
+echo Ajenti will listen on HTTPS port 8000 by default
+echo 
+echo Default username : root
+echo Default password : admin
+echo ------------------------------------------------

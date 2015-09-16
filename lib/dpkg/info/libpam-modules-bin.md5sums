@@ -1,0 +1,10 @@
+059dd44c47504fe4b191f1baa0c75ddb  sbin/mkhomedir_helper
+ddf3b049c8c919730225251f25706352  sbin/pam_tally
+73f19666f38f07cbb3eeeb0cc99c8d7d  sbin/pam_tally2
+0d8d91019f19994000a7aab5eeee327b  sbin/unix_chkpwd
+925514222154cdfc486d17de3111ba40  sbin/unix_update
+6c05e902bc75c9e6d2da3ac75da5d47b  usr/share/doc/libpam-modules-bin/copyright
+3a6fb53b963b2d17950d0b129636e631  usr/share/lintian/overrides/libpam-modules-bin
+1adc7a3cdabad88ea92f322ef0bd9403  usr/share/man/man8/mkhomedir_helper.8.gz
+dd2d9128fb0b1914b6c53b2c75e67672  usr/share/man/man8/unix_chkpwd.8.gz
+b4f0cf760471640420b1a18ccf27b8ad  usr/share/man/man8/unix_update.8.gz

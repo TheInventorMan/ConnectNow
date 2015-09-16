@@ -1,0 +1,472 @@
+Package: ajenti
+Version: 1.2.18.4
+Architecture: all
+Maintainer: Eugene Pankov <e@ajenti.org>
+Installed-Size: 3969
+Depends: python (>= 2.6), python-support (>= 0.90.0), python-lxml (>= 2.2.4), python-gevent, openssl, python-gevent-socketio, python-psutil (>= 0.6.0), python-reconfigure (>= 0.1.42), python-daemon, python-passlib, python-requests (>= 0.12.0), python-dbus, python-imaging, apt-show-versions, python-catcher, python-exconsole (>= 0.1.5), python-ldap
+Homepage: http://ajenti.org/
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti/ajenti_1.2.18.4_all.deb
+Size: 1194308
+SHA256: 62ce1180d239fce2eab4dff5a5d3058d0e6ce3ba2f847de8fefe377647e22eaa
+SHA1: 48637bfafb058140cea865ab23bea728c620e3bf
+MD5sum: ea69f2355c0c5b25d52bac770391d937
+Description: Server administration web interface
+ It provides rich functionality and support for lots of server software,
+ along with system configuration options.
+ Lots of additional plugins can be downloaded with plugin manager.
+Python-Version: 2.7
+
+Source: ajenti-v
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v
+Version: 0.2.5
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti (>=1.2.16.2), ajenti-v-webserver, python-reconfigure (>=0.1.39)
+Provides: ajenti-v-core
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v/ajenti-v_0.2.5_all.deb
+Size: 10174
+SHA256: fff8625ce42287ec723a30a523e7d88b8a65bb8dc16d9f8e3a2ee355be0273a1
+SHA1: 73182f27c70ac10974218f657267a5c66d03cc3c
+MD5sum: 5128ae0b6d671fc7c0949761f4591ce5
+Description: Virtual hosting solution for Ajenti
+
+Source: ajenti-v-ftp-vsftpd
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-ftp-vsftpd
+Version: 0.2.0
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v (>=0.2.0), vsftpd (>=3.0.0), db-util
+Provides: ajenti-v-ftp
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-ftp-vsftpd/ajenti-v-ftp-vsftpd_0.2.0_all.deb
+Size: 2374
+SHA256: f56a738ddb9f561d5e36e033f3c60c929fa1ccebfc2ea0b3ca807bbc8e4b2ce5
+SHA1: 11f1510dbddf8bcc008c681dba9378ad9765b353
+MD5sum: 1b0015cd4301a9b57fb33701a5ba8669
+Description: VSFTPD support for Ajenti V
+
+Source: ajenti-v-mail
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-mail
+Version: 0.0.5
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v, courier-imap, exim4
+Provides: ajenti-v-mailserver
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-mail/ajenti-v-mail_0.0.5_all.deb
+Size: 7678
+SHA256: 0b43f74d3dec67039baaa0b17368fe6bac9ed3f517e45c9b6c4a03d6fa848362
+SHA1: 6b9f0908961c8dc5a83164817b48920b502e67df
+MD5sum: 5b6fc5ea832481e574f481ff41ea0ac1
+Description: Mail for Ajenti V
+
+Source: ajenti-v-mysql
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-mysql
+Version: 0.2.2
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v (>=0.2.0), mysql-server, mysql-client
+Provides: ajenti-v-db
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-mysql/ajenti-v-mysql_0.2.2_all.deb
+Size: 2280
+SHA256: b3e78e5b4438ac81a154218680eee26b02259f63334782b2c2a005af6d61a67d
+SHA1: 8722d30ef2ae21c10eed4e1d14ba8e1f198204c3
+MD5sum: 7c0e129d28ca18da91565b8860dc6cd3
+Description: MySQL support for Ajenti V
+
+Source: ajenti-v-nginx
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-nginx
+Version: 0.1.10
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v (>=0.2.3), nginx
+Provides: ajenti-v-webserver
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-nginx/ajenti-v-nginx_0.1.10_all.deb
+Size: 4252
+SHA256: f0d6388d3e584cd19d8a7f0b94ebb8120d072ce90575e93fd419f34fb6320688
+SHA1: 64592b76cc87f0577b7b37d15a35f74eb5b52e53
+MD5sum: 16151e326a0ec38584bf3c26b22ebcac
+Description: NGINX support for Ajenti V
+
+Source: ajenti-v-nodejs
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-nodejs
+Version: 0.1.3
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v, supervisor
+Provides: ajenti-v-appgate
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-nodejs/ajenti-v-nodejs_0.1.3_all.deb
+Size: 1630
+SHA256: a0fca8cfbb8c5cd87d35615d9bc47402f5ffc0b55fe8ea84ab923605a4471a6e
+SHA1: c8d2610f6b6a7b84976bec72a64614a1f9ef8234
+MD5sum: 4d16dc0cda40b01f9a32082129bb2f1e
+Description: Node.JS support for Ajenti V
+
+Source: ajenti-v-php-fpm
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-php-fpm
+Version: 0.1.2
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v, php5-fpm
+Provides: ajenti-v-appgate
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-php-fpm/ajenti-v-php-fpm_0.1.2_all.deb
+Size: 1970
+SHA256: 80de47b4a8fc125e54d90e3e88c30522b641b3b573ff1b9c2088295184fdbdf1
+SHA1: 5c80aa646037391f315e593a51bce26f5b692a03
+MD5sum: 8e9650fb48373a430921d014e8943175
+Description: PHP support for Ajenti V (via PHP-FPM)
+
+Source: ajenti-v-python-gunicorn
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-python-gunicorn
+Version: 0.2.2
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v (>=0.1.15)
+Provides: ajenti-v-appgate
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-python-gunicorn/ajenti-v-python-gunicorn_0.2.2_all.deb
+Size: 2052
+SHA256: 40fc510f760569e252b57d3a24ad8101ab2be0a337d5035363c8fb574cf386b3
+SHA1: 36e01da62a5ae822ea8ffb25ddd7810710424ac8
+MD5sum: dfed2d966426f5362c7ba38ad2d76420
+Description: Python support for Ajenti V (via gunicorn)
+
+Source: ajenti-v-ruby-puma
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-ruby-puma
+Version: 0.1.3
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v
+Provides: ajenti-v-appgate
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-ruby-puma/ajenti-v-ruby-puma_0.1.3_all.deb
+Size: 1814
+SHA256: b7847c4718a4b80dd1350a78f1ba294448ef765c2c4d0cfb74aecd341eff5009
+SHA1: 51ce8072326fa99b1803b2036922f0a2651915ba
+MD5sum: 3511bce71012d4fcca4a851fa13cdce4
+Description: Ruby support for Ajenti V (via Puma.io)
+
+Source: ajenti-v-ruby-unicorn
+Maintainer: Eugene Pankov <e@ajenti.org>
+Package: ajenti-v-ruby-unicorn
+Version: 0.1.3
+Architecture: all
+Homepage: http://ajenti.org/
+Depends: ajenti-v, unicorn
+Provides: ajenti-v-appgate
+Priority: optional
+Section: admin
+Filename: pool/main/a/ajenti-v-ruby-unicorn/ajenti-v-ruby-unicorn_0.1.3_all.deb
+Size: 2116
+SHA256: 7cf4c50104487a17e32645f999aecf9caf85662ec967fd5cb6a75594038c272b
+SHA1: 060d3c9e42f6c185fe59fcdf07b8fb3eb4a4e73e
+MD5sum: 9e4a11b001a13ca19b54df12d435a81c
+Description: Ruby support for Ajenti V (via Unicorn)
+
+Package: libevent-2.0-5
+Source: libevent
+Version: 2.0.19-stable-3
+Architecture: i386
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 358
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.7)
+Multi-Arch: same
+Homepage: http://libevent.org/
+Priority: standard
+Section: libs
+Filename: pool/main/libe/libevent/libevent-2.0-5_2.0.19-stable-3_i386.deb
+Size: 170760
+SHA256: 62848cd965991224794f899f8d5bb7600fb4fafa4ec2964ce736583614c85390
+SHA1: 8ec5a5b8f2bbfc10ecc75355545e56865922e47d
+MD5sum: e62fd0d1f6dea98f6cf0f5d7b25e83bc
+Description: Asynchronous event notification library
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ It is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ For backward compatibility and to transition to "libevent_core only"
+ or "libevent_core + libevent_extra", the libevent source package builds
+ the libevent library that includes everything in libevent_core and
+ libevent_extra.
+
+Package: python-catcher
+Version: 0.1.7
+Architecture: all
+Maintainer: Eugeny Pankov <e@ajenti.org>
+Installed-Size: 59
+Depends: python (>= 2.6), python-support (>= 0.90.0), python-requests, python-mako
+Homepage: http://github.com/Eugeny/catcher
+Priority: optional
+Section: python
+Filename: pool/main/p/python-catcher/python-catcher_0.1.7_all.deb
+Size: 5338
+SHA256: 14c3a44b2a44b18697682022ed232ba1c55320fc8c92c5d016d0880191b53c9e
+SHA1: e3ebe485afbf6921f57dfb72553a561931ff23f0
+MD5sum: bf510307e9eb57b6691fbfec989f0bb6
+Description: Beautiful stack traces for Python
+Python-Version: 2.7
+
+Package: python-exconsole
+Version: 0.1.5
+Architecture: all
+Maintainer: Eugene Pankov <e@ajenti.org>
+Installed-Size: 46
+Depends: python (>= 2.6), python-support (>= 0.90.0)
+Homepage: http://github.com/Eugeny/exconsole
+Priority: optional
+Section: python
+Filename: pool/main/p/python-exconsole/python-exconsole_0.1.5_all.deb
+Size: 3638
+SHA256: 27179a221f4cbcdc7305a03c9eeb0b9546678aedf477dfeca06064e563429032
+SHA1: 4bf02ee383c79e5e98e7a7a86138d82a68652543
+MD5sum: 0b07f33ea71cdd5cedcd0d3b36c1294e
+Description: Emergency/postmortem Python console
+Python-Version: 2.7
+
+Package: python-gevent
+Version: 0.13.6-1~bpo60+1
+Architecture: i386
+Maintainer: Örjan Persson <orange@fobie.net>
+Installed-Size: 744
+Depends: libc6 (>= 2.3.6-6~), libevent-1.4-2 (>= 1.4.13-stable), python (<< 2.7), python (>= 2.5), python-support (>= 0.90.0), python-greenlet | python-codespeak-lib (<< 1.0)
+Suggests: python-gevent-doc, python-gevent-dbg, python-openssl
+Homepage: http://www.gevent.org/
+Priority: extra
+Section: python
+Filename: pool/main/p/python-gevent/python-gevent_0.13.6-1~bpo60+1_i386.deb
+Size: 187806
+SHA256: 6eb2d2c83f888cc024a31fd17decedb7b7a16561f5ab552fef14a0bf627db750
+SHA1: 4ca01fc681593958b448f7d83a4ed53599e0452c
+MD5sum: 2be4eb3fc8a5adcc960c40b73f2f57f5
+Description: gevent is a coroutine-based Python networking library
+ gevent uses greenlet to provide a high-level synchronous API on top of
+ libevent event loop.
+
+Package: python-gevent-socketio
+Source: gevent-socketio
+Version: 0.3.5-rc2-1
+Architecture: all
+Maintainer: Alexandre Bourget <alex@bourget.cc>
+Installed-Size: 164
+Depends: python, python-support (>= 0.90.0), python-gevent-websocket
+Provides: python2.5-gevent-socketio, python2.6-gevent-socketio
+Priority: optional
+Section: python
+Filename: pool/main/g/gevent-socketio/python-gevent-socketio_0.3.5-rc2-1_all.deb
+Size: 23048
+SHA256: 51e9b2ed08ba1af8dbcf1703f9b2aa40c82818864c746c6821e006e9d9c8ea95
+SHA1: 05ee87efa3e9c018da2bdf64f2d403baf1b0e0a9
+MD5sum: 36253ba1bb09a7147a733134946a2cd9
+Description: SocketIO server based on the Gevent pywsgi server, a Python
+ gevent-socketio is a Python implementation of the Socket.IO protocol, developed originally for Node.js by LearnBoost and then ported to other languages. Socket.IO enables real-time web communications between a browser and a server, using a WebSocket-like API. One aim of this project is to provide a single gevent-based API that works across the different WSGI-based web frameworks out there (Pyramid, Pylons, Flask, web2py, Django, etc...). Only ~3 lines of code are required to tie-in gevent-socketio in your framework. Note: you need to use the gevent python WSGI server to use gevent-socketio.
+Python-Version: 2.5, 2.6
+
+Package: python-gevent-websocket
+Source: gevent-websocket
+Version: 0.3.6-1
+Architecture: all
+Maintainer: Jeffrey Gelens <jeffrey@noppo.pro>
+Installed-Size: 128
+Depends: python, python-support (>= 0.90.0), python-gevent, python-greenlet
+Provides: python2.5-gevent-websocket, python2.6-gevent-websocket
+Priority: optional
+Section: python
+Filename: pool/main/g/gevent-websocket/python-gevent-websocket_0.3.6-1_all.deb
+Size: 11084
+SHA256: ae1de867dd130abd753fd7f3002d46d85668d483066423dd6663cb39c7d81b51
+SHA1: e08dabacb231914b490d1267badb7a52bdfab1bc
+MD5sum: 4bf5ae860db6cf6b244097a33a806d6d
+Description: Websocket handler for the gevent pywsgi server, a Python net
+ ================
+ gevent-websocket
+ ================
+ .
+ `gevent-websocket`_ is a websocket library for the gevent_ networking library
+ written written and maintained by `Jeffrey Gelens`_ It is licensed under the BSD license.
+ .
+ Installation
+ ------------
+ .
+ Install Python 2.5 or newer and Gevent and its dependencies. The latest release
+ can be download from PyPi_ or by cloning the repository_ and running::
+ .
+     $ python setup.py install
+ .
+ The easiest way to install gevent-websocket is directly from PyPi_ using pip or
+ setuptools by running the commands below::
+ .
+     $ pip install gevent-websocket
+Python-Version: 2.5, 2.6
+
+Package: python-greenlet
+Version: 0.4.0-1
+Architecture: i386
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
+Installed-Size: 117
+Depends: libc6 (>= 2.3.6-6~), python (>= 2.6), python (<< 2.8)
+Suggests: python-greenlet-doc, python-greenlet-dev, python-greenlet-dbg
+Conflicts: python-codespeak-lib (<< 1.0)
+Homepage: http://pypi.python.org/pypi/greenlet
+Priority: extra
+Section: python
+Filename: pool/main/p/python-greenlet/python-greenlet_0.4.0-1_i386.deb
+Size: 21042
+SHA256: ee7d9237be5a0ac4808e947157d6bbedb92a901fd3e1f4b4e6611a848cfce009
+SHA1: 4922e92147a4ad3058ef17f70b1452352421df25
+MD5sum: 9e1920a4bc74d2994a542c112f0f999f
+Description: Lightweight in-process concurrent programming
+ The greenlet package is a spin-off of Stackless, a version of CPython that
+ supports micro-threads called "tasklets". Tasklets run pseudo-concurrently
+ (typically in a single or a few OS-level threads) and are synchronized with
+ data exchanges on "channels".
+ .
+ greenlet is the standalone package derived from the py lib, and is used by
+ several non-blocking IO packages as a more flexible alternative to Python's
+ built in coroutines.
+
+Package: python-psutil
+Version: 0.6.1-2
+Architecture: i386
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 275
+Depends: libc6 (>= 2.4), python (<< 2.8), python (>= 2.6), python-support (>= 0.90.0)
+Homepage: http://code.google.com/p/psutil/
+Priority: optional
+Section: python
+Filename: pool/main/p/python-psutil/python-psutil_0.6.1-2_i386.deb
+Size: 59786
+SHA256: f90e6d05123acbc3716844a9a2d14f5b64579340185a578a965a90131da9c230
+SHA1: eb6255ce3638b477e6b7e773c48c8634292e7e3b
+MD5sum: ab318dfb0e96f5d6c5a1644868d00468
+Description: module providing convenience functions for managing processes
+ psutil is a module providing an interface for retrieving information on
+ running processes and system utilization (CPU, memory) in a portable way
+ by using Python, implementing many functionalities offered by tools like
+ ps, top and Windows task manager.
+ .
+ It currently supports Linux, OS X, FreeBSD and Windows.
+
+Package: python-reconfigure
+Version: 0.1.42
+Architecture: all
+Maintainer: Eugeny Pankov <e@ajenti.org>
+Installed-Size: 195
+Depends: python (>= 2.6), python-support (>= 0.90.0), python-chardet
+Homepage: http://eugeny.github.com/reconfigure
+Priority: optional
+Section: python
+Filename: pool/main/p/python-reconfigure/python-reconfigure_0.1.42_all.deb
+Size: 31624
+SHA256: f34f38e60000462227de2ed9f874a0610a698f2ccbe12d30d28c311290a00dd1
+SHA1: ef1d2feffd2122c4535de845b741090331ed01d5
+MD5sum: 8ccd020c990d861378a1f8016025397f
+Description: Simple config file management library
+Python-Version: 2.7
+
+Package: python-six
+Source: six
+Version: 1.1.0-2~bpo60+1
+Architecture: all
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 84
+Depends: python2.6 | python2.5, python (>= 2.6.6-3+squeeze3~), python (<< 2.7)
+Homepage: http://packages.python.org/six/
+Priority: optional
+Section: python
+Filename: pool/main/s/six/python-six_1.1.0-2~bpo60+1_all.deb
+Size: 6308
+SHA256: 9d5b6c8ed8a772cd36af68f3348d00bca92603f9048df4cb3c696db51798c440
+SHA1: 9c82432eb512d6167ca1f207cc81ee73f1925764
+MD5sum: 2115a0dab8fd7fa1229ca5e5e689e5cf
+Description: Python 2 and 3 compatibility library (Python 2 interface)
+ Six is a Python 2 and 3 compatibility library. It provides utility
+ functions for smoothing over the differences between the Python versions
+ with the goal of writing Python code that is compatible on both Python
+ versions.
+ .
+ This package provides Six on the Python 2 module path. It is complemented
+ by python3-six.
+
+Package: python-urllib3
+Version: 1.3-2ubuntu2
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 151
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-six
+Homepage: http://urllib3.readthedocs.org
+Priority: optional
+Section: python
+Filename: pool/main/p/python-urllib3/python-urllib3_1.3-2ubuntu2_all.deb
+Size: 24302
+SHA256: d3640dc3b526b4c0c98eb6bedd325d03fc499c562efdce28f105fab0abe0a450
+SHA1: b49606e7b038c1f1782eedf32cef290d33fe4473
+MD5sum: c3f9bb3ff8468ceb7c6f242bb2669d64
+Description: HTTP library with thread-safe connection pooling for Python
+ urllib3 supports features left out of urllib and urllib2 libraries.
+ .
+   - Re-use the same socket connection for multiple requests (HTTPConnectionPool
+     and HTTPSConnectionPool) (with optional client-side certificate
+     verification).
+   - File posting (encode_multipart_formdata).
+   - Built-in redirection and retries (optional).
+   - Supports gzip and deflate decoding.
+   - Thread-safe and sanity-safe.
+   - Small and easy to understand codebase perfect for extending and
+     building upon.
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: vsftpd
+Version: 3.0.2-3
+Architecture: i386
+Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+Installed-Size: 378
+Depends: debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.7), libcap2 (>= 2.10), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.0), libwrap0 (>= 7.6-4~), adduser, libpam-modules, netbase
+Recommends: logrotate
+Conflicts: ftp-server
+Replaces: ftp-server
+Provides: ftp-server
+Homepage: http://vsftpd.beasts.org/
+Priority: extra
+Section: net
+Filename: pool/main/v/vsftpd/vsftpd_3.0.2-3_i386.deb
+Size: 149992
+SHA256: cd5328d77e04b7425bad40a14cce870b0348b0e4cf0e1d2c5da7ae3cb5454bf2
+SHA1: b4fa0c7a686d816393619f7910bcf72c2a8ba48b
+MD5sum: 9746833312d9c439c76994437bf36da6
+Description: lightweight, efficient FTP server written for security
+ This package provides the "Very Secure FTP Daemon", written from
+ the ground up with security in mind.
+ .
+ It supports both anonymous and non-anonymous FTP access, PAM authentication,
+ bandwidth limiting, and the Linux sendfile() facility.
+

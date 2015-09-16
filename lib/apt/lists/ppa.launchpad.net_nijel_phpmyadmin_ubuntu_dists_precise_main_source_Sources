@@ -1,0 +1,28 @@
+Package: phpmyadmin
+Binary: phpmyadmin
+Version: 4:4.0.9-1.precise~ppa.1
+Section: web
+Maintainer: Thijs Kinkhorst <thijs@debian.org>
+Build-Depends: debhelper (>= 7), po-debconf
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/phpmyadmin
+Files:
+ 3530c80086324d45894633f863f11d8f 4773892 phpmyadmin_4.0.9.orig.tar.xz
+ 1dc2bfc0cc71dbab9c342a647dfc452a 53092 phpmyadmin_4.0.9-1.precise~ppa.1.debian.tar.gz
+ aafab83261819f3f2ec58a4b4e9f8548 1322 phpmyadmin_4.0.9-1.precise~ppa.1.dsc
+Checksums-Sha1:
+ 065f4c650655ed7e3ce5a414bc10df98366cdd79 4773892 phpmyadmin_4.0.9.orig.tar.xz
+ 958dc9170499550ead561f8dedd294f8d99885b2 53092 phpmyadmin_4.0.9-1.precise~ppa.1.debian.tar.gz
+ 2bbb01a88686f97d86c2f69b2b4162f10ade5a96 1322 phpmyadmin_4.0.9-1.precise~ppa.1.dsc
+Checksums-Sha256:
+ 7e1d045dd71910ba203149dcd446134c62cee0308bf9569eccf1dd91cf04d1a4 4773892 phpmyadmin_4.0.9.orig.tar.xz
+ 969aaa3a4bddc0b826ed065a98973ac8d363bedbb39e69a27f337158adcc60cf 53092 phpmyadmin_4.0.9-1.precise~ppa.1.debian.tar.gz
+ 16a926fdc1fd46fda1f252f377f87f620e5d13158efeea917dc905b185382ea8 1322 phpmyadmin_4.0.9-1.precise~ppa.1.dsc
+Homepage: http://www.phpmyadmin.net/
+Uploaders: Michal Čihař <nijel@debian.org>
+Vcs-Svn: https://svn.kinkhorst.nl/svn/debian/phpmyadmin/trunk
+Package-List: phpmyadmin deb web extra
+Vcs-Browser: https://aphrodite.kinkhorst.nl/wsvn/debian/phpmyadmin/
+

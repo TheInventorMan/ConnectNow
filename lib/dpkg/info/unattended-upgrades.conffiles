@@ -1,0 +1,4 @@
+/etc/pm/sleep.d/10_unattended-upgrades-hibernate
+/etc/logrotate.d/unattended-upgrades
+/etc/init.d/unattended-upgrades
+/etc/apt/apt.conf.d/50unattended-upgrades

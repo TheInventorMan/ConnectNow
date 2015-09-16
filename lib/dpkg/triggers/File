@@ -1,0 +1,16 @@
+/usr/share/info install-info
+/etc/init ureadahead
+/etc/init.d ureadahead
+/usr/man man-db
+/usr/share/man man-db
+/usr/local/man man-db
+/usr/local/share/man man-db
+/usr/X11R6/man man-db
+/opt/man man-db
+/etc/lsb-release plymouth-theme-ubuntu-text
+/usr/share/mime/packages shared-mime-info
+/usr/lib/i386-linux-gnu/gio/modules libglib2.0-0
+/usr/lib/gio/modules libglib2.0-0
+/usr/share/glib-2.0/schemas libglib2.0-0
+/etc/php5/apache2/conf.d libapache2-mod-php5
+/etc/php5/fpm/conf.d php5-fpm

@@ -1,0 +1,9 @@
+0e30951f9ad69751b446ddb026be4fdd  usr/bin/apt-show-versions
+f0d727cccf2f782a6d5fcf57a9932af7  usr/share/doc/apt-show-versions/changelog.gz
+1d5fb3fdbbbfda7819d333ef5a80d61d  usr/share/doc/apt-show-versions/copyright
+3ec61a58be483fc2f9a4679c66b67399  usr/share/man/de/man1/apt-show-versions.1.gz
+09c78009b9bee430db2565f0069ede3f  usr/share/man/es/man1/apt-show-versions.1.gz
+ab60f4e2726fb3b66db1a8e90ee5e91a  usr/share/man/fr/man1/apt-show-versions.1.gz
+8df419cdaeb7c70e208a9efba271893c  usr/share/man/man1/apt-show-versions.1p.gz
+8292201c117fd808bc4a6d3615af5a5d  usr/share/man/sv/man1/apt-show-versions.1.gz
+6f0de377277ca054376f1fdfaa9177bd  usr/share/man/vi/man1/apt-show-versions.1.gz

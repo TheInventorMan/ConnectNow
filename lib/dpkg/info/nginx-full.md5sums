@@ -1,0 +1,5 @@
+4ed59763040f7395e40ccaf391150f2c  usr/sbin/nginx
+820f736a21e718b141934583bdf0c0de  usr/share/doc/nginx-full/changelog.Debian.gz
+3dacb337717eea916834b755dbba35c9  usr/share/doc/nginx-full/changelog.gz
+90df7924ed0a97d0f39f1cadb5419623  usr/share/doc/nginx-full/copyright
+cd732356977e5e90d752758edf88af23  usr/share/lintian/overrides/nginx-full

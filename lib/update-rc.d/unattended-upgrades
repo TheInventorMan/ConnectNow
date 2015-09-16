@@ -1,0 +1,1 @@
+update-rc.d unattended-upgrades stop 10 0 6 .

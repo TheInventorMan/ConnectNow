@@ -1,0 +1,4 @@
+/etc
+/etc/apache2
+/etc/apache2/mods-available
+/etc/apache2/mods-available/auth_mysql.load

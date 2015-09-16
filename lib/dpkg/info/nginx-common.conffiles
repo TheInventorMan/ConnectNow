@@ -1,0 +1,17 @@
+/etc/default/nginx
+/etc/ufw/applications.d/nginx
+/etc/nginx/scgi_params
+/etc/nginx/win-utf
+/etc/nginx/mime.types
+/etc/nginx/naxsi.rules
+/etc/nginx/koi-win
+/etc/nginx/proxy_params
+/etc/nginx/sites-available/default
+/etc/nginx/uwsgi_params
+/etc/nginx/naxsi_core.rules
+/etc/nginx/koi-utf
+/etc/nginx/fastcgi_params
+/etc/nginx/naxsi-ui.conf.1.4.1
+/etc/nginx/nginx.conf
+/etc/init.d/nginx
+/etc/logrotate.d/nginx

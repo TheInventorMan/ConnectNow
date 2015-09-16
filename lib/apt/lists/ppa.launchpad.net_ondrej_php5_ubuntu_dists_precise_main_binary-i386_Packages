@@ -1,0 +1,2986 @@
+Package: apache2
+Priority: optional
+Section: httpd
+Installed-Size: 442
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Recommends: ssl-cert
+Replaces: apache2.2-common
+Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom, apache2-utils
+Depends: lsb-base, procps, perl, mime-support, apache2-bin (= 2.4.7-1+sury.org~precise+1), apache2-data (= 2.4.7-1+sury.org~precise+1)
+Conflicts: apache2.2-common
+Filename: pool/main/a/apache2/apache2_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 141138
+MD5sum: 478a2237467818572b5b2e4aab440409
+SHA1: 7932f57de106184ebbe949e072456d74d9a8a2d9
+SHA256: 0fa62ebdff3d6aa5f900acbdd0893b1dbfda95408f56f36db653e77e6e7ac434
+Description: Apache HTTP Server
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains the configuration files, init scripts and support
+ scripts. It does not install the actual apache2 binaries.
+
+Package: apache2-dev
+Source: apache2
+Priority: optional
+Section: httpd
+Installed-Size: 917
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Replaces: apache2-prefork-dev, apache2-threaded-dev
+Provides: apache2-prefork-dev, apache2-threaded-dev, dh-apache2
+Depends: openssl, libapr1-dev, libaprutil1-dev, debhelper (>= 9), perl
+Conflicts: apache2-prefork-dev, apache2-threaded-dev
+Filename: pool/main/a/apache2/apache2-dev_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 217720
+MD5sum: bfdcdf47f0378c54c8d44041c38fa32a
+SHA1: 46888db03f3a46a65c4f7a6f8fa80f24a5bc9013
+SHA256: 0d2944e40dc4874537a179b6ace955a80b92458ba9bea36174fc31876eca2ea5
+Description: Apache HTTP Server (development headers)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package provides development headers and the apxs2 binary for the Apache 2
+ HTTP server useful to develop and link third party additions to the Debian
+ Apache HTTP server package.
+ .
+ It also provides dh_apache2 and dh sequence addons useful to install various
+ Debian Apache2 extensions with debhelper. It supports
+ - Apache 2 module configurations and shared objects
+ - Site configuration files
+ - Global configuration files
+
+Package: apache2-doc
+Source: apache2
+Priority: optional
+Section: doc
+Installed-Size: 19272
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: all
+Version: 2.4.7-1+sury.org~precise+1
+Recommends: apache2
+Pre-Depends: dpkg (>= 1.15.7.2)
+Filename: pool/main/a/apache2/apache2-doc_2.4.7-1+sury.org~precise+1_all.deb
+Size: 2691052
+MD5sum: 3a7670da1d3d9dfbcf48f80287e04bb6
+SHA1: 0b977309b676758736041bc5403ce9a8c7fb52c6
+SHA256: 1bbe8925fe71b1e660865ba5e69ebbc9ee3d3232064a08ae4b72a64da8b34198
+Description: Apache HTTP Server (on-site documentation)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package provides the documentation for the Apache 2 HTTP server. The
+ documentation is shipped in HTML format and can be accessed from a local
+ running Apache HTTP server instance or by browsing the file system directly.
+
+Package: apache2-mpm-prefork
+Source: apache2
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.7-1+sury.org~precise+1)
+Filename: pool/main/a/apache2/apache2-mpm-prefork_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1428
+MD5sum: 88af895657d9a04ddba1ff41867555f1
+SHA1: 734fcb65468c301fb3bcf96d9046cafffd0ddb70
+SHA256: feba7438af3e242ff5f91cecf537723ba548705cef8c7577e61cd39c64d45e52
+Description: transitional prefork MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-prefork and
+ can be safely removed after the installation is complete.
+
+Package: apache2-mpm-worker
+Source: apache2
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.7-1+sury.org~precise+1)
+Filename: pool/main/a/apache2/apache2-mpm-worker_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1432
+MD5sum: 5f7f486f0e9573e7c718f2fcb720f00a
+SHA1: 6c5dd365c677b3e42d9b2645a5a492aecd9d0e78
+SHA256: 4eb484639e3404928efc2ec6709138245cf1fd7f3601a51760cf5c93ea167b0f
+Description: transitional worker MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-worker and
+ can be safely removed after the installation is complete.
+
+Package: apache2-utils
+Source: apache2
+Priority: optional
+Section: httpd
+Installed-Size: 321
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Depends: libapr1 (>= 1.4.8-2~), libaprutil1 (>= 1.5.0), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.1)
+Filename: pool/main/a/apache2/apache2-utils_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 135366
+MD5sum: 1cb7204d9ff53acd018c9798d20441ae
+SHA1: ca1aa1283713e8886f02809133b926cc103f3d39
+SHA256: 51e45774840397d7ebf5f8e32acd2ebbebfd3bbc6755767c098c4f02b142ff15
+Description: Apache HTTP Server (utility programs for web servers)
+ Provides some add-on programs useful for any web server.  These include:
+ - ab (Apache benchmark tool)
+ - fcgistarter (Start a FastCGI program)
+ - logresolve (Resolve IP addresses to hostname in logfiles)
+ - htpasswd (Manipulate basic authentication files)
+ - htdigest (Manipulate digest authentication files)
+ - htdbm (Manipulate basic authentication files in DBM format, using APR)
+ - htcacheclean (Clean up the disk cache)
+ - rotatelogs (Periodically stop writing to a logfile and open a new one)
+ - split-logfile (Split a single log including multiple vhosts)
+ - checkgid (Checks whether the caller can setgid to the specified group)
+ - check_forensic (Extract mod_log_forensic output from Apache log files)
+ - httxt2dbm (Generate dbm files for use with RewriteMap)
+Multi-Arch: foreign
+
+Package: icu-doc
+Source: icu
+Priority: optional
+Section: doc
+Installed-Size: 34984
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Architecture: all
+Version: 52.1-1+debphp.org~precise+1
+Filename: pool/main/i/icu/icu-doc_52.1-1+debphp.org~precise+1_all.deb
+Size: 2283496
+MD5sum: fca6820a8547dd7dd08b7775d19f4add
+SHA1: f6550aaa14d543c98a07902411c712817a5e3352
+SHA256: e0bd109d5d73bb43f2b8c7a2551e76670492106ef5f37e6869e3bf0d61375fb1
+Description: API documentation for ICU classes and functions
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains HTML files
+ documenting the ICU APIs.
+
+Package: libapache2-mod-macro
+Source: apache2 (2.4.7-1+sury.org~precise+1)
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1:2.4.7-1+sury.org~precise+1
+Depends: apache2-bin (>= 2.3~)
+Filename: pool/main/a/apache2/libapache2-mod-macro_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1422
+MD5sum: 2e72a1f0e0c59355f05851c6840d133f
+SHA1: ae08db252f5c4f1f35597f0ffa3e691f474aecbf
+SHA256: fbbc40007e3d6dcb2bc8dc271015cec150def948e5385181e00f0eba25d0005e
+Description: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: libapache2-mod-proxy-html
+Source: apache2 (2.4.7-1+sury.org~precise+1)
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1:2.4.7-1+sury.org~precise+1
+Depends: apache2-bin (>= 2.3~)
+Filename: pool/main/a/apache2/libapache2-mod-proxy-html_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1430
+MD5sum: 3260c45ca606d97f5d601d4ef87d9612
+SHA1: 207ed5be84170b2bdf1777dac401c6062667fc5e
+SHA256: d1251c1a0579932cd303129967fe39cf7c4bf4c7193425934b45ff478e233989
+Description: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: libedit-dev
+Source: libedit
+Priority: optional
+Section: libdevel
+Installed-Size: 219
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: i386
+Version: 2.11-20080614-6+debphp.org~precise+1
+Depends: libedit2 (= 2.11-20080614-6+debphp.org~precise+1), libbsd-dev (>= 0.1.3), libtinfo-dev
+Filename: pool/main/libe/libedit/libedit-dev_2.11-20080614-6+debphp.org~precise+1_i386.deb
+Size: 83828
+MD5sum: fd01fe1c37d85f15e1a9131305be84b3
+SHA1: 79a6ea2e1e3f7b014140be6a539cd54798a0ebd5
+SHA256: 02a6e1e5f26aa4bbcabf00e301acd479895821d12ac9d71f47edd205f2e102a0
+Description: BSD editline and history libraries (development files)
+ The editline library provides generic line editing and
+ history functions.
+ .
+ It slightly resembles GNU readline
+Multi-Arch: same
+
+Package: libedit2
+Source: libedit
+Priority: standard
+Section: libs
+Installed-Size: 165
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: i386
+Version: 2.11-20080614-6+debphp.org~precise+1
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.11), libtinfo5
+Pre-Depends: multiarch-support
+Filename: pool/main/libe/libedit/libedit2_2.11-20080614-6+debphp.org~precise+1_i386.deb
+Size: 70836
+MD5sum: ac849b4418cc96c10265034fa47328fa
+SHA1: 598ce86d192b288bda9aa0b9628446e3f82b00ca
+SHA256: 7995b528085df562a91837b3919ac3f712fa50a6d2345081454c47f4d8ebd6fd
+Description: BSD editline and history libraries
+ The editline library provides generic line editing and
+ history functions.
+ .
+ It slightly resembles GNU readline
+Multi-Arch: same
+
+Package: libgd-dev
+Source: libgd2
+Priority: optional
+Section: libdevel
+Installed-Size: 793
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.1.0-2~precise+1
+Replaces: libgd2-dev (<< 2.1.0~alpha1-2~), libgd2-noxpm-dev (<< 2.1.0~), libgd2-xpm-dev (<< 2.1.0~)
+Provides: libgd2-dev, libgd2-noxpm-dev, libgd2-xpm-dev
+Depends: libgd3 (= 2.1.0-2~precise+1), libpng-dev, libz-dev, libjpeg-dev, libfreetype6-dev, libxpm-dev, libx11-dev, libxt-dev, libfontconfig-dev, libvpx-dev, libtiff-dev
+Breaks: libgd2-dev (<< 2.1.0~alpha1-2~), libgd2-noxpm-dev (<< 2.1.0~), libgd2-xpm-dev (<< 2.1.0~)
+Filename: pool/main/libg/libgd2/libgd-dev_2.1.0-2~precise+1_i386.deb
+Size: 322158
+MD5sum: 9f2d4368d0dbbfa5eb1415eaf1f22ccd
+SHA1: 892295981aff4afb4f6c77c6997075cdbef5f002
+SHA256: a064ca2fc2f76076f092d94548a975362bd589cd5c6f97e25a2ba80d9093aee6
+Description: GD Graphics Library (development version)
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the full development version of the library.
+Multi-Arch: same
+
+Package: libgd-tools
+Source: libgd2
+Priority: optional
+Section: graphics
+Installed-Size: 140
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.1.0-2~precise+1
+Suggests: libgd-dev
+Depends: libc6 (>= 2.7), libgd3 (>= 2.1.0~alpha~), perl
+Filename: pool/main/libg/libgd2/libgd-tools_2.1.0-2~precise+1_i386.deb
+Size: 45582
+MD5sum: 1025eae3252c4e9f2063e13b78d76aea
+SHA1: 8082b4348b59dbc195c15d4bedeca678577f3155
+SHA256: b5a32d4cb3ab87a69805d9bae6884e60e4ebbf504557a472dae2972eb32c8295
+Description: GD command line tools and example code
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is some simple command line tools and example code that use the GD
+ graphics library.
+
+Package: libgd2-noxpm-dev
+Source: libgd2
+Priority: extra
+Section: oldlibs
+Installed-Size: 29
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 2.1.0-2~precise+1
+Depends: libgd-dev
+Filename: pool/main/libg/libgd2/libgd2-noxpm-dev_2.1.0-2~precise+1_all.deb
+Size: 1108
+MD5sum: 17d37487a23fe654e159afb5354b5823
+SHA1: c0b9dee806bf129f866aac9a95e1d1c4c452e8d7
+SHA256: 6581c1b40e64e9f17112a94e564165b818a4a4367da226ae2c51f274b96bffe1
+Description: GD Graphics Library (transitional package)
+ This is a dummy transition package that can be safely removed once no
+ package depend on it.
+Multi-Arch: foreign
+
+Package: libgd2-xpm-dev
+Source: libgd2
+Priority: extra
+Section: oldlibs
+Installed-Size: 29
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 2.1.0-2~precise+1
+Depends: libgd-dev
+Filename: pool/main/libg/libgd2/libgd2-xpm-dev_2.1.0-2~precise+1_all.deb
+Size: 1106
+MD5sum: 81a8153b583b2090a258d23f881b9374
+SHA1: 89328c0b9a3593d47f10a4538404e00631fe9b18
+SHA256: 6c1446ebdf00ad5cb9deb698d9c927e612240985c3b73763f75b95b8e1125bdb
+Description: GD Graphics Library (transitional package)
+ This is a dummy transition package that can be safely removed once no
+ package depend on it.
+Multi-Arch: foreign
+
+Package: libicu-dev
+Source: icu
+Priority: optional
+Section: libdevel
+Installed-Size: 35057
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Architecture: i386
+Version: 52.1-1+debphp.org~precise+1
+Suggests: icu-doc
+Depends: libicu52 (= 52.1-1+debphp.org~precise+1), icu-devtools (>= 52.1-1+debphp.org~precise+1), libc6-dev | libc-dev
+Filename: pool/main/i/icu/libicu-dev_52.1-1+debphp.org~precise+1_i386.deb
+Size: 7691658
+MD5sum: d85459091d27ba2f4bdc37eb4f45ac26
+SHA1: 9fb8d01feaec454d3061e1dfb855a32aa00d9e16
+SHA256: 05e400a699b4c6a5ff97806e8efef9faa31e3fbeb8fd30f6ab7e1ac1e39ff160
+Description: Development files for International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains the development
+ files for ICU.
+Multi-Arch: same
+
+Package: php5
+Priority: optional
+Section: php
+Installed-Size: 29
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: all
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libapache2-mod-php5 (>= 5.5.9+dfsg-1+sury.org~precise+1) | libapache2-mod-php5filter (>= 5.5.9+dfsg-1+sury.org~precise+1) | php5-cgi (>= 5.5.9+dfsg-1+sury.org~precise+1) | php5-fpm (>= 5.5.9+dfsg-1+sury.org~precise+1), php5-common (>= 5.5.9+dfsg-1+sury.org~precise+1)
+Filename: pool/main/p/php5/php5_5.5.9+dfsg-1+sury.org~precise+1_all.deb
+Size: 1222
+MD5sum: e47306b1680d770a51dd282221a35c09
+SHA1: 8e410a7d6f33a03bbf2620cc661fb6166663067b
+SHA256: a73ed65a8a6fc35dfe9652b54b57505d49b37f87349de1967f4962291277f001
+Description: server-side, HTML-embedded scripting language (metapackage)
+ This package is a metapackage that, when installed, guarantees that you
+ have at least one of the four server-side versions of the PHP5 interpreter
+ installed. Removing this package won't remove PHP5 from your system, however
+ it may remove other packages that depend on this one.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-cgi
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 16888
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Suggests: php-pear
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.1, libonig2 (>= 5.2.0), libpcre3 (>= 8.10), libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), mime-support, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), libmagic1, ucf, tzdata
+Filename: pool/main/p/php5/php5-cgi_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 5430560
+MD5sum: c29818b79d303b1fd7fb50bfa6d77652
+SHA1: 47c020d7baba2a246ee03c0e4048d3106f37ddd2
+SHA256: d99300d76b161b1031118db07462f45805b471e44129774dd60eec130e295903
+Description: server-side, HTML-embedded scripting language (CGI binary)
+ This package provides the /usr/lib/cgi-bin/php5 CGI interpreter built
+ for use in Apache 2 with mod_actions, or any other CGI httpd that
+ supports a similar mechanism.  Note that MOST Apache users probably
+ want the libapache2-mod-php5 package.
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcntl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-cli
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 8501
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Recommends: php5-readline
+Suggests: php-pear
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.1, libonig2 (>= 5.2.0), libpcre3 (>= 8.10), libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), mime-support, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), libmagic1, ucf, tzdata, libedit2 (>= 2.11-20080614-4)
+Filename: pool/main/p/php5/php5-cli_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 2726024
+MD5sum: 9d4ed70d1fc209ada266eccdfbab6745
+SHA1: 5e20556594911ad6078d6330c3b403972b7c2e11
+SHA256: 6a68bf9092b81ba8fe96449aaddc7b99e4cab4be7d80db202cd4605e6f32491e
+Description: command-line interpreter for the php5 scripting language
+ This package provides the /usr/bin/php5 command interpreter, useful for
+ testing PHP scripts from a shell or performing general shell scripting tasks.
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcntl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-gd
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 146
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libgd3 (>= 2.1.0~alpha~), libxpm4, phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-gd_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 34046
+MD5sum: 88f2a157eda6a501e3e086d5436a4301
+SHA1: 38f3e69e8060fe0dc47a15a6dc34549e13058ed7
+SHA256: d40a5c9a9a4115feeeccd1b2a130260d1ab2987706bfa170d1e41f0861906103
+Description: GD module for php5
+ This package provides a module for handling graphics directly from PHP
+ scripts. It supports the PNG, JPEG, XPM formats as well as Freetype/ttf fonts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-mysql
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 258
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Replaces: php5-mysqli, php5-mysqlnd
+Depends: libc6 (>= 2.4), libmysqlclient18 (>= 5.5.13-1), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Conflicts: php5-mysqli, php5-mysqlnd
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-mysql_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 80290
+MD5sum: e6fef634dc64d88b5e35b9445b43f320
+SHA1: ccf46c139c707295820016a384de10671e4d8a24
+SHA256: 2e87b03e7ed08e415fcb1586a4f261bed878a8a322319a2008031082a1291a4d
+Description: MySQL module for php5
+ This package provides modules for MySQL database connections directly from
+ PHP scripts.  It includes the generic "mysql" module which can be used
+ to connect to all versions of MySQL, an improved "mysqli" module for
+ MySQL version 4.1 or later, and the pdo_mysql module for use with
+ the PHP Data Object extension.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: libapache2-mod-php5
+Source: php5
+Priority: optional
+Section: httpd
+Installed-Size: 8699
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Recommends: php5-cli
+Suggests: php-pear
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.1, libonig2 (>= 5.2.0), libpcre3 (>= 8.10), libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), apache2-api-20120211, apache2 (>= 2.4), mime-support, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), libmagic1, ucf, tzdata
+Conflicts: libapache2-mod-php4, libapache2-mod-php5filter
+Filename: pool/main/p/php5/libapache2-mod-php5_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 2735104
+MD5sum: 5e642a2ae339d240d18fd9be33690854
+SHA1: 2b1365f7027d3f1f6a1a35a8aca7f96fc2058ffc
+SHA256: 567be73789c091cbb9e0ab716532774a9067e907b4e1d746710e0e71b6afeb90
+Description: server-side, HTML-embedded scripting language (Apache 2 module)
+ This package provides the PHP5 module for the Apache 2 webserver (as
+ found in the apache2-mpm-prefork package).  Please note that this package
+ ONLY works with Apache's prefork MPM, as it is not compiled thread-safe.
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php-pear
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 2233
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: all
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Recommends: gnupg
+Replaces: php-xml-util, php4-pear (<< 4:4.4.0-0)
+Suggests: php5-dev
+Provides: php-xml-util
+Depends: php5-common (>= 5.5.9+dfsg-1+sury.org~precise+1), php5-cli
+Conflicts: php-xml-util
+Filename: pool/main/p/php5/php-pear_5.5.9+dfsg-1+sury.org~precise+1_all.deb
+Size: 368882
+MD5sum: bfca84edfeabfb8a60371f18303fcd6d
+SHA1: 9eeed902d1283d627466a3ba4eaf9e26291e274f
+SHA256: a50976538c949ff592b4eb4b19649139141a76f98b508f6519ccfb905512e3f1
+Description: PEAR - PHP Extension and Application Repository
+ This package contains the base PEAR classes for PHP, as well as the PEAR
+ installer.  Many PEAR classes are already packaged for Debian, and can be
+ easily identified by names beginning with "php-", such as php-db and
+ php-auth.  Note: to build and install precompiled PECL extensions, you
+ will need one of the php development packages installed.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-common
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 789
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Suggests: php5-user-cache
+Provides: php5-mhash, phpapi-20121212
+Depends: libc6 (>= 2.4), sed (>= 4.1.1-1), psmisc (>= 22.15-1~), lsof, ucf, php5-json
+Conflicts: php5-mhash
+Breaks: php-apc (<< 4.0.0), php-crypt-gpg (<< 1.3.2), php5-json (<< 1.3.1-1~), php5-suhosin (<< 0.9.34), php5-xcache (<< 3.1~), php5-xdebug (<< 2.2.2)
+Filename: pool/main/p/php5/php5-common_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 413916
+MD5sum: a7846ccab788dc1a8e8eb02d9a7a48b8
+SHA1: e801ca9aa12241787814aff706efcd3ac213ca5e
+SHA256: cc1117fa77fb7568092a7935e4fb83b53e5efec092b8acd8ae9b1cfc576f19e6
+Description: Common files for packages built from the php5 source
+ This package contains the documentation and example files relevant to all
+ the other packages built from the php5 source.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-curl
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 134
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libcurl3 (>= 7.16.2-1), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-curl_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 33328
+MD5sum: 64042e85a8f00e0ff364f20a5f383c41
+SHA1: b4718dce6bd6f5ac08b606aabe42078a42bef2a0
+SHA256: 88cce2fc5a3abb31d7342f7ff7fd28b681634301ce8779c2a55b50233c5758dd
+Description: CURL module for php5
+ CURL is a library for getting files from  FTP, GOPHER, HTTP server.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-dev
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 3616
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Recommends: pkg-php-tools
+Provides: dh-php5
+Depends: autoconf (>= 2.63), automake (>= 1.11), libssl-dev, libtool (>= 2.2), shtool, php5-common (>= 5.5.9+dfsg-1+sury.org~precise+1), perl
+Conflicts: libtool (<< 2.2)
+Filename: pool/main/p/php5/php5-dev_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 555368
+MD5sum: d8a70fe4d1ee71ff1e7cad5d6fdbc7b8
+SHA1: 68ea06cc6d4e2a821c46270279394b09e8473191
+SHA256: 1ef0d599cc9d2efbebf64a9685c1786ce7b57f3b930281cdca67c6301dd61b71
+Description: Files for PHP5 module development
+ This package provides the files from the PHP5 source needed for compiling
+ additional modules.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-imap
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 146
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc-client2007e, libc6 (>= 2.4), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-imap_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 37106
+MD5sum: cb6269a76457ec71172dec2321a08423
+SHA1: 619f39f827d614c132f699f9cc18cee588f5c446
+SHA256: 42a36691bcf498c0026922bad090f3c450e01f01b1f658828f10d0b214c149c7
+Description: IMAP module for php5
+ This package provides a module for IMAP functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-ldap
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 102
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-ldap_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 22054
+MD5sum: 5531cc692b9b6648be741a31692067b5
+SHA1: 96181066aaf1e92f62fc0dcf1cc71430df0bcd2a
+SHA256: db9a63506889f07ac3ee398b3f897fce9a4760931b89af0e32ec9b092232dfed
+Description: LDAP module for php5
+ This package provides a module for LDAP functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-odbc
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 136
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libodbc1 (>= 2.2.11) | unixodbc (>= 2.2.11), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-odbc_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 36824
+MD5sum: 56f1069e45cd2e2b7b6463161d3f6b78
+SHA1: ea2907001f22edd58e33d269ec8df65ade83ca44
+SHA256: e9b6cce56f240133289e50eef74dfce9e5ee8cc608dded13cc908f6e11404f83
+Description: ODBC module for php5
+ This package provides a module for database access through ODBC drivers.
+ It uses the unixODBC library as an ODBC provider.  It also contains the
+ pdo_odbc module, for use with the PHP Data Object extension.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-pgsql
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 204
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libpq5 (>= 9.0~), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-pgsql_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 63180
+MD5sum: 6cc2d61be772c3fc793ad690f2146770
+SHA1: c2186c6da9090e01c34d04914422ac17caa1d2b5
+SHA256: 6b8ddda34e315da83301d388a36507e26a9f7c5ef988d3e346855e51b640d59b
+Description: PostgreSQL module for php5
+ This package provides a module for PostgreSQL database connections
+ directly from PHP scripts.  It also includes the pdo_pgsql module for
+ use with the PHP Data Object extension.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-recode
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 61
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.1.3), librecode0 (>= 3.6), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-recode_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 5814
+MD5sum: 449def01336d283f2df6a67c785b1e64
+SHA1: 554fb9dc3867754a9e25df1cbcab359d4a57a209
+SHA256: 9ad042835474d1d53ec2d190224303af835de7a4956655b7738636a14469f89b
+Description: recode module for php5
+ This package provides a module for recode - character set recoding.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-snmp
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 102
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libsnmp15 (>= 5.4.3~dfsg), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-snmp_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 22218
+MD5sum: 4b4b27d35a3b726da4241fd912311307
+SHA1: b442e7611afe0fa48bd3680612d8652cc2d33422
+SHA256: ab05e2b6d34ba24e2f382cf76585a056f855d98d8678d5607bed63f58f6de5a6
+Description: SNMP module for php5
+ This package provides a module for SNMP functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-sqlite
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 121
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libsqlite3-0 (>= 3.7.4), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Breaks: roundcube-sqlite (<< 0.7.1-2)
+Filename: pool/main/p/php5/php5-sqlite_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 29922
+MD5sum: c4ed97e2b545a96e9e545e37cbc6874c
+SHA1: c544091d9abb3625cff7818e0ac4c698e47a1352
+SHA256: dcdf230ada78b5a061a9840eb8fb66bbf29b1d0374e6f48fe4f478058849795d
+Description: SQLite module for php5
+ This package provides a module allowing you to use the SQLite self-contained
+ database engine from within your PHP scripts, eliminating the need for a full
+ SQL server installation like MySQL or PostgreSQL.  It also includes the
+ pdo_sqlite module, for use with the PHP Data Object extension.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-sybase
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 116
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Provides: php5-mssql
+Depends: libc6 (>= 2.4), libsybdb5 (>= 0.63), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-sybase_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 29082
+MD5sum: 965980ea8cff66d7bc069d4a1578bbc7
+SHA1: 2156b82a3bbed88eeab2878ae948ef8c882436c5
+SHA256: 7a18e1bb1af39a6a09b3592f34ad01adcc38d5c9f83002c914e1bc7eab910c26
+Description: Sybase / MS SQL Server module for php5
+ This package provides a module for Sybase and Microsoft SQL Server
+ database connections directly from PHP scripts. It also includes the
+ pdo_dblib module for use with the PHP Data Object extension.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-xmlrpc
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 138
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-xmlrpc_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 40950
+MD5sum: 6172d554bb7175303f8ebef248c57940
+SHA1: d4fb7de83033c9fb45bc0c48eb6f5d0b318e4061
+SHA256: 0dc1e0b7dff1e62bf29a3c06732608c16cbc3a0729bfba538a3d18696f7c2392
+Description: XML-RPC module for php5
+ This package provides a module for XML-RPC functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-xsl
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 82
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-xsl_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 15992
+MD5sum: b6d613cc1b319366127f826035d13943
+SHA1: d08ea4c6a88bcaac08dcaffd38a7681b2e3d0dd7
+SHA256: 0e127d77f769189694de77573890c42270b4902f4e5e75b75f91086a28ae4475
+Description: XSL module for php5
+ This package provides a module for XSL using the libxslt XSL parser.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-json
+Source: php-json
+Priority: optional
+Section: php
+Installed-Size: 170
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.3.2-3+debphp.org~precise+1
+Replaces: php5-dev (<< 5.5.0~rc1+dfsg-1~)
+Depends: libc6 (>= 2.8), phpapi-20121212, ucf, libjson-c2 (>= 0.11-3~)
+Breaks: php5-common (<< 5.5.0~rc1+dfsg-1~), php5-dev (<< 5.5.0~rc1+dfsg-1~)
+Filename: pool/main/p/php-json/php5-json_1.3.2-3+debphp.org~precise+1_i386.deb
+Size: 41602
+MD5sum: 5cbe2991277c242d067c751b7672bbc9
+SHA1: 33c9bef2bfa00bb16144a839bdb0a87d34de9a6c
+SHA256: 322b659da907e6843d65efe339dddfd3d749b90ae9b9068708cafa36d65d4adf
+Description: JSON module for php5
+ This package provides a module for JSON functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-mcrypt
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 89
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libmcrypt4, phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-mcrypt_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 16442
+MD5sum: be3a4661ba5eec46c63ae4984fa77cc7
+SHA1: 75d1ba56e7ea79e93bc011c04d502f0f8e38212d
+SHA256: 0919a69f79bef6c16baf1868ccbf16327ead2bff87da17563bdac30f6f01f48e
+Description: MCrypt module for php5
+ This package provides a module for MCrypt functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-pspell
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 69
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libaspell15 (>= 0.60.7~20110707), libc6 (>= 2.4), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-pspell_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 9188
+MD5sum: 6f39527ed08557badff2715aed2be46d
+SHA1: 96e6affe5f865f881fc8973951877d844c0d6b14
+SHA256: 04ac3e329e76add7c5ac7b9394ca8185ffc4ff1c404335b087ba2f23946a83a9
+Description: pspell module for php5
+ This package provides a module for pspell functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-interbase
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 164
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.4), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-interbase_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 51976
+MD5sum: 5d45c707e6d6c40753c85cbbeb98fe99
+SHA1: b75e5134317d8ab5272608b6810ea671f1bbf2ad
+SHA256: 2b22c927afbe8925ccc448c02fc477fa4778721fe524890bcae7993dd65aa400
+Description: interbase/firebird module for php5
+ This package provides a module for interbase/firebird functions in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: libming-dev
+Source: ming
+Priority: optional
+Section: libdevel
+Installed-Size: 857
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: i386
+Version: 1:0.4.5-1~precise+1
+Depends: libming1 (= 1:0.4.5-1~precise+1)
+Filename: pool/main/m/ming/libming-dev_0.4.5-1~precise+1_i386.deb
+Size: 323464
+MD5sum: 8e37195fdec3927b7a37d62410dc0982
+SHA1: f88b441857a6515422a9fbe9fdb25b3824939bda
+SHA256: e714f578ac865292fea002bae9a339c83efb32ed3cc63f2ade8ce7679e11f54a
+Description: Library to generate SWF (Flash) Files (development files)
+ Ming is an SWF (Flash) file format output library.
+ It is written in C, with wrappers for C++, Perl, Python,
+ PHP and experimental support for Ruby and Java.
+ .
+ This package contains the development headers for C and C++.
+
+Package: libswf-perl
+Source: ming
+Priority: optional
+Section: perl
+Installed-Size: 590
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: i386
+Version: 1:0.4.5-1~precise+1
+Suggests: libming-fonts-openoffice
+Depends: libming1, libc6 (>= 2.3.4), perl (>= 5.14.2-6ubuntu2.3), perlapi-5.14.2
+Filename: pool/main/m/ming/libswf-perl_0.4.5-1~precise+1_i386.deb
+Size: 229702
+MD5sum: 4a4671b6bb3152f223aa2703e28d6f7a
+SHA1: c5973a6815a367c89b3c9e0bedb5f749beda967e
+SHA256: 86fc5fa1d41953f584dfa549dc557b5936b4f6fc70bd536e59b1c2cc428ae871
+Description: Ming (SWF) module for Perl
+ Ming is an SWF (Flash) file format output library.
+ It is written in C, with wrappers for C++, Perl, Python,
+ PHP and experimental support for Ruby and Java.
+ .
+ This package contains the Perl Module.
+
+Package: libming-util
+Source: ming
+Priority: optional
+Section: devel
+Installed-Size: 1610
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: i386
+Version: 1:0.4.5-1~precise+1
+Depends: libc6 (>= 2.8), libgif4 (>= 4.1.4), libming1, libpng12-0 (>= 1.2.13-4), zlib1g (>= 1:1.1.4)
+Filename: pool/main/m/ming/libming-util_0.4.5-1~precise+1_i386.deb
+Size: 657658
+MD5sum: 83dda7fc2adb675a19cb15992aefdaf0
+SHA1: e11205c00d8f4fefee5085d17670eb9f038d95c4
+SHA256: 0f1abac6ec52117a491d20490ee655d9a899dd29ad5634cfb81caa62a7cc65bc
+Description: Library to generate SWF (Flash) Files - Utilities
+ Ming is an SWF (Flash) file format output library.
+ It is written in C, with wrappers for C++, Perl, Python,
+ PHP and experimental support for Ruby and Java.
+ .
+ This package contains some utilities like:
+ swftophp   - SWF to PHP converter
+ makefdb    - Font Definition Ripper
+ listfdb    - List Font Definition
+ listjpeg   - List JPEGs
+ listswf    - SWF Disassembler
+ listaction - Actions Script Disassembler
+ png2dbl    - PNG convert
+ gif2dbl    - GIF converter
+ gif2mask   - GIF Mask extractor
+ raw2adpcm  - Audio Converter
+
+Package: python-ming
+Source: ming
+Priority: optional
+Section: python
+Installed-Size: 424
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: i386
+Version: 1:0.4.5-1~precise+1
+Provides: python2.7-ming
+Depends: libc6 (>= 2.4), libming1, python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Filename: pool/main/m/ming/python-ming_0.4.5-1~precise+1_i386.deb
+Size: 91310
+MD5sum: ad0c0618432f727924617b0f02f6f17c
+SHA1: 6ac3c2136f261762c10a884d7530fda65eb799a9
+SHA256: dc6240d8b27b2f5552157db391b45dc3cc17e7564600356745f36b7447189fe9
+Description: Ming (SWF) module for Python
+ Ming is an SWF (Flash) file format output library.
+ It is written in C, with wrappers for C++, Perl, Python,
+ PHP and experimental support for Ruby and Java.
+ .
+ This package contains the Python module and development files.
+
+Package: php5-imagick
+Source: php-imagick
+Priority: optional
+Section: php
+Installed-Size: 492
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Architecture: i386
+Version: 3.1.2-1+debphp.org~precise+1
+Recommends: ghostscript, ttf-dejavu-core
+Depends: libc6 (>= 2.4), libmagickcore4 (>= 8:6.6.9.7), libmagickwand4 (>= 8:6.6.9.7), phpapi-20121212, ucf
+Filename: pool/main/p/php-imagick/php5-imagick_3.1.2-1+debphp.org~precise+1_i386.deb
+Size: 133060
+MD5sum: 94c734cccbca2ae666a044470d4cad9d
+SHA1: 6ec414cf2bc7a638d6df38d1e4e3a870bdb2360b
+SHA256: 41aba8d84c03d08808e9c8fa3b0d3853ab95d097af078b24145e2286dbf5250f
+Description: ImageMagick module for php5
+ This package provides a wrapper for ImageMagick library directly from
+ PHP scripts.
+ .
+ PHP5 is an HTML-embedded scripting language. Much of its syntax is borrowed
+ from C, Java and Perl with a couple of unique PHP-specific features thrown
+ in. The goal of the language is to allow web developers to write
+ dynamically generated pages quickly.
+
+Package: libapr1
+Source: apr
+Priority: optional
+Section: libs
+Installed-Size: 268
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.0-1+sury.org~precise+1
+Depends: libc6 (>= 2.15), libuuid1 (>= 2.16)
+Conflicts: libapr1.0
+Pre-Depends: multiarch-support
+Filename: pool/main/a/apr/libapr1_1.5.0-1+sury.org~precise+1_i386.deb
+Size: 111106
+MD5sum: f3360580c499dd785627da20a96592e8
+SHA1: 82ac2a1000b2e734872d36a59cbe550d5b3b5f58
+SHA256: 8740e7f4fac187fe18975040236fb2254ba9fd2743e38572da6ce89b5aaed3f1
+Description: Apache Portable Runtime Library
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+Multi-Arch: same
+
+Package: libapr1-dev
+Source: apr
+Priority: optional
+Section: libdevel
+Installed-Size: 6650
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.0-1+sury.org~precise+1
+Suggests: python
+Depends: libapr1 (= 1.5.0-1+sury.org~precise+1), uuid-dev, libsctp-dev
+Conflicts: libapr0-dev, libapr1.0-dev
+Filename: pool/main/a/apr/libapr1-dev_1.5.0-1+sury.org~precise+1_i386.deb
+Size: 1139588
+MD5sum: e6e6527eb1335c6abb97a0945c8347c2
+SHA1: 0e2e4293bd3eba8ffd01754238d3e95f4788833b
+SHA256: 7c0b0b7bf6944db2456c5ac834d209a5e8266904768b9c2a17d22c5a96c738dd
+Description: Apache Portable Runtime Library - Development Headers
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ This package contains development headers for APR.
+
+Package: libapr1-dbg
+Source: apr
+Priority: extra
+Section: debug
+Installed-Size: 259
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.0-1+sury.org~precise+1
+Depends: libapr1 (= 1.5.0-1+sury.org~precise+1)
+Filename: pool/main/a/apr/libapr1-dbg_1.5.0-1+sury.org~precise+1_i386.deb
+Size: 194208
+MD5sum: b4c81060e2a38570b31ff0d541c357a6
+SHA1: 720f81c44c0094a43313701d7ead05fc88fe2d95
+SHA256: cfd433b316b57d94c9edc58ad4656765e34d396575e3d8a24eeb56f1ad45caf1
+Description: Apache Portable Runtime Library - Debugging Symbols
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ This package contains the debugging symbols for APR.
+Multi-Arch: same
+
+Package: php5-memcache
+Source: php-memcache
+Priority: optional
+Section: php
+Installed-Size: 324
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Architecture: i386
+Version: 3.0.8-2+debphp.org~precise+1
+Suggests: memcached
+Depends: libc6 (>= 2.15), php5-common (>= 4.3.11), php-pear (>= 1.4.0~b1), phpapi-20121212, ucf
+Filename: pool/main/p/php-memcache/php5-memcache_3.0.8-2+debphp.org~precise+1_i386.deb
+Size: 96346
+MD5sum: 7ccb6c2941a3ffd86956b17563051fd7
+SHA1: dfd146ea87664e83c4a72e7183de1d721790b433
+SHA256: 8ca1c191c500fa0f9e55595be13e24c1c4471eabcda6800208e44f07507b5676
+Description: memcache extension module for PHP5
+ Memcached is a caching daemon designed especially for dynamic web applications
+ to decrease database load by storing objects in memory.
+ .
+ This extension allows you to work with memcached through handy OO and
+ procedural interfaces in your php5 applications.
+
+Package: php5-ps
+Source: php-ps
+Priority: optional
+Section: php
+Installed-Size: 103
+Maintainer: Uwe Steinmann <steinm@debian.org>
+Architecture: i386
+Version: 1.3.7-1+precise+1
+Depends: libc6 (>= 2.4), pslib1 (>= 0.4.0), phpapi-20121212, php5-gd
+Filename: pool/main/p/php-ps/php5-ps_1.3.7-1+precise+1_i386.deb
+Size: 22824
+MD5sum: 31b90ef7b87ce6896f9d2d6e6d7fcad3
+SHA1: 9a6c3dad49b46038df068d91e76d554e07286993
+SHA256: 9620a7fe1dc2a1ca08b20fcfbf3dec72e9f3ef9ea58afd262b63284fc8c8a82e
+Description: ps module for PHP 5
+ ps is an extension similar to the pdf extension but for creating
+ PostScript files. Its api is modelled after the pdf extension.
+ It has some advanced features like taking kerning into account
+ and support for hyphenation. PostScript files can converted to
+ pdf files with ghostscript retaining hyperlinks and bookmarks.
+
+Package: libaprutil1
+Source: apr-util
+Priority: optional
+Section: libs
+Installed-Size: 245
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libapr1 (>= 1.4.8-2~), libc6 (>= 2.4), libdb5.1, libexpat1 (>= 1.95.8), libssl1.0.0 (>= 1.0.0)
+Pre-Depends: multiarch-support
+Breaks: libapr1 (<< 1.4.8-2~)
+Filename: pool/main/a/apr-util/libaprutil1_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 96274
+MD5sum: 1aa232ac4c8f6c2d76e32e0e3061dfc6
+SHA1: 9945957342693de82f76dc7574a344491655c151
+SHA256: 876b33ca0b6b1f1d0bc095f2f36610edf4bbe0ed8676da01b6237189c054470e
+Description: Apache Portable Runtime Utility Library
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+Multi-Arch: same
+
+Package: libaprutil1-dev
+Source: apr-util
+Priority: optional
+Section: libdevel
+Installed-Size: 3693
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libaprutil1 (= 1.5.3-1+sury.org~precise+1), libldap2-dev, libexpat1-dev, libpcre3-dev, libapr1-dev (>= 1.2.2-1), libsqlite3-dev, libpq-dev, libmysqlclient-dev
+Filename: pool/main/a/apr-util/libaprutil1-dev_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 592450
+MD5sum: 816b57e537af6d34f6fe1ed71f65795f
+SHA1: ffcc8cf16a05bbb1faf2aa52cbf3a396be674dcb
+SHA256: 84d6c4585c88f425163ffdd2421da05735020000ed4b972904ea929439162212
+Description: Apache Portable Runtime Utility Library - Development Headers
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains development headers for APR util.
+
+Package: libaprutil1-dbg
+Source: apr-util
+Priority: extra
+Section: debug
+Installed-Size: 341
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libaprutil1 (= 1.5.3-1+sury.org~precise+1)
+Filename: pool/main/a/apr-util/libaprutil1-dbg_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 231218
+MD5sum: 649743af852fb633361c2d9268cdccc0
+SHA1: 5d23b6d7132161e3b82ca27f06c06c2237c3baf3
+SHA256: 27d6deda1723225113a004b8ee37cccf7d3d663e436197126f61a9368cf7010c
+Description: Apache Portable Runtime Utility Library - Debugging Symbols
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the debugging symbols for APR util.
+Multi-Arch: same
+
+Package: ming-fonts-dejavu
+Source: ming
+Priority: optional
+Section: web
+Installed-Size: 78
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: all
+Version: 1:0.4.5-1~precise+1
+Filename: pool/main/m/ming/ming-fonts-dejavu_0.4.5-1~precise+1_all.deb
+Size: 36264
+MD5sum: 01dd3477870e2a9207b631335d640dc2
+SHA1: 9844c9aefb6ec369d0b857d248ac200a10adebfc
+SHA256: ff905c81b1d5369d7ec67f57f5a0fa2ba8bc94351f17da6ff69cdb914f8ae739
+Description: Ming format DejaVue Fonts
+ Ming is an SWF (Flash) file format output library.
+ It is written in C, with wrappers for C++, Perl, Python,
+ PHP and experimental support for Ruby and Java.
+ .
+ This package contains the DejaVu Fonts in the ming format.
+
+Package: ming-fonts-opensymbol
+Source: ming
+Priority: optional
+Section: web
+Installed-Size: 45
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: all
+Version: 1:0.4.5-1~precise+1
+Replaces: libming-fonts-openoffice
+Provides: libming-fonts-openoffice
+Conflicts: libming-fonts-openoffice
+Filename: pool/main/m/ming/ming-fonts-opensymbol_0.4.5-1~precise+1_all.deb
+Size: 5252
+MD5sum: a19b6c9728f0b4c9853e26ca7be085e9
+SHA1: a31ea2e9961bfe34ee92a4cc23d2c84100b48e95
+SHA256: 743d61929450549f137d8a28539bf9744bf33acde8f361e8fe5b1fa60c6df9e0
+Description: Ming format Opensymbol Fonts
+ Ming is an SWF (Flash) file format output library.
+ It is written in C, with wrappers for C++, Perl, Python,
+ PHP and experimental support for Ruby and Java.
+ .
+ This package contains the Opensymbol Font in the ming format.
+
+Package: php5-ming
+Source: ming
+Priority: optional
+Section: web
+Installed-Size: 196
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: i386
+Version: 1:0.4.5-1~precise+1
+Depends: libc6 (>= 2.1.3), libming1, phpapi-20121212
+Filename: pool/main/m/ming/php5-ming_0.4.5-1~precise+1_i386.deb
+Size: 53510
+MD5sum: 2621b11c663230b5deb7586b3c7b38b8
+SHA1: 89d6b71cb3920a058593cd9337e295df1ff06293
+SHA256: 9ca02e19d01228c13b5f8cda7677be39118e10876170ef8b7afa5f0b6314a9a4
+Description: Ming module for php5
+ This package provides a module for Ming functions in PHP scripts.
+ .
+ PHP5 is an HTML-embedded scripting language. Much of its syntax is borrowed
+ from C, Java and Perl with a couple of unique PHP-specific features thrown
+ in. The goal of the language is to allow web developers to write
+ dynamically generated pages quickly.
+
+Package: php5-xcache
+Source: xcache
+Priority: optional
+Section: php
+Installed-Size: 409
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 3.1.0-1+debphp.org~precise+1
+Replaces: php5-user-cache
+Provides: php5-user-cache
+Depends: libc6 (>= 2.4), phpapi-20121212
+Conflicts: php-apc, php5-user-cache
+Pre-Depends: dpkg (>= 1.15.7.2)
+Filename: pool/main/x/xcache/php5-xcache_3.1.0-1+debphp.org~precise+1_i386.deb
+Size: 131142
+MD5sum: 2472d9d5f28c688f1a6fe978116e8f45
+SHA1: d18393ff8e7f38d0dd43aa166342256f93051904
+SHA256: 334df3d942e47da4b4e5f2c4e75fa12506caa56d0d4599b3c8ba53d3b6c02ea3
+Description: Fast, stable PHP opcode cacher
+ XCache is a fast, stable PHP opcode cacher that has been tested and
+ is now running on production servers under high load.  It overcomes a
+ lot of problems that has been with other competing opcachers such as
+ being able to be used with new PHP versions.
+ .
+ PHP5 is an HTML-embedded scripting language. Much of its syntax is borrowed
+ from C, Java and Perl with a couple of unique PHP-specific features thrown
+ in. The goal of the language is to allow web developers to write
+ dynamically generated pages quickly.
+
+Package: php5-tidy
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 98
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.1.3), libtidy-0.99-0, phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-tidy_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 19706
+MD5sum: f50b862f2502f44a8546663614317ba7
+SHA1: 8f8b19fee280fbc0af92d3ad9005e4af7840bcbc
+SHA256: e135b934373ee4a4f217124d9d235afb1eefde80da82dcb2559c6529f0c74935
+Description: tidy module for php5
+ This package provides a module for tidy functions in PHP scripts.
+ .
+ Tidy is an extension based on Libtidy (http://tidy.sf.net/) and allows
+ a PHP developer to clean, repair, and traverse HTML, XHTML, and XML
+ documents -- including ones with embedded scripting languages such as PHP
+ or ASP within them using OO constructs.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: apache2-mpm-event
+Source: apache2
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.7-1+sury.org~precise+1)
+Filename: pool/main/a/apache2/apache2-mpm-event_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1430
+MD5sum: 6e6a847d3a850fb7b4205d4492bd50b2
+SHA1: 83b3eed243d31d7977c9adcc4aadfad1e397a0e5
+SHA256: 10c814e85473c7f072d316c21e7b2512defc2c347b562d171cf78e6c443be9bf
+Description: transitional event MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-event and
+ can be safely removed after the  installation is complete.
+
+Package: apache2-mpm-itk
+Source: apache2
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Provides: httpd, httpd-cgi
+Depends: apache2 (= 2.4.7-1+sury.org~precise+1), libapache2-mpm-itk
+Filename: pool/main/a/apache2/apache2-mpm-itk_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1430
+MD5sum: 6fcb0f5264d6bbc2f81ff69bb53c9ed3
+SHA1: 309e14258dc66b9d6198a03128797c68c2c19e3d
+SHA256: cc5b6870f0b36c2037b9b2425d956ab388d39620609827f9d45b22c9fbd75795
+Description: transitional itk MPM package for apache2
+ This is a transitional package to apache2 for users of apache2-mpm-itk and
+ can be safely removed after the installation is complete.
+
+Package: libapache2-mod-wsgi
+Source: mod-wsgi
+Priority: optional
+Section: httpd
+Installed-Size: 232
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: i386
+Version: 3.4-4+debphp.org~precise+1
+Provides: httpd-wsgi
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), apache2-api-20120211, python (>= 2.7), python (<< 2.8)
+Filename: pool/main/m/mod-wsgi/libapache2-mod-wsgi_3.4-4+debphp.org~precise+1_i386.deb
+Size: 81868
+MD5sum: fa70dc5c3ed3aa126965f2c94c6c00c8
+SHA1: 21f1db21bbbbd41efa54bacc9e28172e72d73c43
+SHA256: 6a74305058ea65acc2e463bd194a23905f7a8036392c8018701f0518bbb5c6e1
+Description: Python WSGI adapter module for Apache
+ The mod_wsgi adapter is an Apache module that provides a WSGI (Web Server
+ Gateway Interface, a standard interface between web server software and
+ web applications written in Python) compliant interface for hosting Python
+ based web applications within Apache. The adapter provides significantly
+ better performance than using existing WSGI adapters for mod_python or CGI.
+ .
+ This package provides module for Python 2.X.
+
+Package: php5-xdebug
+Source: xdebug
+Priority: optional
+Section: php
+Installed-Size: 691
+Maintainer: Martin Meredith <mez@debian.org>
+Architecture: i386
+Version: 2.2.3-1+debphp.org~precise+1
+Depends: ucf, libc6 (>= 2.4), phpapi-20121212
+Filename: pool/main/x/xdebug/php5-xdebug_2.2.3-1+debphp.org~precise+1_i386.deb
+Size: 264298
+MD5sum: 65a6b7661a60026787fb9b4a5e985646
+SHA1: 2f62cce4c77f0c0320ac2596b8025f44c11d09e8
+SHA256: 339e40fcde1d13396256bbff9c35e11deedd00306402a428eda8e70bdb4eb0c1
+Description: Xdebug Module for PHP 5
+ The Xdebug extension helps you debugging your script by providing a lot of
+ valuable debug information. The debug information that Xdebug can provide
+ includes the following:
+ .
+ * stack traces and function traces in error messages with:
+ - full parameter display for user defined functions
+ - function name, file name and line indications
+ - support for member functions
+ * memory allocation
+ * protection for infinite recursions
+ .
+ Xdebug also provides:
+ .
+ * profiling information for PHP scripts
+ * script execution analysis
+ * capabilities to debug your scripts interactively with a debug client
+
+Package: php5-gmp
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 97
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.1.3), libgmp10, phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-gmp_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 17358
+MD5sum: 0fd92ba8a3e5a7cb69ad1e40dd28be1e
+SHA1: d07e5662588dc7bca71cbd324d79caae766013a3
+SHA256: bcca7020ad22eb0713db9b26f632f7f234d95529694dfa951ae08916eba64173
+Description: GMP module for php5
+ This package provides a module for arbitrary precision arithmetic via the
+ GNU Multiple Precision (GMP) Arithmetic Library.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: libapache2-mod-xsendfile
+Priority: extra
+Section: web
+Installed-Size: 83
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Architecture: i386
+Version: 0.12-2+debphp.org~precise+1
+Depends: libc6 (>= 2.3), apache2-api-20120211
+Filename: pool/main/liba/libapache2-mod-xsendfile/libapache2-mod-xsendfile_0.12-2+debphp.org~precise+1_i386.deb
+Size: 13434
+MD5sum: a12333d15f116666ad53d23eaa1f04a8
+SHA1: 664f1d5629681fb459b7929519d2f6ee9c2616f7
+SHA256: 1942c3db7d2efb47fabd4788a07dada5cfbb84547eaf220dae37dcf36078f299
+Description: Serve large static files efficiently from web applications
+ This package provides the xsendfile module for the Apache 2 webserver.
+ xsendfile is a small Apache2 module that processes X-SENDFILE header
+ sent by the original output handler.
+ .
+ If it encounters the presence of such header it will discard all output
+ and send the file specified by that header instead using Apache internals
+ including all optimizations like caching-headers and sendfile or mmap if
+ configured.
+ .
+ It is useful for processing script-output of e.g. php, perl or any cgi.
+
+Package: libmemcached-dev
+Source: libmemcached
+Priority: optional
+Section: libdevel
+Installed-Size: 761
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Architecture: i386
+Version: 1.0.17-2+precise+1
+Depends: libhashkit-dev (= 1.0.17-2+precise+1), libmemcached11 (= 1.0.17-2+precise+1), libmemcachedutil2 (= 1.0.17-2+precise+1), libsasl2-dev
+Filename: pool/main/libm/libmemcached/libmemcached-dev_1.0.17-2+precise+1_i386.deb
+Size: 291036
+MD5sum: 86d0ee5b0cbe1fb116ea076767bb51cd
+SHA1: 46596fab3c1c5cf57b0647fdbcba98356f52d670
+SHA256: 1b40681edce2f3bd0bbdda1fcf470b74bbad750e4cbe2d788b120a67a41996a3
+Description: C and C++ client library to the memcached server (development files)
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+ * Synchronous and Asynchronous support.
+ * Access to large object support.
+ * Local replication.
+ * TCP and Unix Socket protocols.
+ * A half dozen or so different tuneable hash algorithms.
+ * Implementations of the new cas, replace, and append operators.
+ * Man pages written up on entire API.
+ * Implements both modulo and consistent hashing solutions.
+ * Tools to Manage your Memcached networks.
+ .
+ This package provides the development files.
+
+Package: libmemcached-tools
+Source: libmemcached
+Priority: optional
+Section: utils
+Installed-Size: 303
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Architecture: i386
+Version: 1.0.17-2+precise+1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libmemcached11, libmemcachedutil2, libstdc++6 (>= 4.4.0)
+Filename: pool/main/libm/libmemcached/libmemcached-tools_1.0.17-2+precise+1_i386.deb
+Size: 103782
+MD5sum: 9533189efde2db69092323305499f7d0
+SHA1: 5bd9fe889edb9f2cfb299c9f7d22a579ce8840fd
+SHA256: 59017f1cdaf4ee67f1e5ad11b64f26c96b59aaca32a0f1cfe624ecb4ff35f532
+Description: Commandline tools for talking to memcached via libmemcached
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ This package provides several command line tools:
+ .
+ * memccat - Copy the value of a key to standard output
+ * memcflush - Flush the contents of your servers.
+ * memcrm - Remove a key(s) from the serrver.
+ * memccp - Copy files to a memached server.
+ * memcstat - Dump the stats of your servers to standard output
+ * memcslap - Generate testing loads on a memcached cluster
+
+Package: php-apc
+Source: php-apcu
+Priority: extra
+Section: oldlibs
+Installed-Size: 30
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: all
+Version: 4.0.2-2+debphp.org~precise+1
+Depends: php5-apcu
+Filename: pool/main/p/php-apcu/php-apc_4.0.2-2+debphp.org~precise+1_all.deb
+Size: 4766
+MD5sum: 8b98d08304e9e66aa3a5cf1ee8660da8
+SHA1: 656f5a11b4862afda7ca907c4b919de6c8b63479
+SHA256: 4898f23faec5b090b9c4a3c1a3927a8dc799cccb69fa797f5287e782c8d22746
+Description: APC User Cache for PHP 5 (transitional package)
+ This is a dummy transition package that can be safely removed once no
+ package depend on it.
+
+Package: libapache2-mod-passenger
+Source: ruby-passenger
+Priority: optional
+Section: httpd
+Installed-Size: 491
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.0.10-1+debphp.org~precise+1
+Depends: libapr1 (>= 1.2.7), libaprutil1 (>= 1.2.7+dfsg), libc6 (>= 2.10), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6), apache2-api-20120211, ruby-passenger (= 4.0.10-1+debphp.org~precise+1)
+Filename: pool/main/r/ruby-passenger/libapache2-mod-passenger_4.0.10-1+debphp.org~precise+1_i386.deb
+Size: 187240
+MD5sum: 731a2843f494a540a811f585843297f0
+SHA1: 8ce468f72352b0264c4b26327cb0a22cdf05d5d8
+SHA256: 87d5de37c37ce0e0aa0c3b0e84b9fa68b672850287211bd6eaeaf7dca87df5d0
+Description: Rails and Rack support for Apache2
+ Phusion Passenger — a.k.a. mod_rails or mod_rack — makes
+ deployment of Ruby web applications, such as those built on the
+ revolutionary Ruby on Rails web framework, a breeze.
+ .
+ This package contains the Apache 2 module required by Phusion Passenger.
+
+Package: libapache2-mod-php5filter
+Source: php5
+Priority: extra
+Section: httpd
+Installed-Size: 8698
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Suggests: php-pear
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.1, libonig2 (>= 5.2.0), libpcre3 (>= 8.10), libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), apache2-api-20120211, apache2 (>= 2.4), mime-support, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), libmagic1, ucf, tzdata
+Conflicts: libapache2-mod-php4, libapache2-mod-php5
+Filename: pool/main/p/php5/libapache2-mod-php5filter_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 2734108
+MD5sum: e34a7b6305d0cd12843c4db39eb961c7
+SHA1: 9f84ef1a2cdcb61557c09f0d7b5ae331afbc092c
+SHA256: a589353a58d86076101ed0494784d2308cb5d829bbb7606f559229383094fc4b
+Description: server-side, HTML-embedded scripting language (apache 2 filter module)
+ This package provides the PHP5 Filter module for the Apache 2 webserver (as
+ found in the apache2-mpm-prefork package).  Please note that this package
+ ONLY works with Apache's prefork MPM, as it is not compiled thread-safe.
+ Unless you specifically need filter-module support, you most likely
+ should instead install libapache2-mod-php5.
+ .
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-dbg
+Source: php5
+Priority: extra
+Section: debug
+Installed-Size: 102550
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Recommends: gdb
+Depends: php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), libapache2-mod-php5 (= 5.5.9+dfsg-1+sury.org~precise+1) | libapache2-mod-php5filter (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-cgi (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-cli (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-fpm (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-curl (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-enchant (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-gd (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-gmp (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-imap (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-interbase (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-intl (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-ldap (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-mcrypt (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-mysql (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-odbc (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-pgsql (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-pspell (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-readline (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-recode (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-snmp (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-sqlite (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-sybase (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-tidy (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-xmlrpc (= 5.5.9+dfsg-1+sury.org~precise+1) | php5-xsl (= 5.5.9+dfsg-1+sury.org~precise+1)
+Filename: pool/main/p/php5/php5-dbg_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 39746862
+MD5sum: 2a596e714ac652f6b24b7a17b4d29441
+SHA1: 46b7512708b74eda01b30cc0c801ceb74a622a19
+SHA256: c793abff1b4ee058ccfc954592e0004e39ca58db6ab99273d5fb41d7ca906eca
+Description: Debug symbols for PHP5
+ This package provides the debug symbols for PHP5 needed for properly
+ debugging errors in PHP5 with gdb.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: apache2-suexec
+Source: apache2
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Depends: apache2-suexec-pristine (= 2.4.7-1+sury.org~precise+1)
+Filename: pool/main/a/apache2/apache2-suexec_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1406
+MD5sum: b29e34efe0c8a0ca27d857a2b28bb8ef
+SHA1: 90b7984793d8dd90fdd967cd2618d801e55f0f4d
+SHA256: d2ecb6fdeec3d6a983e72458d48bf519e617b1a202a2a7114927ad0b45250bcd
+Description: transitional package for apache2-suexec-pristine
+ This is a transitional package for apache2-suexec-pristine, and can be safely
+ removed after the installation is complete.
+
+Package: apache2-suexec-custom
+Source: apache2
+Priority: extra
+Section: httpd
+Installed-Size: 150
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Replaces: apache2-suexec (<< 2.3~)
+Provides: apache2-suexec
+Depends: libc6 (>= 2.3.6-6~), apache2-bin
+Breaks: apache2-suexec (<< 2.3~)
+Filename: pool/main/a/apache2/apache2-suexec-custom_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 69588
+MD5sum: 2b550f56788845e9a80f04ecb8354e1c
+SHA1: 9245db0fc4e987b927c4c52c2ca97f55957cfe99
+SHA256: b1933f9635dc9b9fd00126961495601546f866d0f2bc8c281a60f6755dc1966b
+Description: Apache HTTP Server configurable suexec program for mod_suexec
+ Provides a customizable version of the suexec helper program for mod_suexec.
+ This is not the version from upstream, but can be configured with a
+ configuration file.
+ .
+ If you do not need non-standard document root or userdir settings, it is
+ recommended that you use the standard suexec helper program from the
+ apache2-suexec-pristine package instead.
+
+Package: php5-geoip
+Source: php-geoip
+Priority: optional
+Section: php
+Installed-Size: 121
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Architecture: i386
+Version: 1.0.8-3+debphp.org~precise+1
+Recommends: geoip-database
+Depends: libc6 (>= 2.4), libgeoip1 (>= 1.4.8+dfsg), php5-common (>= 4.3.0), php-pear (>= 1.4.0~b1), phpapi-20121212
+Filename: pool/main/p/php-geoip/php5-geoip_1.0.8-3+debphp.org~precise+1_i386.deb
+Size: 21446
+MD5sum: 1c650712f0255d9d86013aa7db3c81f1
+SHA1: 92417a17771cdca9f506ac09a35cba1d146ca871
+SHA256: 26ec27bb89ee65d43e34a23475578e88d8ac79666f338d73cfc136fc198be1f3
+Description: GeoIP module for php5
+ This PHP module allows you to find the location of an IP address -
+ City, State, Country, Longitude, Latitude, and other information as
+ all, such as ISP and connection type.
+ .
+ For more info, please visit Maxmind's website:
+ http://www.maxmind.com/
+
+Package: php5-svn
+Source: php-svn
+Priority: extra
+Section: php
+Installed-Size: 161
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.0.2-2+sury.org~precise+1
+Depends: libapr1 (>= 1.2.7), libc6 (>= 2.4), libsvn1 (>= 1.6), phpapi-20121212, ucf, php5-common (>= 4.0.0), php5-common (<= 6.0.0), php-pear (>= 1.4.0)
+Filename: pool/main/p/php-svn/php5-svn_1.0.2-2+sury.org~precise+1_i386.deb
+Size: 44222
+MD5sum: 704391e28bbd6aedc71eced56ae7f05b
+SHA1: 754ac444bab79d22fa1ac30385fd1d9979164208
+SHA256: 6ffe77d50d1dba990e7452cc253c46736e9a2b5bb84c7d416b0482fba37e9187
+Description: PHP Bindings for the Subversion Revision control system
+ These bindings provide a method for manipulating Subversion working copies
+ or repositories with PHP.
+
+Package: libssh2-php
+Source: php-ssh2
+Priority: extra
+Section: devel
+Installed-Size: 113
+Maintainer: Martin Meredith <mez@debian.org>
+Architecture: i386
+Version: 0.12-1+sury.org~precise+1
+Depends: ucf, libc6 (>= 2.4), libssh2-1 (>= 1.2.3), phpapi-20121212
+Filename: pool/main/p/php-ssh2/libssh2-php_0.12-1+sury.org~precise+1_i386.deb
+Size: 29314
+MD5sum: 274f9c0d5f94ee341e764b49c772dd59
+SHA1: bb4bc1e1a77c96b9d39ee80f59bad33099f3e27b
+SHA256: 2e1578777b4bbd489e250839facb429ca81f0cfbd1b6223b773c821ff924806b
+Description: PHP Bindings for libssh2
+ Provides bindings to the functions of libssh2 which implements the SSH2
+ protocol.
+
+Package: libaprutil1-ldap
+Source: apr-util
+Priority: optional
+Section: libs
+Installed-Size: 61
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libaprutil1 (= 1.5.3-1+sury.org~precise+1), libc6 (>= 2.3.6-6~), libldap-2.4-2 (>= 2.4.7)
+Filename: pool/main/a/apr-util/libaprutil1-ldap_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 15570
+MD5sum: 5e96444b45531b32cffbda4459aec578
+SHA1: d36469be5a07924e9c88ef12ef26d78d0226f296
+SHA256: 75aa2946d2c2f612e2086775109b0eede921d2e22a09e0ad0ca0d4c14bcc9d48
+Description: Apache Portable Runtime Utility Library - LDAP Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the LDAP driver.
+Multi-Arch: same
+
+Package: libaprutil1-dbd-mysql
+Source: apr-util
+Priority: optional
+Section: libs
+Installed-Size: 69
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libaprutil1 (= 1.5.3-1+sury.org~precise+1), libc6 (>= 2.3.6-6~), libmysqlclient18 (>= 5.5.13-1)
+Filename: pool/main/a/apr-util/libaprutil1-dbd-mysql_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 19890
+MD5sum: e17f66d3cab16524e91ed27ffdd2c5a3
+SHA1: 2d672e4a64c13d6e2cbe71e93c1b55bb180dc44b
+SHA256: d4ec534a4b4b9026489d5576e60cfe33d693b090e8590f00d7fa515831949543
+Description: Apache Portable Runtime Utility Library - MySQL Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the MySQL database driver.
+Multi-Arch: same
+
+Package: libaprutil1-dbd-sqlite3
+Source: apr-util
+Priority: optional
+Section: libs
+Installed-Size: 65
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libaprutil1 (= 1.5.3-1+sury.org~precise+1), libc6 (>= 2.3.6-6~), libsqlite3-0 (>= 3.5.9)
+Filename: pool/main/a/apr-util/libaprutil1-dbd-sqlite3_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 17846
+MD5sum: c6676592f46e374db4846cc4bc46b7e8
+SHA1: 13c057afd574b924f815ce86d3a44aaa21b53c58
+SHA256: d86e4d4e07823d0578e51c70a97eda46d4402f6567c6524fa87696604849fadf
+Description: Apache Portable Runtime Utility Library - SQLite3 Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the SQLite3 database driver.
+Multi-Arch: same
+
+Package: libaprutil1-dbd-odbc
+Source: apr-util
+Priority: optional
+Section: libs
+Installed-Size: 81
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libaprutil1 (= 1.5.3-1+sury.org~precise+1), libc6 (>= 2.4), libodbc1 (>= 2.2.11) | unixodbc (>= 2.2.11)
+Filename: pool/main/a/apr-util/libaprutil1-dbd-odbc_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 24538
+MD5sum: fdda229701a99d8df041941e75a743a6
+SHA1: b8f8396b800dac2d1d7a8404e1b8778722b08ea9
+SHA256: 8cb94a4aea4f9b6dbf833c1d4c3990cf55ac63952a6ebdb7a545f92f2c19d7da
+Description: Apache Portable Runtime Utility Library - ODBC Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the ODBC database driver.
+Multi-Arch: same
+
+Package: libaprutil1-dbd-pgsql
+Source: apr-util
+Priority: optional
+Section: libs
+Installed-Size: 73
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.3-1+sury.org~precise+1
+Depends: libaprutil1 (= 1.5.3-1+sury.org~precise+1), libc6 (>= 2.3.6-6~), libpq5
+Filename: pool/main/a/apr-util/libaprutil1-dbd-pgsql_1.5.3-1+sury.org~precise+1_i386.deb
+Size: 20174
+MD5sum: ed744060ca993c50437471873f7db230
+SHA1: 8335fefdade96daca3aa8bc434a5e90ebaff3888
+SHA256: 99b5e4730f9397231535747bba6390f30c36ef0623c1ba859234af488a7a22ad
+Description: Apache Portable Runtime Utility Library - PostgreSQL Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the PostgreSQL database driver.
+Multi-Arch: same
+
+Package: libaprutil1-dbd-freetds
+Source: apr-util
+Priority: optional
+Section: libs
+Installed-Size: 63
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 1.5.2-1~precise+1
+Depends: libaprutil1 (= 1.5.2-1~precise+1), libc6 (>= 2.4), libsybdb5 (>= 0.63)
+Filename: pool/main/a/apr-util/libaprutil1-dbd-freetds_1.5.2-1~precise+1_i386.deb
+Size: 20302
+MD5sum: ca68ed5d56a659702d1ed83fce1ce11e
+SHA1: ca763510baaff929c78cf18ae2f8e0278b1cb97e
+SHA256: 00e3df02a9bc00240b6590a8a9f15dcc7b722b2d3d6d0410c83fd861d8403378
+Description: Apache Portable Runtime Utility Library - FreeTDS Driver
+ APR is Apache's Portable Runtime Library, designed to be a support library
+ that provides a predictable and consistent interface to underlying
+ platform-specific implementations.
+ .
+ APR Util is a utilities library implemented on top of apr, providing database
+ access, xml parsing, and other useful functionality.
+ .
+ This package contains the FreeTDS (MS SQL and Sybase) database driver.
+
+Package: libgearman-dev
+Source: gearmand
+Priority: extra
+Section: libdevel
+Installed-Size: 405
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Architecture: i386
+Version: 1.0.6-2+debphp.org~precise+2
+Depends: libgearman7 (= 1.0.6-2+debphp.org~precise+2), libevent-dev
+Filename: pool/main/g/gearmand/libgearman-dev_1.0.6-2+debphp.org~precise+2_i386.deb
+Size: 217762
+MD5sum: 8c5fa12efd983f63ad28a4534d5ffa5d
+SHA1: 9c7978d7bea4f1f5d9a6b6a4d9202a3bb813c509
+SHA256: f9d19c14f2d32c15219adbfeb1c02c0b3017d2240fbef8b4128fc2a4e902ffc3
+Description: Development files for the Gearman Library
+ Gearman is a system to farm out work to other machines, dispatching function
+ calls to machines that are better suited to do work, to do work in parallel,
+ to load balance lots of function calls, or to call functions between languages.
+ .
+ This package contains the development headers for the libgearman library.
+
+Package: gearman
+Source: gearmand
+Priority: extra
+Section: misc
+Installed-Size: 39
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Architecture: all
+Version: 1.0.6-2+debphp.org~precise+2
+Depends: gearman-tools, gearman-job-server
+Filename: pool/main/g/gearmand/gearman_1.0.6-2+debphp.org~precise+2_all.deb
+Size: 13110
+MD5sum: a897f24e9d2820956dcfe375348b3fba
+SHA1: 255772e3984b16c1e2c588a79d0a6133503ff59d
+SHA256: 88dde2b8c44135aaaaeee322bbfecec0ced958b91a7008178cafbe2e400b3e6a
+Description: Distributed job queue
+ Gearman is a system to farm out work to other machines, dispatching function
+ calls to machines that are better suited to do work, to do work in parallel,
+ to load balance lots of function calls, or to call functions between languages.
+ .
+ This package is an empty package that depends on both the client and the
+ server.
+
+Package: libgearman-dbg
+Source: gearmand
+Priority: extra
+Section: debug
+Installed-Size: 1769
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Architecture: i386
+Version: 1.0.6-2+debphp.org~precise+2
+Depends: libgearman7 (= 1.0.6-2+debphp.org~precise+2)
+Filename: pool/main/g/gearmand/libgearman-dbg_1.0.6-2+debphp.org~precise+2_i386.deb
+Size: 1616448
+MD5sum: 5447099d8302089da5f3cf474fc243bf
+SHA1: 430638fe2021ae5a129043c3d6b2a939ff5a34fe
+SHA256: 0edf4769264bc573549117cd80af276139ef446a497fd9576d9d25478b7c5f03
+Description: Debug symbols for the Gearman Client Library
+ Gearman is a system to farm out work to other machines, dispatching function
+ calls to machines that are better suited to do work, to do work in parallel,
+ to load balance lots of function calls, or to call functions between languages.
+ .
+ This package contains the debug symbols for the libgearman client library.
+
+Package: libgearman-doc
+Source: gearmand
+Priority: extra
+Section: doc
+Installed-Size: 1965
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Architecture: all
+Version: 1.0.6-2+debphp.org~precise+2
+Filename: pool/main/g/gearmand/libgearman-doc_1.0.6-2+debphp.org~precise+2_all.deb
+Size: 1902976
+MD5sum: 7fa656c033d63d195d76630a97fe8693
+SHA1: 731d420f0e05dbd9d4fe244487409de860362766
+SHA256: 93c6a7606dc746a078b478afa401d22de5756b1ada4e5f7ddeea0e83c4ff7698
+Description: API Documentation for the Gearman Library
+ Gearman is a system to farm out work to other machines, dispatching function
+ calls to machines that are better suited to do work, to do work in parallel,
+ to load balance lots of function calls, or to call functions between languages.
+ .
+ This package contains the API docs for the libgearman library.
+
+Package: gearman-job-server
+Source: gearmand
+Priority: extra
+Section: misc
+Installed-Size: 396
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Architecture: i386
+Version: 1.0.6-2+debphp.org~precise+2
+Recommends: memcached
+Depends: libboost-program-options1.46.1 (>= 1.46.1-1), libc6 (>= 2.10), libevent-2.0-5 (>= 2.0.16-stable), libgcc1 (>= 1:4.1.1), libmemcached11, libmysqlclient18 (>= 5.5.13-1), libpq5, libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 4.4.0), upstart-job
+Pre-Depends: adduser
+Filename: pool/main/g/gearmand/gearman-job-server_1.0.6-2+debphp.org~precise+2_i386.deb
+Size: 139726
+MD5sum: 7eda941d4407f3726b915b873d395e5a
+SHA1: d9d56b89291d72fe419c76beb73bc9269623867f
+SHA256: cc4f9d4583b7561eeb5613c43ea348c363b62e6ee0cf35ae9d0f3233b2629a18
+Description: Job server for the Gearman distributed job queue
+ Gearman is a system to farm out work to other machines, dispatching function
+ calls to machines that are better suited to do work, to do work in parallel,
+ to load balance lots of function calls, or to call functions between languages.
+ .
+ This package contains the C reimplementation of the job server daemon
+
+Package: libmemcached-dbg
+Source: libmemcached
+Priority: extra
+Section: debug
+Installed-Size: 893
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Architecture: i386
+Version: 1.0.17-2+precise+1
+Depends: libhashkit2 (= 1.0.17-2+precise+1), libmemcached11 (= 1.0.17-2+precise+1), libmemcachedutil2 (= 1.0.17-2+precise+1)
+Filename: pool/main/libm/libmemcached/libmemcached-dbg_1.0.17-2+precise+1_i386.deb
+Size: 672014
+MD5sum: 1a3d4a59d6084e33a77e484452c33573
+SHA1: e06d0430fd8c6d556229eaacae903bb9adf09901
+SHA256: 9d6ed1f2e7bd3d6df17c8be0637be6fdfdf2587155eb410724ba9dddde6e8295
+Description: Debug Symbols for libmemcached
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+ * Synchronous and Asynchronous support.
+ * Access to large object support.
+ * Local replication.
+ * TCP and Unix Socket protocols.
+ * A half dozen or so different tuneable hash algorithms.
+ * Implementations of the new cas, replace, and append operators.
+ * Man pages written up on entire API.
+ * Implements both modulo and consistent hashing solutions.
+ * Tools to Manage your Memcached networks.
+ .
+ This package provides debug symbols.
+Multi-Arch: same
+
+Package: apache2.2-bin
+Source: apache2
+Priority: extra
+Section: oldlibs
+Installed-Size: 22
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Depends: apache2-bin (>= 2.3~)
+Breaks: gnome-user-share (<< 3.8.0-2~), libapache2-mod-dnssd (<< 0.6-3.1~)
+Filename: pool/main/a/apache2/apache2.2-bin_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1448
+MD5sum: d6c42c57b2fabd95243022c7b58da9f4
+SHA1: d0dcc19235b9be3fe60ee309839cbed20736bf78
+SHA256: 1daf0c6f80a2179cea0ee93b2d88157755a39ff28b4254224b28f46fd9329e4c
+Description: Transitional package for apache2-bin
+ This is a transitional package for apache2-bin, and can be safely removed
+ after the installation is complete.
+
+Package: gearman-tools
+Source: gearmand
+Priority: extra
+Section: misc
+Installed-Size: 153
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Architecture: i386
+Version: 1.0.6-2+debphp.org~precise+2
+Depends: libgearman7 (= 1.0.6-2+debphp.org~precise+2), libboost-program-options1.46.1 (>= 1.46.1-1), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+Filename: pool/main/g/gearmand/gearman-tools_1.0.6-2+debphp.org~precise+2_i386.deb
+Size: 60392
+MD5sum: 1c61f817c51887bc6ae2a41eb3e2d987
+SHA1: 7dcc8c2f14cc5451c11fe6c1b9a04dc1d7736344
+SHA256: 18cb61c517f6e30b3961ea5b91e13522ee67fd7079c39972dde63055a43a8a68
+Description: Tools for the Gearman distributed job queue
+ Gearman is a system to farm out work to other machines, dispatching function
+ calls to machines that are better suited to do work, to do work in parallel,
+ to load balance lots of function calls, or to call functions between languages.
+ .
+ This package contains some command line tools for manipulating gearman jobs.
+
+Package: php5-enchant
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 74
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.3.6-6~), libenchant1c2a (>= 1.6), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-enchant_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 10354
+MD5sum: a18e28b7a609d8378b1d50794e359961
+SHA1: f4826e0e33baf845973e4f051c14f6f22b27ab55
+SHA256: eb46822367b76fa346ac35a252afb62f22c60d8252f1cbd22b7889f0fb67a5bf
+Description: Enchant module for php5
+ This package provides a module for the generic spell checking library
+ Enchant, which can use engines such as ispell, aspell and myspells.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-fpm
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 8587
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Suggests: php-pear
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.1, libonig2 (>= 5.2.0), libpcre3 (>= 8.10), libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), upstart-job, mime-support, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), libmagic1, ucf, tzdata
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-fpm_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 2757850
+MD5sum: d2de599ad018b0573faa9940c7488af4
+SHA1: e9f2b97cf4c5af17549299e8c69ca14089ef1ac9
+SHA256: a35a0e0b905b7842f9c2fc538cd931a2abfbf2de34fc56bca60a2a97c62827c4
+Description: server-side, HTML-embedded scripting language (FPM-CGI binary)
+ This package provides the Fast Process Manager interpreter that runs
+ as a daemon and receives Fast/CGI requests.  Note that MOST Apache users
+ probably want the libapache2-mod-php5 package.
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php5-memcached
+Source: php-memcached
+Priority: optional
+Section: php
+Installed-Size: 144
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Architecture: i386
+Version: 2.1.0-3.1+precise+1
+Depends: libc6 (>= 2.4), libmemcached11, zlib1g (>= 1:1.1.4), phpapi-20121212, ucf
+Filename: pool/main/p/php-memcached/php5-memcached_2.1.0-3.1+precise+1_i386.deb
+Size: 39944
+MD5sum: 9510f775c4edd23ea49eaf342081f0b5
+SHA1: be25eff8afd2e295973bbebf4da4b33744ccd691
+SHA256: 14cef1164a2758e1479d2bccbd771c0926ab6dec75f0bfc6fdf6497c0d269312
+Description: memcached extension module for PHP5, uses libmemcached
+ Memcached is a caching daemon designed especially for
+ dynamic web applications to decrease database load by
+ storing objects in memory.
+ .
+ This extension uses libmemcached library to provide
+ API for communicating with memcached servers.
+
+Package: php5-intl
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 414
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Replaces: php5-idn
+Provides: php5-idn
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libicu52 (>= 52~m1-1~), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Conflicts: php5-idn
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-intl_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 135750
+MD5sum: 2e87201cdb8e80574a4242d3e95f7a9f
+SHA1: 8dde0e528fd17b47d4191cf2410a5847927fcd19
+SHA256: c904e6fb5dea3bbb772b4b0afb3a9c315087d10bd9bf703b6ab99c1c75d593af
+Description: internationalisation module for php5
+ This package provides a module to ease internationalisation of PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: libjson0
+Source: json-c
+Priority: extra
+Section: oldlibs
+Installed-Size: 29
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: i386
+Version: 0.11-3+debphp.org~precise+1
+Depends: libjson-c2
+Filename: pool/main/j/json-c/libjson0_0.11-3+debphp.org~precise+1_i386.deb
+Size: 986
+MD5sum: 41367f11f76bde80d739299f6f342172
+SHA1: e90eb9da305c7215468857869364be0ae2950cc6
+SHA256: 265dd9d7808d76d69c6c4f18a8b0d52d363bfb22137ca96a1a210347163e687a
+Description: JSON manipulation library (transitional package)
+ This is a transition package that can be safely removed once no
+ package depend on it.
+Multi-Arch: same
+
+Package: libjson0-dev
+Source: json-c
+Priority: extra
+Section: oldlibs
+Installed-Size: 37
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: i386
+Version: 0.11-3+debphp.org~precise+1
+Depends: libjson-c-dev, libjson0 (= 0.11-3+debphp.org~precise+1)
+Filename: pool/main/j/json-c/libjson0-dev_0.11-3+debphp.org~precise+1_i386.deb
+Size: 1124
+MD5sum: 4b05b73b546064eaa40805e975a01291
+SHA1: 11c5bd6c4c24545c6a32670ab93bfc78baf03394
+SHA256: f6656102f9b2757e6a132af5a8322e0c8828e407e2ee045f2aa3ae2797e92685
+Description: JSON manipulation library (transitional package)
+ This is a transition package that can be safely removed once no
+ package depend on it.
+Multi-Arch: same
+
+Package: libming1
+Source: ming
+Priority: optional
+Section: libs
+Installed-Size: 454
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Architecture: i386
+Version: 1:0.4.5-1~precise+1
+Replaces: libming (<= 0.2a.cvs20020110-1)
+Depends: libc6 (>= 2.4), libfreetype6 (>= 2.2.1), libgif4 (>= 4.1.4), libpng12-0 (>= 1.2.13-4), zlib1g (>= 1:1.1.4)
+Conflicts: libming (<= 0.2a.cvs20020110-1)
+Filename: pool/main/m/ming/libming1_0.4.5-1~precise+1_i386.deb
+Size: 185896
+MD5sum: 3c57fa91c56fd6e001fb45f1d9b5a1dd
+SHA1: 61531cba7c2a026de3c65a6ef9520a83b65e7203
+SHA256: 4026a0171d359228fea7e1074652cbe60154541ea80e03e5e83f29accf1d32df
+Description: Library to generate SWF (Flash) Files
+ Ming is an SWF (Flash) file format output library.
+ It is written in C, with wrappers for C++, Perl, Python,
+ PHP and experimental support for Ruby and Java.
+ .
+ This package contains the C and C++ library.
+
+Package: libapache2-mod-wsgi-py3
+Source: mod-wsgi
+Priority: optional
+Section: httpd
+Installed-Size: 236
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: i386
+Version: 3.4-4+debphp.org~precise+1
+Provides: httpd-wsgi
+Depends: libc6 (>= 2.4), libpython3.2 (>= 3.2~a4), apache2-api-20120211, python3 (>= 3.2), python3 (<< 3.3)
+Conflicts: libapache2-mod-wsgi
+Filename: pool/main/m/mod-wsgi/libapache2-mod-wsgi-py3_3.4-4+debphp.org~precise+1_i386.deb
+Size: 83354
+MD5sum: 917f0b6bc3480a646ac54273d8a35974
+SHA1: bafd7f6760fb60282349b95f2514f5e2349797f2
+SHA256: 0ddae1c7cb1299b1882140f07cd9a5956d6da49993509f02573f2fc15a1c3618
+Description: Python 3 WSGI adapter module for Apache
+ The mod_wsgi adapter is an Apache module that provides a WSGI (Web Server
+ Gateway Interface, a standard interface between web server software and
+ web applications written in Python) compliant interface for hosting Python
+ based web applications within Apache. The adapter provides significantly
+ better performance than using existing WSGI adapters for mod_python or CGI.
+ .
+ This package provides module for Python 3.X.
+
+Package: php5-gearman
+Source: php-gearman
+Priority: optional
+Section: php
+Installed-Size: 213
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.1.2-1+debphp.org~precise+1
+Suggests: gearman-server
+Depends: libc6 (>= 2.4), libgearman7, phpapi-20121212
+Filename: pool/main/p/php-gearman/php5-gearman_1.1.2-1+debphp.org~precise+1_i386.deb
+Size: 47752
+MD5sum: 50cd287c093d4dc4361f61aa584a292c
+SHA1: bb58842e4ddf858e69e377f14c82633d210d2d2d
+SHA256: 829b8140d643c5536c1c50316ebefeff6d93c0ff7b1b88099b269811575f4ac9
+Description: PHP wrapper to libgearman
+ This extension uses libgearman library to provide API for communicating
+ with gearmand, and writing clients and workers.
+
+Package: pkg-php-tools
+Priority: extra
+Section: php
+Installed-Size: 127
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Architecture: all
+Version: 1.9+debphp.org~precise+1
+Suggests: dh-make
+Depends: php5-cli, php5-json, php-pear, debhelper
+Filename: pool/main/p/pkg-php-tools/pkg-php-tools_1.9+debphp.org~precise+1_all.deb
+Size: 24638
+MD5sum: 5d97a2745ca179bbf5740793a45d768f
+SHA1: b45bfd9d62bc47d468fdc466b49e1fc983ad2dee
+SHA256: e8e761492301524d428b3311f2bff48cc65d5ef87ca5120ba790cd269197b965
+Description: various packaging tools and scripts for PHP packages
+ Provide an easy way to package PHP PEAR, PECL and Composer packages: Run
+ dh_make, edit debian/rules and debian/control and that's it!
+ .
+ Detailed instructions can be found in included READMEs.
+
+Package: libmemcachedutil2
+Source: libmemcached
+Priority: optional
+Section: libs
+Installed-Size: 66
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Architecture: i386
+Version: 1.0.17-2+precise+1
+Depends: libc6 (>= 2.3.6-6~), libmemcached11, libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Filename: pool/main/libm/libmemcached/libmemcachedutil2_1.0.17-2+precise+1_i386.deb
+Size: 23006
+MD5sum: c680d587bb7e0482560752b50f92376f
+SHA1: ed79b12912f08cea74d4d1d103a7fd2ae6a02286
+SHA256: 432b0472bbc82ccf60e837723bc42619dffd76f0fd3031d761d5e0dcae359dbc
+Description: library implementing connection pooling for libmemcached
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+ * Synchronous and Asynchronous support.
+ * Access to large object support.
+ * Local replication.
+ * TCP and Unix Socket protocols.
+ * A half dozen or so different tuneable hash algorithms.
+ * Implementations of the new cas, replace, and append operators.
+ * Man pages written up on entire API.
+ * Implements both modulo and consistent hashing solutions.
+ * Tools to Manage your Memcached networks.
+ .
+ This package provides the libmemcachedutil library.
+Multi-Arch: same
+
+Package: php5-mysqlnd
+Source: php5
+Priority: extra
+Section: php
+Installed-Size: 489
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Replaces: php5-mysql, php5-mysqli
+Depends: libc6 (>= 2.15), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Conflicts: php5-mysql, php5-mysqli
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-mysqlnd_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 172372
+MD5sum: 6be6beabf8f575646eeb533c75548e08
+SHA1: b41516ea97b5e66b1b50c60bf007a0b793d40db9
+SHA256: 376c477e2e7d73dfd4d70d038d286d89aa45371bb642a05c2911ff6a3232d3d3
+Description: MySQL module for php5 (Native Driver)
+ This package provides modules for MySQL database connections directly from
+ PHP scripts.  It includes the generic "mysql" module which can be used
+ to connect to all versions of MySQL, an improved "mysqli" module for
+ MySQL version 4.1 or later, and the pdo_mysql module for use with
+ the PHP Data Object extension.
+ .
+ This package use the MySQL Native Driver.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: libphp5-embed
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 8696
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Suggests: php-pear
+Depends: libbz2-1.0, libc6 (>= 2.15), libdb5.1, libonig2 (>= 5.2.0), libpcre3 (>= 8.10), libqdbm14 (>= 1.8.74), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), mime-support, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), libmagic1, ucf, tzdata
+Filename: pool/main/p/php5/libphp5-embed_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 2733072
+MD5sum: 8d7ba80e2487a6d3a9eb243dbd199231
+SHA1: 4c2afa985be9b532f8094cf2007d00271ade6b58
+SHA256: 4060fc2fef5574b5d04c35747abc8f44fcada91fe93b9e4dfa20c59a36a3f8e2
+Description: HTML-embedded scripting language (Embedded SAPI library)
+ This package provides the library /usr/lib/libphp5.so which can
+ be used by application developers to embed PHP scripting functionality.
+ The following extensions are built in: bcmath bz2 calendar Core ctype date
+ dba dom ereg exif fileinfo filter ftp gettext hash iconv libxml mbstring
+ mhash openssl pcntl pcre Phar posix Reflection session shmop SimpleXML soap
+ sockets SPL standard sysvmsg sysvsem sysvshm tokenizer wddx xml xmlreader
+ xmlwriter zip zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ WARNING: The embed SAPI is experimental and there's no guarantee that
+ the API/ABI will be kept compatible even between minor releases.  You
+ have been warned.
+
+Package: apache2-data
+Source: apache2
+Priority: optional
+Section: httpd
+Installed-Size: 698
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: all
+Version: 2.4.7-1+sury.org~precise+1
+Replaces: apache2.2-common
+Conflicts: apache2.2-common
+Filename: pool/main/a/apache2/apache2-data_2.4.7-1+sury.org~precise+1_all.deb
+Size: 162118
+MD5sum: c3277888b437e9879e01132b809f37c0
+SHA1: ed2bbfd5f1391010099b39a0cd674c5fdbe2ef6d
+SHA256: b2235218e23fb1fefbc7ea916d8fe4e2c08da1a34062ec6cec34b2a7753fa73c
+Description: Apache HTTP Server (common files)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains architecture-independent common files such as icons,
+ error pages and static index files.
+Multi-Arch: foreign
+
+Package: apache2-bin
+Source: apache2
+Priority: optional
+Section: httpd
+Installed-Size: 3119
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Replaces: apache2-mpm-event (<< 2.3~), apache2-mpm-itk (<< 2.3~), apache2-mpm-prefork (<< 2.3~), apache2-mpm-worker (<< 2.3~), apache2.2-bin (<< 2.3~), apache2.2-common, libapache2-mod-macro (<< 1:2.4.6-1~), libapache2-mod-proxy-html (<< 1:2.4.4-2~)
+Suggests: www-browser, apache2-doc, apache2-suexec-pristine | apache2-suexec-custom
+Provides: apache2-api-20120211, httpd, httpd-cgi
+Depends: libapr1 (>= 1.5.0), libaprutil1 (>= 1.5.0), libaprutil1-dbd-sqlite3 | libaprutil1-dbd-mysql | libaprutil1-dbd-odbc | libaprutil1-dbd-pgsql | libaprutil1-dbd-freetds, libaprutil1-ldap, libc6 (>= 2.4), libldap-2.4-2 (>= 2.4.7), liblua5.1-0, libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), perl
+Conflicts: apache2.2-bin (<< 2.3~), apache2.2-common
+Breaks: libapache2-mod-macro (<< 1:2.4.6-1~), libapache2-mod-proxy-html (<< 1:2.4.4-2~)
+Filename: pool/main/a/apache2/apache2-bin_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 914790
+MD5sum: 447a729dab8a1db6118aecac6ac2526f
+SHA1: 9ab819ddc62a6beee5d6fcdce7de1858a9e7e646
+SHA256: 136046ddff3e145d9583d55ddc81dc6e8d543f924b1e61a3db19d6ac64e43903
+Description: Apache HTTP Server (binary files and modules)
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package contains the binaries only and does not set up a working
+ web-server instance. Install the "apache2" package to get a fully working
+ instance. Do not install this package unless you want to set-up the Apache
+ HTTP server entirely on your own.
+
+Package: apache2-suexec-pristine
+Source: apache2
+Priority: optional
+Section: httpd
+Installed-Size: 137
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Replaces: apache2-suexec (<< 2.3~)
+Provides: apache2-suexec
+Depends: libc6 (>= 2.3.6-6~), apache2-bin
+Breaks: apache2-suexec (<< 2.3~)
+Filename: pool/main/a/apache2/apache2-suexec-pristine_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 68092
+MD5sum: 6687abb02d02ab475fac41a28cc94327
+SHA1: 5ebb108af9c66491df044c012b5015241c31bc72
+SHA256: a3825d44e38ed2e8e13ba8fa7c8dcb3a431fd3d46fa661e5ef97ef6d1e22042f
+Description: Apache HTTP Server standard suexec program for mod_suexec
+ Provides the standard suexec helper program for mod_suexec. This version is
+ compiled with document root /var/www and userdir suffix public_html. If you
+ need different settings, use the package apache2-suexec-custom.
+
+Package: apache2-dbg
+Source: apache2
+Priority: extra
+Section: debug
+Installed-Size: 5936
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Architecture: i386
+Version: 2.4.7-1+sury.org~precise+1
+Depends: apache2, apache2-bin (= 2.4.7-1+sury.org~precise+1)
+Filename: pool/main/a/apache2/apache2-dbg_2.4.7-1+sury.org~precise+1_i386.deb
+Size: 1548762
+MD5sum: 4a9e8ba3ced6c7e64058a42a00727ee1
+SHA1: 12140b820943a628e41663a7d7d4e53a796418a2
+SHA256: a02ee1e02a3a1cae1b6c050e279e47e674ebe21bcc05958554b861d235c718ff
+Description: Apache debugging symbols
+ The Apache Software Foundation's goal is to build a secure, efficient and
+ extensible HTTP server as standards-compliant open source software. The
+ result has long been the number one web server on the Internet.
+ .
+ This package includes the debugging symbols. It can be used to debug
+ crashing server instances and modules.  See
+ /usr/share/doc/apache2/README.backtrace for more information.
+
+Package: php5-redis
+Source: php-redis
+Priority: optional
+Section: php
+Installed-Size: 343
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.2.4-1+debphp.org~precise+1
+Suggests: redis-server
+Depends: libc6 (>= 2.4), phpapi-20121212
+Filename: pool/main/p/php-redis/php5-redis_2.2.4-1+debphp.org~precise+1_i386.deb
+Size: 123164
+MD5sum: d6f37018a7aaa887c86f2b9a4ee274e4
+SHA1: 0393a1fb49b65dc91156dec3cadd02719a9b09da
+SHA256: 0bb6846411915b0a4ded6a1f4da0ad5bb65b5714c65a272fb0a9d8da6a967e08
+Description: PHP extension for interfacing with Redis
+ This extension allows php applications to communicate with the Redis
+ persistent key-value store. The php-redis module provides an easy object
+ oriented interface.
+
+Package: libhashkit2
+Source: libmemcached
+Priority: optional
+Section: libs
+Installed-Size: 111
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Architecture: i386
+Version: 1.0.17-2+precise+1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/libm/libmemcached/libhashkit2_1.0.17-2+precise+1_i386.deb
+Size: 51450
+MD5sum: 293637137aeda5db202dd5201c756022
+SHA1: 96a459194ab4c5dde182bf7cd315b3618e52287d
+SHA256: e31bb3a73b436479fddc673fa1db1158a3873e4fc912f6713778824203f90e44
+Description: libmemcached hashing functions and algorithms
+ libhashkit is a small and thread-safe client library that provides a
+ collection of useful hashing algorithm. libhashkit is distributed with
+ libmemcached.
+ .
+ This package provides the libhashkit shared library.
+Multi-Arch: same
+
+Package: libhashkit-dev
+Source: libmemcached
+Priority: optional
+Section: libdevel
+Installed-Size: 154
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Architecture: i386
+Version: 1.0.17-2+precise+1
+Replaces: libmemcached-dev (<< 1.0.3-1)
+Depends: libhashkit2 (= 1.0.17-2+precise+1)
+Breaks: libmemcached-dev (<< 1.0.3-1)
+Filename: pool/main/libm/libmemcached/libhashkit-dev_1.0.17-2+precise+1_i386.deb
+Size: 44706
+MD5sum: 0bb984a9c81f2723d377a110d723f42d
+SHA1: f43d33a8ec7e25d729adacd3b6f3cafe14f5b90f
+SHA256: 0ddea0e35de60b0bd6ae82a5ed5021fca4ad920bd1b56a86a0916b491141be74
+Description: libmemcached hashing functions and algorithms (development files)
+ libhashkit is a small and thread-safe client library that provides a
+ collection of useful hashing algorithm. libhashkit is distributed with
+ libmemcached.
+ .
+ This package provides the development files.
+
+Package: ruby-passenger
+Priority: optional
+Section: ruby
+Installed-Size: 2586
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.0.10-1+debphp.org~precise+1
+Replaces: libapache2-mod-passenger (<< 3.0.11debian)
+Suggests: python, rails, ruby-passenger-doc
+Depends: libc6 (>= 2.15), libcurl3 (>= 7.16.2-1), libev4 (>= 1:4.04), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4), libruby1.8 (>= 1.8.7.352) | libruby1.9.1 (>= 1.9.2.0), ruby | ruby-interpreter, rubygems | ruby1.9.1, ruby-rack
+Breaks: libapache2-mod-passenger (<< 3.0.11debian)
+Filename: pool/main/r/ruby-passenger/ruby-passenger_4.0.10-1+debphp.org~precise+1_i386.deb
+Size: 998566
+MD5sum: 0dfa156b8ef4ca21320b8eabb3335a03
+SHA1: df9580b6d8516f3f945995cf82a775487fe5d335
+SHA256: 0dafbeb2109c6cc719bc4e005e0252337a286240d9f98c41c31410a296ce57aa
+Description: Rails and Rack support for Apache2 and Nginx
+ Phusion Passenger — a.k.a. mod_rails or mod_rack — makes
+ deployment of Ruby web applications, such as those built on the
+ revolutionary Ruby on Rails web framework, a breeze.
+
+Package: ruby-passenger-doc
+Source: ruby-passenger
+Priority: optional
+Section: doc
+Installed-Size: 627
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 4.0.10-1+debphp.org~precise+1
+Replaces: passenger-doc
+Suggests: www-browser
+Provides: passenger-doc
+Conflicts: passenger-doc
+Filename: pool/main/r/ruby-passenger/ruby-passenger-doc_4.0.10-1+debphp.org~precise+1_all.deb
+Size: 477226
+MD5sum: 4d44dfe932dad87538cad41158394b21
+SHA1: c19506a7cf82ed72883cd5ffa89ef7cc590f1f25
+SHA256: c6158751cf22d95853cdedc80ffae61ca226a9a9da64336bd9fb88fa664efdfd
+Description: Rails and Rack support for Apache2 - Documentation
+ Phusion Passenger — a.k.a. mod_rails or mod_rack — makes
+ deployment of Ruby web applications, such as those built on the
+ revolutionary Ruby on Rails web framework, a breeze.
+ .
+ This package provides the documentation for Phusion Passenger.
+
+Package: php5-oauth
+Source: php-oauth
+Priority: extra
+Section: php
+Installed-Size: 239
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.2.3-1+debphp.org~precise+1
+Depends: phpapi-20121212, libc6 (>= 2.4)
+Filename: pool/main/p/php-oauth/php5-oauth_1.2.3-1+debphp.org~precise+1_i386.deb
+Size: 57160
+MD5sum: e2497439218ae213cc1cba126f732209
+SHA1: c891244ab049fe476f600032a5dc55733bf168a3
+SHA256: a3aa0d29c91233848e8d28d37583c05af427cc87843a32dca076e39a24277486
+Description: OAuth 1.0 consumer and provider extension
+ OAuth is an authorization protocol built on top of HTTP which allows
+ applications to securely access data without having to store
+ usernames and passwords.
+ .
+ This package provides an API for fetching and serving OAuth
+ protected resources.
+
+Package: libmemcached11
+Source: libmemcached
+Priority: optional
+Section: libs
+Installed-Size: 253
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Architecture: i386
+Version: 1.0.17-2+precise+1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libsasl2-2 (>= 2.1.24), libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Filename: pool/main/libm/libmemcached/libmemcached11_1.0.17-2+precise+1_i386.deb
+Size: 115078
+MD5sum: b4d67fa4f7e041684bd524a9407ed341
+SHA1: 2f3bf073d1315f7eceaa7ddaa3b136ee8d32ea2d
+SHA256: 92fe1d58b57d117f3ada965ba90aafe56fd5dce9baaba1e07136bd15e020b5e8
+Description: C and C++ client library to the memcached server
+ libmemcached is a C and C++ client library to the memcached server
+ (http://memcached.org/). It has been designed to be light on memory
+ usage, thread safe, and provide full access to server side methods.
+ .
+ A few notes on its design:
+ .
+ * Synchronous and Asynchronous support.
+ * Access to large object support.
+ * Local replication.
+ * TCP and Unix Socket protocols.
+ * A half dozen or so different tuneable hash algorithms.
+ * Implementations of the new cas, replace, and append operators.
+ * Man pages written up on entire API.
+ * Implements both modulo and consistent hashing solutions.
+ * Tools to Manage your Memcached networks.
+ .
+ This package provides the libmemcached shared library itself.
+Multi-Arch: same
+
+Package: libgearman7
+Source: gearmand
+Priority: optional
+Section: misc
+Installed-Size: 188
+Maintainer: Stig Sandbeck Mathisen <ssm@debian.org>
+Architecture: i386
+Version: 1.0.6-2+debphp.org~precise+2
+Depends: libc6 (>= 2.9), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.20.1)
+Pre-Depends: multiarch-support
+Filename: pool/main/g/gearmand/libgearman7_1.0.6-2+debphp.org~precise+2_i386.deb
+Size: 82016
+MD5sum: 7bd2ebe93532afe31448115d7e0132cc
+SHA1: 6b10f33e3c55b09483b794d4cc1325d8a79b33d5
+SHA256: eabe298bd51750dcda9eab1bfc84819de1dd5bc15a3251b31cca77996613d865
+Description: Library providing Gearman client and worker functions
+ Gearman is a system to farm out work to other machines, dispatching function
+ calls to machines that are better suited to do work, to do work in parallel,
+ to load balance lots of function calls, or to call functions between languages.
+ .
+ This package contains the C reimplementation of the client library.
+Multi-Arch: same
+
+Package: php5-mysqlnd-ms
+Source: php-mysqlnd-ms
+Priority: optional
+Section: php
+Installed-Size: 2368
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.5.2-3+debphp.org~precise+1
+Depends: libc6 (>= 2.4), phpapi-20121212, php5-mysqlnd
+Filename: pool/main/p/php-mysqlnd-ms/php5-mysqlnd-ms_1.5.2-3+debphp.org~precise+1_i386.deb
+Size: 416180
+MD5sum: cd1cf6e397abb1aef68cbf6d985d5edf
+SHA1: 2d8df36437d2008392de49d1de2aa37088377249
+SHA256: 68cf394e7778ab517e437a16945c137859b276a7cc077bdf9bff39e918ce5d51
+Description: MySQL replication and load balancing module for PHP
+ The mysqlnd_ms replication and load balancing plugin can be used with
+ PHP MySQL extensions (ext/mysql, ext/mysqli, ext/pdo_mysql) if they
+ are compiled to use mysqlnd.  The plugin inspects queries and does
+ read-write splitting. Read-only queries are sent to MySQL replication
+ slave servers while all other queries are redirected to the MySQL
+ replication master server.  Very few, if any, application changes are
+ required, depending on the usage scenario.
+
+Package: php5-readline
+Source: php5
+Priority: optional
+Section: php
+Installed-Size: 77
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: i386
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Depends: libc6 (>= 2.1.3), libedit2 (>= 2.11-20080614-1), phpapi-20121212, php5-common (= 5.5.9+dfsg-1+sury.org~precise+1), php5-cli (= 5.5.9+dfsg-1+sury.org~precise+1), ucf
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Filename: pool/main/p/php5/php5-readline_5.5.9+dfsg-1+sury.org~precise+1_i386.deb
+Size: 13608
+MD5sum: c0c36380e0f73796c4f24df7523a9488
+SHA1: 509d3d87ac4cd1cbf7b78357768daec8dd704435
+SHA256: ac0c2a5629e67d23de08460af60abd504f102ddb8fd424f4f1e8c7f6c4995ccb
+Description: Readline module for php5
+ This package provides a module for readline functions (based on libedit)
+ in PHP scripts.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: libgd3
+Source: libgd2
+Priority: optional
+Section: libs
+Installed-Size: 467
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.1.0-2~precise+1
+Suggests: libgd-tools
+Depends: libc6 (>= 2.11), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libtiff4, libvpx1 (>= 1.0.0), libxpm4, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/libg/libgd2/libgd3_2.1.0-2~precise+1_i386.deb
+Size: 166780
+MD5sum: 19ccfc2a08a81684cdec4cf77f841331
+SHA1: 646014948a4dc11f591cae4007ac58a0a21fc37f
+SHA256: 10de47604334888889e4b5bf2358155c30b3878272774fa693f5c4e2bd5f8f72
+Description: GD Graphics Library
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the runtime package of the library.
+Multi-Arch: same
+
+Package: libgd-dbg
+Source: libgd2
+Priority: extra
+Section: debug
+Installed-Size: 412
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.1.0-2~precise+1
+Recommends: gdb
+Depends: libgd3 (= 2.1.0-2~precise+1) | libgd-tools (= 2.1.0-2~precise+1)
+Filename: pool/main/libg/libgd2/libgd-dbg_2.1.0-2~precise+1_i386.deb
+Size: 273098
+MD5sum: 8155d7fb48087ab2e89fcf77bc525f93
+SHA1: 6d0a67b8d9ea1a4955cb6bbea0d7a962a8f6a6cf
+SHA256: 2f4a09dcc10c4b34bda7ae91ff1d2bfcbab9c4a34eba805fb7c229110e8bc179
+Description: Debug symbols for GD Graphics Library
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ These are the debug symbols for the library and tools.
+Multi-Arch: same
+
+Package: php5-apcu
+Source: php-apcu
+Priority: optional
+Section: php
+Installed-Size: 565
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.0.2-2+debphp.org~precise+1
+Replaces: php-apc (<< 4.0.0), php5-user-cache
+Suggests: php5-gd
+Provides: php-apc, php5-user-cache
+Depends: libc6 (>= 2.4), phpapi-20121212
+Conflicts: php-apc (<< 4.0.0), php5-user-cache, php5-xcache, php5-yac
+Filename: pool/main/p/php-apcu/php5-apcu_4.0.2-2+debphp.org~precise+1_i386.deb
+Size: 101422
+MD5sum: 755b5662b6ca1b786bfc8faad7ff6ead
+SHA1: bba6427e6fe9e3e32d94f94788c7af43667abae0
+SHA256: 0152d0a2fb524918a3d5c33ae55c28a813f1d2a7eea4e6fbb9eb19121178356b
+Description: APC User Cache for PHP 5
+ The APCu is userland caching: APC (Alternative PHP Cache) stripped of
+ opcode caching after the deployment of Zend OpCache in PHP 5.5 as the
+ primary solution to opcode caching in future versions of PHP.
+ .
+ The APCu is a fast solution for userland caching (and dumping) of PHP
+ variables locally, it is not distributed like MemcacheD, but they can
+ be used together for optimal caching.
+
+Package: libjson-c2
+Source: json-c
+Priority: extra
+Section: libs
+Installed-Size: 79
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: i386
+Version: 0.11-3+debphp.org~precise+1
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Filename: pool/main/j/json-c/libjson-c2_0.11-3+debphp.org~precise+1_i386.deb
+Size: 23470
+MD5sum: 64dd0d0bd29b0068668b3d498e8c81f0
+SHA1: 78bda60e0d999e3ae20cc264cb805785d84a16c4
+SHA256: 10b38e05ce12400148d78741e06cf9f3bf6f76762c9bbd37060862371341cfc4
+Description: JSON manipulation library - shared library
+ This library allows you to easily construct JSON objects in C,
+ output them as JSON formatted strings and parse JSON formatted
+ strings back into the C representation of JSON objects.
+Multi-Arch: same
+
+Package: libjson-c-dev
+Source: json-c
+Priority: extra
+Section: libdevel
+Installed-Size: 145
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: i386
+Version: 0.11-3+debphp.org~precise+1
+Depends: libjson-c2 (= 0.11-3+debphp.org~precise+1)
+Filename: pool/main/j/json-c/libjson-c-dev_0.11-3+debphp.org~precise+1_i386.deb
+Size: 34806
+MD5sum: 0e736b2a02360656e5e6fc564f44dfba
+SHA1: ac5c895242bbc338c4ea439685a9e8a590e725a3
+SHA256: 06f282bb3f2305c72832ade609c2b9810cc6a9ca733f64afdb43be9b911857f0
+Description: JSON manipulation library - development files
+ This library allows you to easily construct JSON objects in C,
+ output them as JSON formatted strings and parse JSON formatted
+ strings back into the C representation of JSON objects.
+ .
+ The development headers for compiling programs that use libjson-c
+ are provided by this package.
+Multi-Arch: same
+
+Package: libjson-c2-dbg
+Source: json-c
+Priority: extra
+Section: debug
+Installed-Size: 74
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: i386
+Version: 0.11-3+debphp.org~precise+1
+Depends: libjson-c2 (= 0.11-3+debphp.org~precise+1)
+Filename: pool/main/j/json-c/libjson-c2-dbg_0.11-3+debphp.org~precise+1_i386.deb
+Size: 28466
+MD5sum: 68241a0d132f63a9c5a6bd5a86939ce2
+SHA1: 602f1c6e8c26e8f139561af1e7388c9ca1a02efe
+SHA256: c9ad9aeefca56d6742388613700b917efc45076f77fcc850a8a39da494e4ef2b
+Description: JSON manipulation library - debug symbols
+ This library allows you to easily construct JSON objects in C,
+ output them as JSON formatted strings and parse JSON formatted
+ strings back into the C representation of JSON objects.
+ .
+ The debugging symbols for tracking down bugs in applications
+ that use libjson-c are provided by this package.
+Multi-Arch: same
+
+Package: libjson-c-doc
+Source: json-c
+Priority: extra
+Section: doc
+Installed-Size: 44
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: all
+Version: 0.11-3+debphp.org~precise+1
+Depends: libjs-jquery
+Filename: pool/main/j/json-c/libjson-c-doc_0.11-3+debphp.org~precise+1_all.deb
+Size: 15570
+MD5sum: 39d9978be179d99db65f3b0ce33774fc
+SHA1: b0a99bf4c4903fdaa76314b6a9783b1c8fd0f5fa
+SHA256: 2c85c81eaa568f76dccf028f8e622080f0eb47c0dbc289f23839cd3614b93acb
+Description: JSON manipulation library - documentation files
+ This library allows you to easily construct JSON objects in C,
+ output them as JSON formatted strings and parse JSON formatted
+ strings back into the C representation of JSON objects.
+ .
+ The documentation for libjson-c is provided by this package.
+
+Package: icu-devtools
+Source: icu
+Priority: optional
+Section: libdevel
+Installed-Size: 493
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Architecture: i386
+Version: 52.1-1+debphp.org~precise+1
+Replaces: libicu-dev (<< 52.1-1+debphp.org~precise+1)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libicu52 (>= 52~m1-1~), libstdc++6 (>= 4.1.1)
+Breaks: libicu-dev (<< 52.1-1+debphp.org~precise+1)
+Filename: pool/main/i/icu/icu-devtools_52.1-1+debphp.org~precise+1_i386.deb
+Size: 167370
+MD5sum: 7906b05c937709092c5d653eafde842b
+SHA1: d04e2240364b0c8dfddf7232d191eb68f399f620
+SHA256: 538feb37ca88181cfecc47822e0337b86e43d6c3a78308840ef3b5ccebb3dfa6
+Description: Development utilities for International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support. This package contains programs used to
+ manipulate data files found in the ICU sources and is a dependency of
+ libicu-dev.  End users would generally not need to install this package.
+Multi-Arch: foreign
+
+Package: libicu52
+Source: icu
+Priority: optional
+Section: libs
+Installed-Size: 27288
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Architecture: i386
+Version: 52.1-1+debphp.org~precise+1
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+Pre-Depends: multiarch-support
+Filename: pool/main/i/icu/libicu52_52.1-1+debphp.org~precise+1_i386.deb
+Size: 6834450
+MD5sum: 8a26802f69db6d3a517913c47e137ea8
+SHA1: cca44fbb55d31f5bcf3c387ca5a46c5dfa39c1ee
+SHA256: d26d824414072925847e76972004040fd0c3ce5ee07f49cb03b410dba67bc4b0
+Description: International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains the runtime
+ libraries for ICU.
+Multi-Arch: same
+
+Package: libicu52-dbg
+Source: icu
+Priority: extra
+Section: debug
+Installed-Size: 5712
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Architecture: i386
+Version: 52.1-1+debphp.org~precise+1
+Depends: libicu52 (= 52.1-1+debphp.org~precise+1)
+Filename: pool/main/i/icu/libicu52-dbg_52.1-1+debphp.org~precise+1_i386.deb
+Size: 4939158
+MD5sum: 06a4e9c7fe646acbb51a5e90011c2471
+SHA1: 1dc3ec4f8d31df43899c81d89ecc5a253900ecdc
+SHA256: f3ced2730f60e2ab10d44e0200be250a30faaa17d7b3243696e3f12d5027ff96
+Description: International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains debugging symbols
+ for the libraries.
+

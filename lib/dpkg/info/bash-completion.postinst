@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+
+for file in repomanage modules mock dcop bluez-utils; do
+	dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/$file \
+		1:1.3-1ubuntu6 -- "$@"
+done
+
+case "$1" in
+    configure)
+	# remove ucf configury
+	if which ucf >/dev/null; then
+	    ucf --purge /etc/bash_completion
+	fi
+	if which ucfr >/dev/null; then
+	    ucfr --purge bash-completion /etc/bash_completion
+	fi
+	;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+	;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+
+
+exit 0

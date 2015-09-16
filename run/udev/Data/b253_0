@@ -1,0 +1,15 @@
+N:vda
+S:disk/by-label/DOROOT
+S:disk/by-path/pci-0000:00:04.0-virtio-pci-virtio1
+S:disk/by-uuid/39a37f7a-3e66-4a08-9d8b-3df73b9598a0
+W:5
+I:1152267
+E:ID_FS_LABEL=DOROOT
+E:ID_FS_LABEL_ENC=DOROOT
+E:ID_FS_TYPE=ext4
+E:ID_FS_USAGE=filesystem
+E:ID_FS_UUID=39a37f7a-3e66-4a08-9d8b-3df73b9598a0
+E:ID_FS_UUID_ENC=39a37f7a-3e66-4a08-9d8b-3df73b9598a0
+E:ID_FS_VERSION=1.0
+E:ID_PATH=pci-0000:00:04.0-virtio-pci-virtio1
+E:ID_PATH_TAG=pci-0000_00_04_0-virtio-pci-virtio1

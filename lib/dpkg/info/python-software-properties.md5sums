@@ -1,0 +1,15 @@
+253ad3516014cf8819a989482233fcfb  usr/bin/add-apt-repository
+d452acfcbbca9f831a00db7deb82bbab  usr/share/doc/python-software-properties/AUTHORS
+6ff0bedc540baa621b8ef9ccc212039b  usr/share/doc/python-software-properties/README
+dd5bbca91225f9394188adfce26242ba  usr/share/doc/python-software-properties/TODO
+aa3e33ad1d28666861800e5912773cee  usr/share/doc/python-software-properties/changelog.gz
+c4a52dbcd4545f975c9789c8356a3746  usr/share/doc/python-software-properties/copyright
+e002fc1ca3ff0894d103becc3fc0fceb  usr/share/man/man1/add-apt-repository.1.gz
+e37172b7d8cdc62c8a55d91f0ff4527d  usr/share/pyshared/softwareproperties/AptAuth.py
+47f553265d869f16bd74ce8e0aff6572  usr/share/pyshared/softwareproperties/CountryInformation.py
+cda492961ac31222bc0f545350f244d3  usr/share/pyshared/softwareproperties/MirrorTest.py
+6d8a7b189bab3c3c3a0432d9f836c19c  usr/share/pyshared/softwareproperties/SoftwareProperties.py
+93fd82e09bc2dd4c49feba8ee2420696  usr/share/pyshared/softwareproperties/__init__.py
+4ceb42aac3efb65b2861ea2a936f495a  usr/share/pyshared/softwareproperties/cloudarchive.py
+2362d74d21a1af443b44595abe3315b6  usr/share/pyshared/softwareproperties/distro.py
+22e461d9cf7acccd6c9b032612bdc384  usr/share/pyshared/softwareproperties/ppa.py

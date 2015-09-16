@@ -1,0 +1,4 @@
+/etc/sudoers
+/etc/init.d/sudo
+/etc/pam.d/sudo
+/etc/sudoers.d/README

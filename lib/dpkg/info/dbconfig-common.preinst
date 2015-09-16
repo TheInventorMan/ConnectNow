@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+# rather sensitive data can go here, so let's create the logfile
+# ahead of time with safer permissions.
+if [ ! -d /var/log/dbconfig-common ]; then
+	mkdir /var/log/dbconfig-common
+	touch /var/log/dbconfig-common/dbc.log
+	chmod 600 /var/log/dbconfig-common/dbc.log
+fi
+
+

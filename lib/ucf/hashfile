@@ -1,0 +1,15 @@
+80de10a8b9f13365de8cc4bbf8efec5e  /etc/rsyslog.d/50-default.conf
+458108b20f63fe3deb3b9bc1a7efc154  /etc/dbconfig-common/config
+b30cbe82ef48afd49a6dab7aaab36c1f  /etc/dbconfig-common/phpmyadmin.conf
+b9aeb636df11c656a4565650116b54b2  /etc/phpmyadmin/config-db.php
+bfa961ed634b3f54a49c38b2c88537cc  /etc/php5/mods-available/pdo.ini
+f86ffe2c2484c9880820c98fdb9b69e4  /etc/php5/mods-available/opcache.ini
+11a4170a73925f83355c0f6ddb97dfe1  /etc/php5/apache2/php.ini
+11a4170a73925f83355c0f6ddb97dfe1  /etc/php5/fpm/php.ini
+4ec7c759a1bbf616bd5fc64e46852ed0  /etc/php5/mods-available/mysql.ini
+f236e54661cdcf871dd7e4baf9abbea4  /etc/php5/mods-available/mysqli.ini
+abfa801b4820233d1fcf18d3e15db635  /etc/php5/mods-available/pdo_mysql.ini
+e7305cbdc4c7983bd61222ec6769a315  /etc/php5/mods-available/gd.ini
+926313d8ee40ceba1ca804839990bf6a  /etc/php5/mods-available/mcrypt.ini
+39ce7b308ac28c48e9d8bfc5a913878b  /etc/php5/cli/php.ini
+dbd4b95bd4ed43454ca0065f11183af1  /run/grub/menu.lst

@@ -1,0 +1,8 @@
+5b44f9425449448d9580f97450ef4e4f  lib/systemd/system/nginx.service
+34016ae3d8f813f630bf050382742d0a  usr/share/doc/nginx-common/NEWS.Debian.gz
+820f736a21e718b141934583bdf0c0de  usr/share/doc/nginx-common/changelog.Debian.gz
+3dacb337717eea916834b755dbba35c9  usr/share/doc/nginx-common/changelog.gz
+90df7924ed0a97d0f39f1cadb5419623  usr/share/doc/nginx-common/copyright
+29cb3e185fa141e5df795a924b3f4302  usr/share/man/man1/nginx.1.gz
+d74f9cdd604653c22c6752c46fffd587  usr/share/nginx/html/50x.html
+e3eb0a1df437f3f97a64aca5952c8ea0  usr/share/nginx/html/index.html

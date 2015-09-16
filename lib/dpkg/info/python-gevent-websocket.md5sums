@@ -1,0 +1,15 @@
+7966829c862b6bb01ecacf92dbc634da  usr/share/doc/python-gevent-websocket/changelog.Debian.gz
+f786c3047a74749b073531cd88fdcfdd  usr/share/doc/python-gevent-websocket/changelog.gz
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/python-gevent-websocket/copyright
+5c76ffaf28b998357c98691bd789fc3a  usr/share/pyshared/gevent_websocket-0.3.6.egg-info/PKG-INFO
+601782b17421d6551edc5c110b1e5975  usr/share/pyshared/gevent_websocket-0.3.6.egg-info/SOURCES.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/share/pyshared/gevent_websocket-0.3.6.egg-info/dependency_links.txt
+d2c36f4aef9297bacdae139782382d61  usr/share/pyshared/gevent_websocket-0.3.6.egg-info/requires.txt
+a57c071635c4012b5c0969abc191efc1  usr/share/pyshared/gevent_websocket-0.3.6.egg-info/top_level.txt
+73c2ca5a0f7b38ae34010de5694484fe  usr/share/pyshared/geventwebsocket/__init__.py
+ac73190c00a0227f8ed7265d52eb789b  usr/share/pyshared/geventwebsocket/exceptions.py
+e43a1499daf14008e9ea14f6a70ff3d9  usr/share/pyshared/geventwebsocket/gunicorn/workers.py
+66672812bd4e8c62f0c3d5323baccb7d  usr/share/pyshared/geventwebsocket/handler.py
+7632853b3a62b50cb3d8d838baf6282e  usr/share/pyshared/geventwebsocket/python_fixes.py
+38a0ffdb78ada69649ad843fcabfb128  usr/share/pyshared/geventwebsocket/websocket.py
+d8ff42d27023f7787e83c4330bc5377f  usr/share/python-support/python-gevent-websocket.public

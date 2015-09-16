@@ -1,0 +1,2 @@
+/etc/bash_completion.d/apt-show-versions
+/etc/cron.daily/apt-show-versions

@@ -1,0 +1,4 @@
+/etc/php5/fpm/php-fpm.conf
+/etc/php5/fpm/pool.d/www.conf
+/etc/init/php5-fpm.conf
+/etc/logrotate.d/php5-fpm

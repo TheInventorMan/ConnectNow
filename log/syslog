@@ -1,0 +1,32 @@
+Mar 22 07:35:06 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.6" x-pid="384" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Mar 22 07:35:06 localhost anacron[17878]: Job `cron.daily' terminated
+Mar 22 07:39:01 localhost CRON[18002]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 07:45:01 localhost anacron[17878]: Job `cron.monthly' started
+Mar 22 07:45:01 localhost anacron[17878]: Job `cron.monthly' terminated
+Mar 22 07:45:01 localhost anacron[17878]: Normal exit (2 jobs run)
+Mar 22 07:45:01 localhost anacron[18020]: Updated timestamp for job `cron.monthly' to 2014-03-22
+Mar 22 08:09:01 localhost CRON[18027]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 08:17:01 localhost CRON[18043]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 08:39:01 localhost CRON[18051]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 09:09:01 localhost CRON[18075]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 09:17:01 localhost CRON[18091]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 09:39:01 localhost CRON[18099]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 10:09:01 localhost CRON[18121]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 10:17:01 localhost CRON[18137]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 10:39:01 localhost CRON[18147]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 11:09:01 localhost CRON[18168]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 11:17:01 localhost CRON[18184]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 11:39:01 localhost CRON[18192]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 12:09:01 localhost CRON[18214]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 12:17:01 localhost CRON[18229]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 12:39:01 localhost CRON[18240]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 13:09:01 localhost CRON[18263]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 13:17:01 localhost CRON[18279]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 13:39:01 localhost CRON[18286]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 14:09:01 localhost CRON[18307]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 14:17:01 localhost CRON[18324]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 14:39:01 localhost CRON[18375]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 15:09:01 localhost CRON[18448]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 15:17:01 localhost CRON[18491]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 22 15:39:01 localhost CRON[18555]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))
+Mar 22 16:09:01 localhost CRON[18575]: (root) CMD (  [ -x /usr/lib/php5/maxlifetime ] && [ -x /usr/lib/php5/sessionclean ] && [ -d /var/lib/php5 ] && /usr/lib/php5/sessionclean /var/lib/php5 $(/usr/lib/php5/maxlifetime))

@@ -1,0 +1,518 @@
+Package: nginx
+Priority: optional
+Section: httpd
+Installed-Size: 92
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: all
+Version: 1.4.6-1+precise0
+Depends: nginx-full (>= 1.4.6-1+precise0) | nginx-light (>= 1.4.6-1+precise0) | nginx-extras (>= 1.4.6-1+precise0) | nginx-naxsi (>= 1.4.6-1+precise0), nginx-full (<< 1.4.6-1+precise0.1~) | nginx-light (<< 1.4.6-1+precise0.1~) | nginx-extras (<< 1.4.6-1+precise0.1~) | nginx-naxsi (<< 1.4.6-1+precise0.1~)
+Filename: pool/main/n/nginx/nginx_1.4.6-1+precise0_all.deb
+Size: 67888
+MD5sum: 89b89b20a80ab84a75f0bdd39cda0b5c
+SHA1: b96b601238c80ff67229e7a7b36768d50c4fb159
+SHA256: d83d25e40320235b6fa25708a9d5254858234495549f59f32781fcb3574336f1
+Description: small, powerful, scalable web/proxy server
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This is a dependency package to install either nginx-full (by default) or
+ nginx-light.
+
+Package: nginx
+Priority: optional
+Section: httpd
+Installed-Size: 81
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: all
+Version: 1.0.14-1ppa1~precise
+Depends: nginx-full | nginx-light
+Filename: pool/main/n/nginx/nginx_1.0.14-1ppa1~precise_all.deb
+Size: 56360
+MD5sum: e6ffea939e65518e90ddebd626bdfb65
+SHA1: 0b46a3ffc036e3044f094b870f198d30de473755
+SHA256: 6b9aea639268106324ee9337abfa3b167f3e8a643e5f88322a92564d7e95f37d
+Description: small, but very powerful and efficient web server and mail proxy
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ This is a dummy package that selects nginx-full by default, but also can be
+ installed with nginx-light for upgrading to nginx-light directly.
+
+Package: nginx-passenger
+Source: nginx
+Priority: optional
+Section: httpd
+Installed-Size: 1247
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.0.14-1ppa1~precise
+Provides: httpd, nginx
+Depends: nginx-common (= 1.0.14-1ppa1~precise), ruby-passenger (>> 3.0.11debian), libc6 (>= 2.10), libgcc1 (>= 1:4.1.1), libgd2-noxpm (>= 2.0.36~rc1~dfsg) | libgd2-xpm (>= 2.0.36~rc1~dfsg), libgeoip1 (>= 1.4.8+dfsg), libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Conflicts: nginx-extras, nginx-full, nginx-light, nginx-naxsi
+Filename: pool/main/n/nginx/nginx-passenger_1.0.14-1ppa1~precise_i386.deb
+Size: 565288
+MD5sum: cbea28fc8e6f7b4ff6bc7c4ea5ffc781
+SHA1: e0af97a2eeab1f36abef605d6516efa5bbe2cf19
+SHA256: 2447049e6693d06accf492a61a0003be3bdf106e732c08fb6b08df0c709eb0b2
+Description: nginx web server with full set of core modules and passenger support
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ It can also act as a POP3/IMAP mail proxy with SSL and TLS SNI support. This
+ package has the standard set of modules enabled and also passenger support.
+ .
+ MODULES INCLUDED:
+ Standard HTTP Modules:
+ Core, Access, Auth Basic, Auto Index, Browser, Charset, Empty GIF, FastCGI,
+ Geo, Gzip, Headers, Index, Limit Requests, Limit Zone, Log, Map, Memcached,
+ Proxy, Referer, Rewrite, SCGI, Split Clients, SSI, Upstream, User ID, UWSGI
+ Optional HTTP Modules:
+ Addition, Debug, GeoIP, Gzip Precompression, HTTP Sub, Image Filter, IPv6,
+ RealIP, Stub Status, WebDAV, XSLT
+ Mail Modules:
+ Mail Core, IMAP, POP3, SMTP, SSL
+ Third Party Modules:
+ Echo, Upstream Fair Queue, Passenger
+
+Package: nginx-full
+Source: nginx
+Priority: optional
+Section: httpd
+Installed-Size: 977
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Suggests: nginx-doc (= 1.4.6-1+precise0)
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.4.6-1+precise0), libc6 (>= 2.10), libexpat1 (>= 1.95.8), libgd2-noxpm (>= 2.0.36~rc1~dfsg) | libgd2-xpm (>= 2.0.36~rc1~dfsg), libgeoip1 (>= 1.4.8+dfsg), libpam0g (>= 0.99.7.1), libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.2.0)
+Conflicts: nginx-extras, nginx-light, nginx-naxsi
+Breaks: nginx (<< 1.4.5-1)
+Filename: pool/main/n/nginx/nginx-full_1.4.6-1+precise0_i386.deb
+Size: 485394
+MD5sum: 2f09bd0ca5e589080c768419ac9dbc8b
+SHA1: d35230813a85f92387fa122d4ed459fc98363c54
+SHA256: 93af5f74ee6b140318443712c6e1f4ccd805b3c41a70383cda43c3a4cd2524d4
+Description: nginx web/proxy server (standard version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extra).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser,
+ Charset, Empty GIF, FastCGI, Geo, Gzip, Headers, Index, Limit Requests,
+ Limit Zone, Log, Map, Memcached, Proxy, Referer, Rewrite, SCGI,
+ Split Clients, SSI, Upstream, User ID, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Debug, GeoIP, Gzip Precompression, HTTP Sub,
+ Image Filter, IPv6, Real IP, Spdy, SSL, Stub Status, Substitution, WebDAV,
+ XSLT.
+ .
+ MAIL MODULES: Mail Core, IMAP, POP3, SMTP, SSL.
+ .
+ THIRD PARTY MODULES: Auth PAM, DAV Ext, Echo, HTTP Substitution Filter,
+ Upstream Fair Queue.
+
+Package: nginx-full-dbg
+Source: nginx
+Priority: extra
+Section: debug
+Installed-Size: 3135
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Depends: nginx-full (= 1.4.6-1+precise0)
+Conflicts: nginx-extras-dbg, nginx-light-dbg, nginx-naxsi-dbg
+Filename: pool/main/n/nginx/nginx-full-dbg_1.4.6-1+precise0_i386.deb
+Size: 3041060
+MD5sum: 48eab20f3f170b4e361eb7e6cb1c689b
+SHA1: 63161f56ded58f23ccf885e6af3f37efbf15fcbe
+SHA256: 2b4d787089c0d0814c08a14d3fc3d425a7657bafc7055d6a65c12cba6ad7fac9
+Description: nginx web/proxy server (standard version) - debugging symbols
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides debugging symbols for nginx-full, to assist in debugging
+ issues that you may find. It should not be required for normal operation.
+
+Package: nginx-light
+Source: nginx
+Priority: extra
+Section: httpd
+Installed-Size: 721
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Suggests: nginx-doc (= 1.4.6-1+precise0)
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.4.6-1+precise0), libc6 (>= 2.10), libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.1.4)
+Conflicts: nginx-extras, nginx-full, nginx-naxsi
+Breaks: nginx (<< 1.4.5-1)
+Filename: pool/main/n/nginx/nginx-light_1.4.6-1+precise0_i386.deb
+Size: 368598
+MD5sum: 01b6d2c6c43e1da4cca83f45162ce1a8
+SHA1: 62420fe664b1f63d4c78f8c2079ea21d8674de84
+SHA256: 75ff5f2a081df57db6d56edbab4713497e5248ad562a475ec714926690091804
+Description: nginx web/proxy server (basic version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a very light version of nginx with only the
+ minimal set of features and modules.
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Charset,
+ Empty GIF, FastCGI, Gzip, Headers, Index, Log, Map, Proxy, Rewrite, Upstream.
+ .
+ OPTIONAL HTTP MODULES: Debug, Gzip Precompression, IPv6, Real Ip, SSL,
+ Stub Status.
+ .
+ THIRD PARTY MODULES: Echo.
+
+Package: nginx-light-dbg
+Source: nginx
+Priority: extra
+Section: debug
+Installed-Size: 2161
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Depends: nginx-light (= 1.4.6-1+precise0)
+Conflicts: nginx-extras-dbg, nginx-full-dbg, nginx-naxsi-dbg
+Filename: pool/main/n/nginx/nginx-light-dbg_1.4.6-1+precise0_i386.deb
+Size: 2078342
+MD5sum: 346044554334b5d6d546394e0cbb6be2
+SHA1: 31428f7a1b4fcd00e1b744601bff2c992daa09f5
+SHA256: 3f401a80d39742f4d53e8a1cb12bc0b9239c7f781b0dbd5196aae1c7b25867f5
+Description: nginx web/proxy server (basic version) - debugging symbols
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides debugging symbols for nginx-light, to assist in
+ debugging issues that you may find. It should not be required for normal
+ operation.
+
+Package: nginx-doc
+Source: nginx
+Priority: optional
+Section: doc
+Installed-Size: 114
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: all
+Version: 1.4.6-1+precise0
+Depends: lsb-base (>= 3.2-14)
+Filename: pool/main/n/nginx/nginx-doc_1.4.6-1+precise0_all.deb
+Size: 80440
+MD5sum: 48d706f169de09ccf63f189d113dd9ab
+SHA1: c5ca5b391ca48a55a85f90dac1c0032685086b46
+SHA256: 7b67b079cb94a1e16e38d54fb95773d73b14ed93e3f825ed938d417751e67dcd
+Description: small, powerful, scalable web/proxy server - documentation
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides extra documentation to help unleash the power of Nginx.
+
+Package: nginx-doc
+Source: nginx
+Priority: optional
+Section: doc
+Installed-Size: 104
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: all
+Version: 1.0.14-1ppa1~precise
+Depends: lsb-base (>= 3.2-14)
+Filename: pool/main/n/nginx/nginx-doc_1.0.14-1ppa1~precise_all.deb
+Size: 70092
+MD5sum: d931c828b422382dcb99d7596aed2bdc
+SHA1: 6b19911c31b40ab6aae4dca76fb4403bb2f9a5f9
+SHA256: b176a2bef9f4e53db1482191068cd921884eda0b0e2e5a474525048b01d5a5c2
+Description: small, but very powerful and efficient web server (documentation)
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ This package provides extra documentation to help unleash the power of Nginx.
+
+Package: nginx-extras
+Source: nginx
+Priority: extra
+Section: httpd
+Installed-Size: 1433
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Suggests: nginx-doc (= 1.4.6-1+precise0)
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.4.6-1+precise0), perl (>= 5.14.2-6ubuntu2.4), perlapi-5.14.2, libc6 (>= 2.11), libexpat1 (>= 1.95.8), libgd2-noxpm (>= 2.0.36~rc1~dfsg) | libgd2-xpm (>= 2.0.36~rc1~dfsg), libgeoip1 (>= 1.4.8+dfsg), liblua5.1-0, libpam0g (>= 0.99.7.1), libpcre3 (>= 8.10), libperl5.14 (>= 5.14.2), libssl1.0.0 (>= 1.0.1), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.2.0)
+Conflicts: nginx-full, nginx-light, nginx-naxsi
+Breaks: nginx (<< 1.4.5-1)
+Filename: pool/main/n/nginx/nginx-extras_1.4.6-1+precise0_i386.deb
+Size: 679654
+MD5sum: dd22c4564185be04b7516f7ea89a85d8
+SHA1: d4b51bea4a74d9cd116e3996e041d88a1477c1b3
+SHA256: 1659145b03c4a82d4b20c0b230d567f418d7d536cce02c0780ed36d01767a6a4
+Description: nginx web/proxy server (extended version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the standard modules, plus
+ extra features and modules such as the Perl module, which allows the
+ addition of Perl in configuration files.
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser,
+ Charset, Empty GIF, FastCGI, Geo, Gzip, Headers, Index, Limit Requests,
+ Limit Zone, Log, Map, Memcached, Proxy, Referer, Rewrite, SCGI,
+ Split Clients, SSI, Upstream, User ID, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Debug, Embedded Perl, FLV, GeoIP,
+ Gzip Precompression, Image Filter, IPv6, MP4, Random Index, Real IP,
+ Secure Link, Spdy, SSL, Stub Status, Substitution, WebDAV, XSLT.
+ .
+ MAIL MODULES: Mail Core, IMAP, POP3, SMTP, SSL.
+ .
+ THIRD PARTY MODULES: Auth PAM, Chunkin, DAV Ext, Echo, Embedded Lua,
+ Fancy Index, HttpHeadersMore, HTTP Substitution Filter, http push,
+ Nginx Development Kit, Upload Progress, Upstream Fair Queue.
+
+Package: nginx-extras-dbg
+Source: nginx
+Priority: extra
+Section: debug
+Installed-Size: 4764
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Depends: nginx-extras (= 1.4.6-1+precise0)
+Conflicts: nginx-full-dbg, nginx-light-dbg, nginx-naxsi-dbg
+Filename: pool/main/n/nginx/nginx-extras-dbg_1.4.6-1+precise0_i386.deb
+Size: 4668334
+MD5sum: 220ed1f335fd7e188f0e07f89a350114
+SHA1: c012916c7005dd1025e30eabaf36917b01f2ec88
+SHA256: ca9985950687e8fafc53df8dc6e8966ca3efad28d8512e524a71bfa282e04d90
+Description: nginx web/proxy server (extended version) - debugging symbols
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides debugging symbols for nginx-extras, to assist in
+ debugging issues that you may find. It should not be required for normal
+ operation.
+
+Package: nginx-passenger-dbg
+Source: nginx
+Priority: extra
+Section: debug
+Installed-Size: 7100
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.0.14-1ppa1~precise
+Depends: nginx-passenger (= 1.0.14-1ppa1~precise)
+Conflicts: nginx-extras-dbg, nginx-full-dbg, nginx-light-dbg, nginx-naxsi-dbg
+Filename: pool/main/n/nginx/nginx-passenger-dbg_1.0.14-1ppa1~precise_i386.deb
+Size: 3199100
+MD5sum: 480a47a502b6330fb1c5899da7792161
+SHA1: 1e3b55f9d127b742cc547da3daf9dd12d9268d83
+SHA256: 54b8c3f7faa676915c06a6b21a320292ee49dd6545db12e67a348c92cba06913
+Description: Debugging symbols for nginx (passenger)
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ This package provides debugging symbols for nginx-passenger, to assist in
+ debugging issues that you may find. It should not be required for normal
+ operation.
+
+Package: nginx-common
+Source: nginx
+Priority: optional
+Section: httpd
+Installed-Size: 213
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: all
+Version: 1.4.6-1+precise0
+Replaces: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Suggests: fcgiwrap, nginx-doc
+Depends: lsb-base (>= 3.2-14), init-system-helpers (>= 1.5)
+Breaks: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Filename: pool/main/n/nginx/nginx-common_1.4.6-1+precise0_all.deb
+Size: 82632
+MD5sum: 14c970f7aefb30a809279a3f00374b89
+SHA1: 67d92b23c86dab4c53cc29c95b3a661fe7dfce3e
+SHA256: 504d55cef4df53ffdf38c5708c8ac6398ec85a8e62f575d64fb4a70509ccd6b6
+Description: small, powerful, scalable web/proxy server - common files
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package contains base configuration files used by all versions of
+ nginx.
+
+Package: nginx-common
+Source: nginx
+Priority: optional
+Section: httpd
+Installed-Size: 196
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: all
+Version: 1.0.14-1ppa1~precise
+Replaces: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Depends: lsb-base (>= 3.2-14)
+Breaks: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Filename: pool/main/n/nginx/nginx-common_1.0.14-1ppa1~precise_all.deb
+Size: 68000
+MD5sum: d81d92382843c72c83bded2ea89177e3
+SHA1: 41dc96d3393e8798cfabdc91ac627873ccc70bae
+SHA256: 164c81e2f5a9e5c652bf82b62780ed635b0c1694ff948cfa2c8d204ab5a16148
+Description: small, but very powerful and efficient web server (common files)
+ Nginx (engine x) is a web server created by Igor Sysoev and kindly provided to
+ the open-source community. This server can be used as standalone HTTP server
+ and as a reverse proxy server before some Apache or another big server to
+ reduce load to backend servers by many concurrent HTTP-sessions.
+ .
+ This package contains base configuration files used across multiple packaged
+ versions of Nginx (nginx-full, nginx-light, nginx-extras, nginx-naxsi).
+
+Package: nginx-naxsi
+Source: nginx
+Priority: extra
+Section: httpd
+Installed-Size: 806
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.4.6-1+precise0), libc6 (>= 2.10), libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.1.4)
+Conflicts: nginx-extras, nginx-full, nginx-light
+Breaks: nginx (<< 1.4.5-1), nginx-naxsi-ui (<< 1.4.5-1)
+Filename: pool/main/n/nginx/nginx-naxsi_1.4.6-1+precise0_i386.deb
+Size: 412992
+MD5sum: 807664b2679013f53d80affa941b3a00
+SHA1: 289565891bd99a37a8d10e13c3f5ede5271b9802
+SHA256: b5f85b0a233b5e68dab384e08d4693f27c329e774c02ca6c61da268a4802981b
+Description: nginx web/proxy server (version with naxsi)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the basic modules, plus
+ the naxsi Web Application Firewall module.
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser,
+ Charset, Core, Empty GIF, FastCGI, Geo, Gzip, Headers, Index,
+ Limit Requests, Limit Zone, Log, Map, Memcached, Proxy, Referer,
+ Rewrite, Split Clients, SSI, Upstream, User ID.
+ .
+ OPTIONAL HTTP MODULES: Debug, IPv6, Real IP, SSL, Stub Status.
+ .
+ THIRD PARTY MODULES: Naxsi, Cache Purge, Upstream Fair.
+
+Package: nginx-naxsi-dbg
+Source: nginx
+Priority: extra
+Section: debug
+Installed-Size: 2289
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: i386
+Version: 1.4.6-1+precise0
+Depends: nginx-naxsi (= 1.4.6-1+precise0)
+Conflicts: nginx-extras-dbg, nginx-full-dbg, nginx-light-dbg
+Filename: pool/main/n/nginx/nginx-naxsi-dbg_1.4.6-1+precise0_i386.deb
+Size: 2204334
+MD5sum: 429874ec74e5858447c5aca545d7f834
+SHA1: 62ae309a0c152a660a62199b9da446dd855d92cb
+SHA256: 141666fa2817bf22d9c66b88ac8266efbd48ae966798d0b6f3fda2d948c2d45f
+Description: nginx web/proxy server (version with naxsi) - debugging symbols
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides debugging symbols for nginx-naxsi, to assist in
+ debugging issues that you may find. It should not be required for normal
+ operation.
+
+Package: nginx-naxsi-ui
+Source: nginx
+Priority: extra
+Section: httpd
+Installed-Size: 1270
+Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: all
+Version: 1.4.6-1+precise0
+Depends: daemon, dbconfig-common, nginx-naxsi (>= 1.4.6-1+precise0), nginx-naxsi (<< 1.4.6-1+precise0.1~), python-twisted-web
+Filename: pool/main/n/nginx/nginx-naxsi-ui_1.4.6-1+precise0_all.deb
+Size: 358350
+MD5sum: e6f7382977dba5390b5035e0af7efca6
+SHA1: e5b299f3c1ee1a231247c2ff1c77b8b8b4998578
+SHA256: 7f5ea4a3e6f395f211a6531db559ce0859aa86df81d50888e9f14a13c405060c
+Description: nginx web/proxy server - naxsi configuration front-end
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides the autolearning daemon and web user interface for
+ nginx's naxsi module.
+ .
+ It includes an interceptor (listening on TCP port 8080), which monitors
+ HTTP requests from naxsi, and an extractor (running on TCP port 8081),
+ which reads the database and prints reports about blocked requests.
+
+Package: init-system-helpers
+Priority: extra
+Section: admin
+Installed-Size: 68
+Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 1.7~precise1~ppa1
+Depends: perl
+Breaks: systemd (<< 44-12)
+Filename: pool/main/i/init-system-helpers/init-system-helpers_1.7~precise1~ppa1_all.deb
+Size: 10586
+MD5sum: 716de2df90f73bcfc4f0f02da620eee6
+SHA1: 0faf96a7b51d372dc04c9505f4623899fb2a1adc
+SHA256: 1382ce80b08fd8d760e3db16f46f9604ff7125cff8934739dbdccd6f81a826ba
+Description: helper tools for all init systems
+ This package contains helper tools that are necessary for switching between
+ the various init systems that Debian contains (e.g. sysvinit, upstart,
+ systemd). An example is deb-systemd-helper, a script that enables systemd unit
+ files without depending on a running systemd.
+ .
+ While this package is maintained by pkg-systemd-maintainers, it is NOT
+ specific to systemd at all. Maintainers of other init systems are welcome to
+ include their helpers in this package.
+
+Package: dh-systemd
+Source: init-system-helpers
+Priority: extra
+Section: admin
+Installed-Size: 80
+Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 1.7~precise1~ppa1
+Depends: perl, debhelper
+Filename: pool/main/i/init-system-helpers/dh-systemd_1.7~precise1~ppa1_all.deb
+Size: 12724
+MD5sum: c07b96190e6ee813df07ed756e663c0d
+SHA1: 3ced0827915a0f80bdf150e84bfcd1a77eeaddae
+SHA256: 203df399faf818771d7a0a1f5982abc2e700c6a313ef160f9b9571ff57c17865
+Description: debhelper add-on to handle systemd unit files
+ dh-systemd provides a debhelper sequence addon named 'systemd' and the
+ dh_systemd_enable/dh_systemd_start commands.
+ .
+ The dh_systemd_enable command adds the appropriate code to the postinst, prerm
+ and postrm maint scripts to properly enable/disable systemd service files.
+ The dh_systemd_start command deals with start/stop/restart on upgrades for
+ systemd-only service files.
+

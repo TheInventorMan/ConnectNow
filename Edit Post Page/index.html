@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ConnectNow</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">input,textarea{border-style:solid;border-width:1px;border-color:#CCC;}</style>
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/elusive-webfont.css" rel="stylesheet">
+        <link href="assets/css/ui.min.css" rel="stylesheet">
+        <link href="assets/css/picker.css" rel="stylesheet"> 
+        <link href="assets/css/semantic.min.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,600|Open+Sans:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://connectnow.today/favicon-128.png" sizes="128x128">
+        <link rel="icon" type="image/png" href="https://connectnow.today/favicon-64.png" sizes="64x64">
+        <link rel="icon" type="image/png" href="https://connectnow.today/favicon-32.png" sizes="32x32">
+        <link rel="shortcut icon" type="image/x-icon" href="https://connectnow.today/favicon.ico">
+        <link href="assets/css/account.css" rel="stylesheet">
+    </head>
+    <body ng-app="helper">
+        <div class="navbar navbar-fixed-top top" role="navigation" id="navbar">
+            <div id="navbar-top">
+                <div class="container" style="position:relative">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://facebook.com/connectnowcn"><i class="facebook icon">&nbsp;</i></a></li>
+                        <li><a href="http://twitter.com/connectnow"><i class="twitter icon">&nbsp;</i></a></li>
+                        <li><a href="http://plus.google.com/connectnow"><i class="google plus icon">&nbsp;</i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" style="position:absolute;right:0px;top:0px;">
+                                                        <li><a href="https://connectnow.today/profile">{profilename}</a></li>
+                                <li><a href="https://connectnow.today/account">Account</a></li>
+                                <li><a href="https://connectnow.today/logout">Logout</a></li>
+                                            </ul>
+                </div>
+            </div>
+            <div id="navbar-inner" style="position:relative;">
+                <div class="container" style="position:relative;">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://connectnow.today/" id="home"><img src="assets/images/navlogo.png">&nbsp;&nbsp;&nbsp;<span>ConnectNow</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" style="position:absolute;right:0px;top:0px;">
+                        <li><a href="https://connectnow.today/">Home</a></li>
+                        <li><a href="https://connectnow.today/explore">Explore</a></li>
+                        <li><a href="https://connectnow.today/start">Start</a></li>
+                        <li><a href="https://connectnow.today/about">About</a></li>
+                        <li><a href="https://connectnow.today/contact">Contact</a></li>
+                        <li><a href="https://connectnow.today/support">Support</a></li>
+                        <li><span class="seperator">&nbsp;</span></li>
+                        <li><a href="https://connectnow.today/search" id="search-link"><span style="display:inline-block;" class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                </div>
+                <div id="search-container">
+                    <div class="container" style="height:100%;position:relative;">
+                        <form id="search-form" action="https://connectnow.today/search" method="get">
+                            <div class="row">
+                            <span id="search-span">Search: </span><input type="text" id="search-input" autocomplete="off" name="q">
+                            </div>
+                        </form>
+                        <a class="glyphicon glyphicon-remove" id="search-close" href="javascript:void(0);" onclick="$('#search-container').trigger('click');"></a>
+                        <div id="search-suggestions-outer" style="display:none !important;">
+                            <ul id="search-suggestions" class="list-inline container">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="navbar navbar-fixed-top navbar-default" id="navbar" role="navigation">
+            <div id="nav-ext-wrap">
+                <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"><a href="https://connectnow.today/explore">Explore</a></div>
+                    <div class="col-sm-3"><a href="https://connectnow.today/start">Start</a></div>
+                    <div class="col-sm-3"><a href="https://connectnow.today/about">About</a></div>
+                    <div class="col-sm-3"><a href="https://connectnow.today/search" id="search-link">Search</a></div>
+                </div>
+                    <a href="https://connectnow.today/" id="home">
+                        <img src="https://connectnow.today/img/logo.png">
+                    </a>
+                    <div id="login" class="row">
+                        <div><a href="https://connectnow.today/login">Login</a></div>
+                    </div>
+                </div> 
+            </div>
+        </div>-->
+        <div id="wrapper">
+        <h1 id="page-header"><div class="container">Edit Post</div></h1>
+<div id="page-subheading"><div class="container">SUBHEADING TEXT</div></div>
+<div class="container" id="resultsContainer" ng-controller="accountController">
+    <div class="row">
+        <div class="col-sm-3 col-md-3">
+            <div id="resultsMenu">
+                <div class="ui vertical menu" ng-init="page.active='basic';check()">
+                    <a class="item black" href="#all" ng-class="{active:page.active=='all'}" ng-click="page.active='all'"><i class="grid layout icon"></i> <span ng-style="{ 'font-weight' : page.active=='all' ? 'bold' : 'normal'}">Show All</span></a>
+                    <a class="purple item" href="#basic" ng-class="{active:page.active=='basic'}" ng-click="page.active='basic'"><i class="flag icon red" ng-show="isValid('#basic-section')"></i><i class="save icon" ng-show="isDirty('#basic-section')"></i> Basic</a>
+                    <a class="item orange" href="#personal" ng-class="{active:page.active=='personal'}" ng-click="page.active='personal'"><i class="flag icon red" ng-show="isValid('#personal-section')"></i><i class="save icon" ng-show="isDirty('#personal-section')"></i>Location</a>
+                    <a class="item teal" href="#privacy" ng-class="{active:page.active=='privacy'}" ng-click="page.active='privacy'"><i class="flag icon red" ng-show="isValid('#privacy-section')"></i><i class="save icon" ng-show="isDirty('#privacy-section')"></i>Dates and Times</a>
+                    <a class="item red" href="https://connectnow.today/account/delete">Delete Post</a>
+                </div>
+                <div class="text-muted">Thick bottom bar means you've modified the value</div>
+            </div>
+        </div>
+        <form class="col-sm-9 col-md-9 ui form" name="editForm" action="#" id="editForm" ng-submit="submit($event)" autocomplete="off" method="post">
+            <div ng-show="page.active=='basic' || page.active=='all'" id="basic-section">
+                <h1 class="settings-head">Basic Settings</h1> 
+                
+                <div class="ui segment">
+                    <div class="field ui input fluid">
+                        <label>Title ([[50-start.title.length]] chars remaining) <span class="text-danger">*</span></label>
+                        <input ng-required="true" ng-maxlength="50" ng-model="start.title" type="text" name="title" id="title" maxlength="50" placeholder="Give us a simple title for your endeavour">
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <div class="field ui input fluid">
+                        <label>Description (<span ng-show="!start.description">50 characters minimum</span><span ng-show="start.description.length >= 50">[[1500-start.description.length]] chars remaining</span>) <span class="text-danger">*</span></label>
+                        <textarea ng-required="true" ng-minlength="50" ng-maxlength="1500" ng-model="start.description" name="description" id="description" maxlength="1500" placeholder="What's this about? Tell us about it!">&nbsp;</textarea>
+                    </div>
+                </div>
+                 <h3>Email Notifications</h3>
+                <div class="ui segment">
+                    <div class="check">
+                          <label><input type="checkbox" ng-model="user.email_notification.newsletters" name="email_notification[]" value="newsletters"> Send me newsletters & updates</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" ng-model="user.email_notification.recommended" name="email_notification[]" value="recommended"> Send me recommended & suggested events</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" ng-model="user.email_notification.notifications" name="email_notification[]" value="notifications"> Send me notifications</label>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="page.active=='personal' || page.active=='all'" id="personal-section">
+                <div class="ui divider" ng-show="page.active=='all'"></div>
+                
+                
+                <h2>Location</h2>
+                <div class="ui segment">
+                    <div class="field ui input fluid">
+                        <label>Address</label>
+                        <input type="text" name="address" ng-model="start.address" id="address-input" placeholder="Where is this happening?">
+                        <iframe width="100%" height="350" frameborder="0" style="border:0;display:none;" id="maps-area"></iframe>
+                    </div>
+                    <div class="field ui input fluid">
+                        <label>Specific Location <span class="text-muted">(e.g. Room 323, West Wing)</span></label>
+                        <input type="text" name="address" ng-model="start.specificaddress" placeholder="So we don't get lost in a huge building ;)">
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div ng-show="page.active=='privacy' || page.active=='all'" id="privacy-section">
+                <div class="ui divider" ng-show="page.active=='all'"></div>
+                
+                
+                <h2>Dates and Times</h2>
+                <div class="ui segment">
+                    <div class="text-muted"><small><span class="text-danger">*</span> To fill in time, date must be filled in as well</small></div>
+                    <div class="ui two column grid">
+                        <div class="field ui column fluid">
+                            <label>Start Date</label>
+                            <input type="text" name="startdate" ng-model="start.startdate" class="datepicker" placeholder="What day is your event starting?">
+                        </div>
+                        <div class="field ui column fluid">
+                            <label>Start Time</label>
+                            <input type="text" name="starttime" ng-model="start.starttime" class="timepicker" placeholder="What time is your event starting?">
+                        </div>
+                    </div>
+                    <div class="ui two column grid">
+                        <div class="field ui column fluid">
+                            <label>End Date</label>
+                            <input type="text" name="enddate" ng-model="start.enddate" class="datepicker" placeholder="What day is your event ending?">
+                        </div>
+                        <div class="field ui column fluid">
+                            <label>End Time</label>
+                            <input type="text" name="endtime" ng-model="start.endtime" class="timepicker" placeholder="What time is your event ending?">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <input type="hidden" name="_token" value="TBrgLKZsfDPjwUNthl6rxDGaphsD3uBv8yrChFEq">
+            <div class="ui divider"></div>
+            <button class="ui button" ng-class="{disabled:(editForm.$dirty == false || editForm.$invalid == true), negative: editForm.$invalid == true, positive: editForm.$invalid == false && editForm.$dirty == true}"><span ng-show="editForm.$invalid == true">There are some invalid fields</span><span ng-show="editForm.$dirty == false">Nothing has changed</span><span ng-show="editForm.$dirty == true && editForm.$invalid == false">Save Changes</span></button><div style="height:10px;"></div>
+                    </form> 
+    </div>
+</div>
+<div class="spacer"></div>
+  <div class="ui active inverted dimmer fixed" id="formDimmer" style="display:none;">
+    <div class="ui text loader">Saving...</div>
+  </div>
+            <div id="push"></div>
+        </div>
+        <div id="footerWrapper">
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col footer-col-margin footer-col-light col-sm-3" style="border-color:#B52435;">
+                            <div class="footer-col-inner">
+                                <a href="https://connectnow.today/" class="footer-col-title">HOME</a>
+                                <a href="https://connectnow.today/explore">EXPLORE</a>
+                                <a href="https://connectnow.today/start">START</a>
+                                <a href="https://connectnow.today/about">ABOUT</a>
+                                <a href="https://connectnow.today/signup">SIGNUP</a>
+                                <a href="https://connectnow.today/login">LOGIN</a>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-col-margin col-sm-3" style="border-color:#911A28;">
+                            <div class="footer-col-inner">
+                                <div class="footer-col-title">POLICIES</div>
+                                <a href="https://connectnow.today/privacy">PRIVACY POLICY</a>
+                                <a href="https://connectnow.today/terms">TERMS OF SERVICE</a>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-col-margin col-sm-3" style="border-color:#B84451;">
+                            <div class="footer-col-inner">
+                                <a class="footer-col-title" href="https://connectnow.today/help">SUPPORT</a>
+                                <a href="https://connectnow.today/help">HELP/FAQ</a>
+                                <a href="https://connectnow.today/contact">CONTACT US</a>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-col-margin footer-col-light col-sm-3" style="border-color:#B52435;">
+                            <div class="footer-col-inner">
+                                <div class="footer-col-title">About ConnectNow</div>
+                                <p>We at ConnectNow love events, parties, and other stuff. We hope you enjoy the site as much as we do :) <a href="https://connectnow.today/about">More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div id="footer-bottom"><div class="container">&copy; COPYRIGHT 2014 <strong>CONNECTNOW</strong><sup>&trade;</sup>  ALL RIGHTS RESERVED                <span class="pull-right" id="footer-social">
+                    <a href="http://facebook.com/connectnowcn"><i class="facebook icon">&nbsp;</i></a>
+                    <a href="http://twitter.com/connectnow"><i class="twitter icon">&nbsp;</i></a>
+                    <a href="http://plus.google.com/connectnow"><i class="icon google plus">&nbsp;</i></a>
+                </span>
+            </div></div>
+        </div>
+        <div id="login-modal">
+            <form class="ui modal" action="https://connectnow.today/login" method="POST">
+                <i class="close icon"></i>
+                <div class="header">Login to ConnectNow</div>
+                <div class="content">
+                    <div class="ui form">
+                        <div class="field">
+                            <label>Email</label>
+                            <div class="ui left labeled icon input">
+                                <input type="text" name="email" placeholder="Email" id="login-email">
+                                <i class="mail icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left labeled icon input">
+                                <input type="password" name="password" placeholder="Password" id="login-password">
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <input type="hidden" name="_token" value="TBrgLKZsfDPjwUNthl6rxDGaphsD3uBv8yrChFEq">
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="ui button">Cancel</div>
+                    <input class="ui button positive" type="submit" value="Login">
+                </div>
+            </div>
+        </div>
+        <!--[if lte IE 7]>
+        <div style="height:50px;display:block;">&nbsp;</div>
+        <div class="alert alert-warning" style="position:fixed;bottom:0px;left:0px;width:100%;z-index:400;margin:0px;padding:10px;">
+            <img id="catcompat" src="https://connectnow.today/img/cat.png">
+            <a id="catcompat-link" href="http://browsehappy.com/?locale=en" target="_blank"><strong>Hey There!</strong> You're using an outdated browser, would you please consider upgrading or using another browser like Firefox? Pretty please?</a>
+        </div>
+        <![endif]-->
+        <script src="assets/js/jquery.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+            <script src="assets/js/PIE.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                    if (window.PIE) {
+                        $('.ui.segment, .ui.menu, #events-section').each(function() {
+                            PIE.attach(this);
+                        });
+                    }
+                });
+            </script>
+        <![endif]-->
+        <script src="https://connectnow.today/webfonts.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+        <script src="assets/js/transit.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/semantic.min.js"></script>
+        <script src="assets/js/picker.js"></script>
+        <script src="assets/js/ui.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
+        <script src="assets/js/ui-utils.min.js"></script>
+        <script type="text/javascript">
+        var helperAngular = angular.module('helper',['ngResource','ui.utils','monospaced.elastic']).run(function($rootScope) {
+            $rootScope.csrf = 'TBrgLKZsfDPjwUNthl6rxDGaphsD3uBv8yrChFEq';
+            $rootScope.isValid = function(selector){
+                return $(selector).find('.ng-invalid').length;
+            }
+        });
+        helperAngular.config(function($interpolateProvider) {
+          $interpolateProvider.startSymbol('[[');
+          $interpolateProvider.endSymbol(']]');
+        });
+        function Captcha(elem){
+            var time = Math.round(new Date().getTime()/1000);
+            this.show = function(){
+                time = Math.round(new Date().getTime()/1000);
+                var imgurl = 'https://connectnow.today/captcha/en?id='+time;
+                $(elem).html('<img src="'+imgurl+'" style="padding:0px;width:100%;margin:0px;"/>');
+            }
+            this.getId = function(){
+                return time;
+            }
+        }
+        helperAngular.directive('onFinishRender', function ($timeout) {
+    return {
+        restrict: 'A',
+        link: function (scope, element, attr) {
+            if (scope.$last === true) {
+                scope.$evalAsync(attr.onFinishRender);
+            }
+        }
+    }
+});
+var passwordElement = $('#changepassword');
+var passwordBar = $('#passbar');
+passwordElement.keyup(function () {
+    var alphabet = 0;
+    var value = passwordElement.val();
+    if (value.match(/\d+/g)) {
+        alphabet += 10;
+    }
+    if (value.match(/[a-z]/)) {
+        alphabet += 26;
+    }
+    if (value.match(/[A-Z]/)) {
+        alphabet += 26;
+    }
+    if (value.match(/\p{L}/)) {
+        alphabet += 26;
+    }
+    if (!value.match(/^[a-z0-9]+$/i)) {
+        alphabet += 33;
+    }
+    if (!value.match(/^[ -~]+$/)) {
+        alphabet += 123;
+    }
+    var entropy = value.length * Math.log(alphabet) / Math.log(2);
+    var passwordStrength = "";
+    var passwordClass = "failed";
+    var passwordColor = "#FFF";
+    if (entropy > 100) {
+        passwordStrength = "Excellent";
+        passwordClass = "successful";
+    } else if (entropy > 80) {
+        passwordStrength = "Good";
+        passwordClass = "blue";
+    } else if (entropy > 60) {
+        passwordStrength = "Fair";
+        passwordClass = "warning";
+    } else if (entropy > 40) {
+        passwordStrength = "Weak";
+    } else if (entropy > 0) {
+        passwordStrength = "Insecure";
+        passwordClass = "red";
+    }
+    if (value.length < 8) {
+        var passwordStrength = "";
+        entropy = 0;
+    } else {
+        if (entropy > 100) {
+            entropy = 100;
+        }
+        entropy /= 1 + (100 - entropy) / 100;
+        if (entropy > 60) {
+            var passwordColor = "#FFF"; 
+        }
+    }
+    passwordBar.attr('class', 'ui progress ' + passwordClass).find('.bar').width(entropy + '%');
+    passwordBar.find('.progress-text').text(passwordStrength).css('color', passwordColor);
+});
+passwordElement.trigger('keyup');
+function accountController($scope){
+    $scope.user = {"firstname":"Mohammed","lastname":"Nasir","email":"mnehaal@gmail.com","about":"","address":{"street":"","province":"Ontario","city":"Stouffville","country":"CA"},"specific":[],"types":{"events":false,"projects":false,"volunteering":false},"email_notification":{"newsletters":true,"recommended":true,"notifications":true},"privacy":{"joined":true,"address":false,"created":true,"email":true,"interests":false}};
+    $scope.userSubmit = false;
+    $scope.submit = function(e){
+        if(!$scope.editForm.$dirty || $scope.editForm.$invalid){
+            e.preventDefault();
+        }else{  
+            $scope.userSubmit = true;
+            $.cookie('accountTop', $(window).scrollTop());
+            $('#formDimmer').show();
+        }
+    };
+    $scope.doSelect = function(){
+        $('#user-country-dropdown').dropdown('set value', $scope.user.address.country).dropdown({onChange:function(value, text){
+            $('#user-country').val(value).trigger('change');
+        }});
+    };
+    $scope.countries = {"AF":"Afghanistan","AL":"Albania","DZ":"Algeria","AS":"American Samoa","AD":"Andorra","AO":"Angola","AI":"Anguilla","AQ":"Antarctica","AG":"Antigua and Barbuda","AR":"Argentina","AM":"Armenia","AW":"Aruba","AU":"Australia","AT":"Austria","AZ":"Azerbaijan","BS":"Bahamas","BH":"Bahrain","BD":"Bangladesh","BB":"Barbados","BY":"Belarus","BE":"Belgium","BZ":"Belize","BJ":"Benin","BM":"Bermuda","BT":"Bhutan","BO":"Bolivia","BA":"Bosnia and Herzegovina","BW":"Botswana","BV":"Bouvet Island","BR":"Brazil","BQ":"British Antarctic Territory","IO":"British Indian Ocean Territory","VG":"British Virgin Islands","BN":"Brunei","BG":"Bulgaria","BF":"Burkina Faso","BI":"Burundi","KH":"Cambodia","CM":"Cameroon","CA":"Canada","CT":"Canton and Enderbury Islands","CV":"Cape Verde","KY":"Cayman Islands","CF":"Central African Republic","TD":"Chad","CL":"Chile","CN":"China","CX":"Christmas Island","CC":"Cocos [Keeling] Islands","CO":"Colombia","KM":"Comoros","CG":"Congo - Brazzaville","CD":"Congo - Kinshasa","CK":"Cook Islands","CR":"Costa Rica","HR":"Croatia","CU":"Cuba","CY":"Cyprus","CZ":"Czech Republic","CI":"C\\u00f4te d\\u2019Ivoire","DK":"Denmark","DJ":"Djibouti","DM":"Dominica","DO":"Dominican Republic","NQ":"Dronning Maud Land","DD":"East Germany","EC":"Ecuador","EG":"Egypt","SV":"El Salvador","GQ":"Equatorial Guinea","ER":"Eritrea","EE":"Estonia","ET":"Ethiopia","FK":"Falkland Islands","FO":"Faroe Islands","FJ":"Fiji","FI":"Finland","FR":"France","GF":"French Guiana","PF":"French Polynesia","TF":"French Southern Territories","FQ":"French Southern and Antarctic Territories","GA":"Gabon","GM":"Gambia","GE":"Georgia","DE":"Germany","GH":"Ghana","GI":"Gibraltar","GR":"Greece","GL":"Greenland","GD":"Grenada","GP":"Guadeloupe","GU":"Guam","GT":"Guatemala","GG":"Guernsey","GN":"Guinea","GW":"Guinea-Bissau","GY":"Guyana","HT":"Haiti","HM":"Heard Island and McDonald Islands","HN":"Honduras","HK":"Hong Kong SAR China","HU":"Hungary","IS":"Iceland","IN":"India","ID":"Indonesia","IR":"Iran","IQ":"Iraq","IE":"Ireland","IM":"Isle of Man","IL":"Israel","IT":"Italy","JM":"Jamaica","JP":"Japan","JE":"Jersey","JT":"Johnston Island","JO":"Jordan","KZ":"Kazakhstan","KE":"Kenya","KI":"Kiribati","KW":"Kuwait","KG":"Kyrgyzstan","LA":"Laos","LV":"Latvia","LB":"Lebanon","LS":"Lesotho","LR":"Liberia","LY":"Libya","LI":"Liechtenstein","LT":"Lithuania","LU":"Luxembourg","MO":"Macau SAR China","MK":"Macedonia","MG":"Madagascar","MW":"Malawi","MY":"Malaysia","MV":"Maldives","ML":"Mali","MT":"Malta","MH":"Marshall Islands","MQ":"Martinique","MR":"Mauritania","MU":"Mauritius","YT":"Mayotte","FX":"Metropolitan France","MX":"Mexico","FM":"Micronesia","MI":"Midway Islands","MD":"Moldova","MC":"Monaco","MN":"Mongolia","ME":"Montenegro","MS":"Montserrat","MA":"Morocco","MZ":"Mozambique","MM":"Myanmar [Burma]","NA":"Namibia","NR":"Nauru","NP":"Nepal","NL":"Netherlands","AN":"Netherlands Antilles","NT":"Neutral Zone","NC":"New Caledonia","NZ":"New Zealand","NI":"Nicaragua","NE":"Niger","NG":"Nigeria","NU":"Niue","NF":"Norfolk Island","KP":"North Korea","VD":"North Vietnam","MP":"Northern Mariana Islands","NO":"Norway","OM":"Oman","PC":"Pacific Islands Trust Territory","PK":"Pakistan","PW":"Palau","PS":"Palestinian Territories","PA":"Panama","PZ":"Panama Canal Zone","PG":"Papua New Guinea","PY":"Paraguay","YD":"People's Democratic Republic of Yemen","PE":"Peru","PH":"Philippines","PN":"Pitcairn Islands","PL":"Poland","PT":"Portugal","PR":"Puerto Rico","QA":"Qatar","RO":"Romania","RU":"Russia","RW":"Rwanda","RE":"R\\u00e9union","BL":"Saint Barth\\u00e9lemy","SH":"Saint Helena","KN":"Saint Kitts and Nevis","LC":"Saint Lucia","MF":"Saint Martin","PM":"Saint Pierre and Miquelon","VC":"Saint Vincent and the Grenadines","WS":"Samoa","SM":"San Marino","SA":"Saudi Arabia","SN":"Senegal","RS":"Serbia","CS":"Serbia and Montenegro","SC":"Seychelles","SL":"Sierra Leone","SG":"Singapore","SK":"Slovakia","SI":"Slovenia","SB":"Solomon Islands","SO":"Somalia","ZA":"South Africa","GS":"South Georgia and the South Sandwich Islands","KR":"South Korea","ES":"Spain","LK":"Sri Lanka","SD":"Sudan","SR":"Suriname","SJ":"Svalbard and Jan Mayen","SZ":"Swaziland","SE":"Sweden","CH":"Switzerland","SY":"Syria","ST":"S\\u00e3o Tom\\u00e9 and Pr\\u00edncipe","TW":"Taiwan","TJ":"Tajikistan","TZ":"Tanzania","TH":"Thailand","TL":"Timor-Leste","TG":"Togo","TK":"Tokelau","TO":"Tonga","TT":"Trinidad and Tobago","TN":"Tunisia","TR":"Turkey","TM":"Turkmenistan","TC":"Turks and Caicos Islands","TV":"Tuvalu","UM":"U.S. Minor Outlying Islands","PU":"U.S. Miscellaneous Pacific Islands","VI":"U.S. Virgin Islands","UG":"Uganda","UA":"Ukraine","SU":"Union of Soviet Socialist Republics","AE":"United Arab Emirates","GB":"United Kingdom","US":"United States","ZZ":"Unknown or Invalid Region","UY":"Uruguay","UZ":"Uzbekistan","VU":"Vanuatu","VA":"Vatican City","VE":"Venezuela","VN":"Vietnam","WK":"Wake Island","WF":"Wallis and Futuna","EH":"Western Sahara","YE":"Yemen","ZM":"Zambia","ZW":"Zimbabwe","AX":"\\u00c5land Islands"};
+    $scope.user.hasSubmit = false;
+    $scope.isDirty = function(selector){
+        return $(selector).find('.ng-dirty').length;
+    }
+    $scope.check = function(){
+                if(location.hash == "#all" || location.hash == "#basic" || location.hash == "#personal" || location.hash == "#privacy" || location.hash == "#email"){
+            $scope.page.active = location.hash.substring(1);
+        }
+    }
+    window.scope = $scope;
+}
+$(window).hashchange(function(){
+    if(location.hash.length > 2){
+        $('#editForm').attr('action', location.hash);
+    }
+}).trigger('hashchange');
+$('#resultsMenu').affix({
+    offset: {
+      top: function () {
+        return (this.top = $('#resultsContainer').offset().top - 120)
+        }
+    , bottom: function () {
+        return ($('#footer').outerHeight(true)+200)
+      }
+    }
+});
+window.onbeforeunload = function(){
+    if($('#editForm').hasClass('ng-dirty') && scope.userSubmit == false){
+        return 'You have unsaved changes. Are you sure you want to leave?';
+    }
+};
+$('.pseudopass').focus(function(){
+    $(this).attr('type', 'password');
+});
+$('#interests-textarea').autocomplete({minLength: 2, source: "https://connectnow.today/ajax/tags",
+    select: function( event, ui ) {
+        event.preventDefault();
+        $('#interests-textarea').val($('#interests-textarea').val().substr(0, $('#interests-textarea').val().lastIndexOf(',') + 1) + ui.item.value).trigger('change');
+    },
+    focus: function(event, ui){
+        if(event.offsetX == undefined){
+            event.preventDefault();
+            $('#interests-textarea').val($('#interests-textarea').val().substr(0, $('#interests-textarea').val().lastIndexOf(',') + 1) + ($('#interests-textarea').val().lastIndexOf(',') == -1 ? '':' ') + ui.item.value).trigger('change');
+        }
+    }
+}).keydown(function(){
+    $(this).trigger('change');
+});
+$(window).resize(function(){
+    $('#resultsMenu').width('auto');
+    if($('#resultsMenu').hasClass('affix')){
+        $('#resultsMenu').removeClass('affix').width($('#resultsMenu').width()).addClass('affix');
+    }else{
+        $('#resultsMenu').width($('#resultsMenu').width());
+    }
+}).load(function(){
+    if($.cookie('accountTop')){
+        $(window).scrollTop($.cookie('accountTop'));
+        $.removeCookie('accountTop');
+    }
+});
+        $(window).scroll(function(){
+            $('#navbar,#search-container').css('left',-$(window).scrollLeft());
+            if($(window).scrollTop() > 0){
+                $('#navbar').addClass('scrolled').removeClass('top');
+            }else{
+                $('#navbar').removeClass('scrolled').addClass('top');
+            }
+        }).resize(function(){
+            $('body, #wrapper').css('min-height',$(window).height());  
+            $('#search-container').width($(document).width());
+            $('#search-input').width($('#search-form').width() - $('#search-span').width());
+            $('#footerWrapper').css('margin-top', -$('#footerWrapper').height());
+            $('#push').height($('#footerWrapper').height());
+            if($(window).width() < 1440){
+                $('body').addClass('lowres');   
+            }else{
+                $('body').removeClass('lowres');  
+            }
+        }).trigger('resize').load(function(){
+            if(location.hash != "" && $(location.hash).length > 0){
+                $(window).scrollTop($(location.hash).offset().top-100);   
+            }
+        });
+        $(function(){
+            $('#login-link').click(function(e){
+                e.preventDefault();
+                $($('#login-modal').html()).modal('setting', {
+                    onApprove : function(e) {
+                        e.preventDefault();
+                    }
+                  }).modal('show');
+            }); 
+            $(window).trigger('resize');
+            $('#search-link').click(function(e){
+                e.preventDefault();
+                if(!$('#search-container').hasClass('active')){
+                    $('#search-container').addClass('active');
+                    $('#navbar').addClass('hasSearch');
+                }
+                $('#search-input').width($('#search-form').width() - $('#search-span').width());
+                $('#search-input').focus();
+            });
+            $('#search-container').click(function(e){
+                $('#search-input').width($('#search-form').width() - $('#search-span').width());
+                if(e.target == this){
+                    $('#search-input').blur().val('');
+                    $(this).removeClass('active');
+                    $('#navbar').removeClass('hasSearch');
+                }
+            });
+            $('#search-input').keyup(function(){
+                if($.trim($('#search-input').val()) != ""){
+                    $('#start-searching').css('visibility','hidden');   
+                }else{
+                    $('#start-searching').css('visibility','visible');   
+                }
+            }).keydown(function(e){
+                setTimeout(function(){
+                    if($.trim($('#search-input').val()) != ""){
+                        $('#start-searching').css('visibility','hidden');   
+                    }
+                },10);
+                var searchSuggestions = $('#search-suggestions');
+				var searchSuggestionsOuter = $('#search-suggestions-outer');
+				if(searchSuggestionsOuter.hasClass('shown')){
+					var selected = searchSuggestions.find('li.active').eq(0);
+					var searchInput = $('#search-input');
+					if(e.keyCode == 38 || e.keyCode == 40){
+						e.preventDefault();
+					}
+					if(e.keyCode == 38 && !selected.is(':first-child')){
+						selected.removeClass('active');
+						selected = selected.prev();
+						selected.addClass('active');
+						searchSuggestionsOuter.stop(false,true).animate({scrollTop:selected.position().top},200);
+						searchInput.val(selected.text());
+					}
+					if(e.keyCode == 40 && !selected.is(':last-child')){
+						selected.removeClass('active');
+						selected = selected.next();
+						selected.addClass('active');
+						searchInput.val(selected.text());
+                        console.log(selected.position().top);
+						searchSuggestionsOuter.stop(false,true).animate({scrollTop:selected.position().top},200);
+					}
+				}
+            }).keyup(function(){
+                var searchSuggestions = $('#search-suggestions-outer');
+                var searchSuggestionsInner = $('#search-suggestions');
+                var searchInputValue = $.trim($('#search-input').val());
+                if(!(searchSuggestions.hasClass('shown')&&searchSuggestionsInner.find('li.active').is(':first-child')==false&&searchInputValue==searchSuggestionsInner.find('li.active a').text())){
+                    previousInput = searchInputValue;
+                    if(searchInputValue == ""){
+                        searchSuggestions.stop(false,true).removeClass('shown').hide();
+                    }else{
+                        if(!searchSuggestions.hasClass('shown')){
+                            searchSuggestions.stop(false,true).addClass('shown').show();
+                        }
+                        searchSuggestionsInner.html('');
+                        var first = true;
+                        for(var i = 0; i < countries.length; i++){
+                            if(countries[i].toLowerCase().indexOf(searchInputValue.toLowerCase()) == 0){
+                                searchSuggestionsInner.append('<li><a href="javascript:void(0);" class="top-full">'+countries[i]+'</a></li>')
+                            }
+                            if(countries[i].toLowerCase() == searchInputValue.toLowerCase()){
+                                first = false;
+                            }
+                        }
+                        if(first){
+                            searchSuggestionsInner.prepend('<li><a href="javascript:void(0);" class="top-full">'+searchInputValue+'</a></li>');
+                        }
+                        searchSuggestionsInner.children("li:first").addClass('active');  
+                    }
+                }
+            });
+        });
+        var countries = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic", "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Morocco", "Monaco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlanhds", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "San Marino", " Sao Tome", "Saudi Arabia", "Senegal", "Serbia and Montenegro", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe");
+        $(document).keypress(function(e){
+            var c= String.fromCharCode(e.which);
+            var isWordcharacter = c.match(/\w/);
+            if(!$(e.target).is('input') && !$(e.target).is('textarea') && isWordcharacter ){
+                if(!$('#search-container').hasClass('active')){
+                    $('#search-container').addClass('active');
+                    $('#navbar').addClass('hasSearch');
+                }
+                $('#search-input').focus();
+                $('#search-input').width($('#search-form').width() - $('#search-span').width());
+                setTimeout(function(){
+                    if($('#search-input').val() == "" || $('#search-input').val().slice(-1) != String.fromCharCode(e.which)){
+                        $('#search-input').val($('#search-input').val()+String.fromCharCode(e.which));
+                    }
+                    $('#search-input').trigger('keydown');
+                },50);
+            }
+        }).keydown(function(e){
+            if(e.which == 27 && $('#search-container').hasClass('active')){
+                $('#search-container').trigger('click');
+            }
+        });
+        var justOpen = false;
+        $('#navbar, #navbar *').on('click mousedown mouseup touchstart touchmove', function () {
+            $('#navbar').addClass('navopen');
+            justOpen = true;
+            setTimeout(function(){justOpen = false;}, 1000);
+        });
+        $(document).on('click', ':not(#navbar, #navbar *)', function() {        
+            if( $('.navopen').length > 0 && !justOpen) {
+                $('.navopen').removeClass('navopen');
+            }
+        });
+        </script>
+        <script>
+// Include the UserVoice JavaScript SDK (only needed once on a page)
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/fTPFYARidvoCOrY59MJVQg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+//
+// UserVoice Javascript SDK developer documentation:
+// https://www.uservoice.com/o/javascript-sdk
+//
+
+// Set colors
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: '#448dd6'
+}]);
+
+// Identify the user and pass traits
+// To enable, replace sample data with actual user traits and uncomment the line
+UserVoice.push(['identify', {
+  //email:      'john.doe@example.com', // User’s email address
+  //name:       'John Doe', // User’s real name
+  //created_at: 1364406966, // Unix timestamp for the date the user signed up
+  //id:         123, // Optional: Unique id of the user (if set, this should not change)
+  //type:       'Owner', // Optional: segment your users by type
+  //account: {
+  //  id:           123, // Optional: associate multiple users with a single account
+  //  name:         'Acme, Co.', // Account name
+  //  created_at:   1364406966, // Unix timestamp for the date the account was created
+  //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+  //  ltv:          1495.00, // Decimal; lifetime value of the account
+  //  plan:         'Enhanced' // Plan name for the account
+  //}
+}]);
+
+// Add default trigger to the bottom-right corner of the window:
+UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+
+// Or, use your own custom trigger:
+//UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
+
+// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+UserVoice.push(['autoprompt', {}]);
+</script>
+        <!--[if lte IE 7]>
+            <script type="text/javascript">
+            $(function(){
+                $('#catcompat-link').hover(function(){
+                    var catleft = 10;
+                    $('#catcompat').show().css({left:catleft});
+                },function(){
+                    $('#catcompat').hide();
+                });
+            });
+            </script>
+        <![endif]-->
+    </body>
+</html>

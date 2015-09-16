@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# get some of our helper functions
+. /usr/share/dbconfig-common/dpkg/common
+dbc_config dbconfig-common $@
+
+db_get dbconfig-common/remember-admin-pass
+dbc_remember_admin_pass="$RET"
+db_get dbconfig-common/remote-questions-default
+dbc_remote_questions_default="$RET"
+
+dbc_write_global_config
+
+

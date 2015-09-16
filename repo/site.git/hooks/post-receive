@@ -1,0 +1,3 @@
+#!/bin/sh
+git --work-tree=/var/ --git-dir=/var/repo/site.git
+checkout -f

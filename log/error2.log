@@ -1,0 +1,147 @@
+[Sun Mar 16 14:58:05.523729 2014] [mpm_prefork:notice] [pid 6792] AH00163: Apache/2.4.6 (Ubuntu) PHP/5.5.7-1+sury.org~precise+1 configured -- resuming normal operations
+[Sun Mar 16 14:58:05.523794 2014] [mpm_prefork:info] [pid 6792] AH00164: Server built: Sep 23 2013 07:21:56
+[Sun Mar 16 14:58:05.523812 2014] [core:notice] [pid 6792] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 16 14:58:05.523820 2014] [mpm_prefork:debug] [pid 6792] prefork.c(995): AH00165: Accept mutex: fcntl (default: sysvsem)
+[Sun Mar 16 14:58:09.459301 2014] [core:info] [pid 6799] [client 207.245.236.158:49254] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:09.639500 2014] [core:info] [pid 6800] [client 207.245.236.158:49268] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:09.779395 2014] [core:info] [pid 6798] [client 207.245.236.158:49286] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:11.669858 2014] [core:info] [pid 6799] [client 207.245.236.158:49401] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:11.799465 2014] [core:info] [pid 6797] [client 207.245.236.158:49528] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:11.938990 2014] [core:info] [pid 6796] [client 207.245.236.158:49560] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:50.445375 2014] [core:info] [pid 6800] [client 207.245.236.158:54925] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:50.595860 2014] [core:info] [pid 6798] [client 207.245.236.158:54938] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:58:50.735767 2014] [core:info] [pid 6799] [client 207.245.236.158:54943] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 14:59:05.644566 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:05.644632 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:05.644641 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:07.062339 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:07.062383 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:07.062391 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:07.282430 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:07.282469 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:07.282477 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:07.482286 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:07.482325 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:07.482334 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:07.642030 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:07.642069 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:07.642094 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:07.822312 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:07.822347 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:07.822353 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:07.942390 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:07.942432 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:07.942441 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:08.112267 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 14:59:08.112306 2014] [authz_core:debug] [pid 6796] mod_authz_core.c(802): [client 207.245.236.158:56546] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 14:59:08.112312 2014] [authz_core:error] [pid 6796] [client 207.245.236.158:56546] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 14:59:57.348961 2014] [reqtimeout:info] [pid 6797] [client 207.245.236.158:56550] AH01382: Request header read timeout
+[Sun Mar 16 15:01:12.564505 2014] [core:info] [pid 6792] AH00096: removed PID file /var/run/apache2/apache2.pid (pid=6792)
+[Sun Mar 16 15:01:12.564565 2014] [mpm_prefork:notice] [pid 6792] AH00169: caught SIGTERM, shutting down
+[Sun Mar 16 15:01:13.653894 2014] [mpm_prefork:notice] [pid 6861] AH00163: Apache/2.4.6 (Ubuntu) PHP/5.5.7-1+sury.org~precise+1 configured -- resuming normal operations
+[Sun Mar 16 15:01:13.653956 2014] [mpm_prefork:info] [pid 6861] AH00164: Server built: Sep 23 2013 07:21:56
+[Sun Mar 16 15:01:13.653971 2014] [core:notice] [pid 6861] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 16 15:01:13.653980 2014] [mpm_prefork:debug] [pid 6861] prefork.c(995): AH00165: Accept mutex: fcntl (default: sysvsem)
+[Sun Mar 16 15:01:25.585603 2014] [authz_core:debug] [pid 6867] mod_authz_core.c(802): [client 207.245.236.158:12535] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:01:25.585675 2014] [authz_core:debug] [pid 6867] mod_authz_core.c(802): [client 207.245.236.158:12535] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:01:25.585684 2014] [authz_core:error] [pid 6867] [client 207.245.236.158:12535] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:01:50.577840 2014] [core:info] [pid 6868] [client 192.241.154.149:60528] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:02:35.812502 2014] [core:info] [pid 6869] [client 127.0.0.1:59840] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:03:23.408539 2014] [core:info] [pid 6866] [client 127.0.0.1:59841] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:05:23.423592 2014] [core:info] [pid 6865] [client 192.241.154.149:60533] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:05:43.826557 2014] [core:info] [pid 6868] [client 192.241.154.149:60534] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:06:06.110777 2014] [core:info] [pid 6867] [client 192.241.154.149:60535] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:06:56.677178 2014] [core:info] [pid 6869] [client 192.241.154.149:60536] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:07:01.009463 2014] [core:info] [pid 6875] [client 192.241.154.149:60537] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:07:17.150641 2014] [core:info] [pid 6866] [client 192.241.154.149:60538] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:09:27.670451 2014] [core:info] [pid 6868] [client 192.241.154.149:60540] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:11:08.429005 2014] [authz_core:debug] [pid 6867] mod_authz_core.c(802): [client 192.241.154.149:60541] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:11:08.429047 2014] [authz_core:debug] [pid 6867] mod_authz_core.c(802): [client 192.241.154.149:60541] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:11:08.429053 2014] [authz_core:error] [pid 6867] [client 192.241.154.149:60541] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:11:17.730867 2014] [core:info] [pid 6869] [client 192.241.154.149:60542] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:45.581490 2014] [core:info] [pid 6861] AH00096: removed PID file /var/run/apache2/apache2.pid (pid=6861)
+[Sun Mar 16 15:12:45.581548 2014] [mpm_prefork:notice] [pid 6861] AH00169: caught SIGTERM, shutting down
+[Sun Mar 16 15:12:46.685056 2014] [mpm_prefork:notice] [pid 6985] AH00163: Apache/2.4.6 (Ubuntu) PHP/5.5.7-1+sury.org~precise+1 configured -- resuming normal operations
+[Sun Mar 16 15:12:46.685135 2014] [mpm_prefork:info] [pid 6985] AH00164: Server built: Sep 23 2013 07:21:56
+[Sun Mar 16 15:12:46.685181 2014] [core:notice] [pid 6985] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 16 15:12:46.685198 2014] [mpm_prefork:debug] [pid 6985] prefork.c(995): AH00165: Accept mutex: fcntl (default: sysvsem)
+[Sun Mar 16 15:12:56.970765 2014] [core:info] [pid 7000] [client 135.23.250.207:6497] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:56.974823 2014] [core:info] [pid 6999] [client 135.23.250.207:6498] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:57.252497 2014] [core:info] [pid 7004] [client 135.23.250.207:6499] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:57.356595 2014] [core:info] [pid 6999] [client 135.23.250.207:6500] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:57.462323 2014] [core:info] [pid 7000] [client 135.23.250.207:6501] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:57.565758 2014] [core:info] [pid 6999] [client 135.23.250.207:6502] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:58.572984 2014] [core:info] [pid 7000] [client 135.23.250.207:6504] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:58.578405 2014] [core:info] [pid 7003] [client 135.23.250.207:6505] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:58.688210 2014] [core:info] [pid 7002] [client 135.23.250.207:6506] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:58.800913 2014] [core:info] [pid 7000] [client 135.23.250.207:6507] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:58.902519 2014] [core:info] [pid 7003] [client 135.23.250.207:6508] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:59.334931 2014] [core:info] [pid 7004] [client 135.23.250.207:6510] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:59.335142 2014] [core:info] [pid 6989] [client 135.23.250.207:6509] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:59.461434 2014] [core:info] [pid 6993] [client 135.23.250.207:6511] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:59.595102 2014] [core:info] [pid 6992] [client 135.23.250.207:6512] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:12:59.713361 2014] [core:info] [pid 6991] [client 135.23.250.207:6513] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:13:03.353700 2014] [core:info] [pid 6989] [client 135.23.250.207:6514] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:13:03.357425 2014] [core:info] [pid 6993] [client 135.23.250.207:6515] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:13:03.459547 2014] [core:info] [pid 6999] [client 135.23.250.207:6516] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:13:03.568792 2014] [core:info] [pid 6991] [client 135.23.250.207:6517] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:13:03.667589 2014] [core:info] [pid 6992] [client 135.23.250.207:6518] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:13:28.883647 2014] [core:info] [pid 7000] [client 192.241.154.149:60545] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:15:23.925074 2014] [core:info] [pid 6985] AH00096: removed PID file /var/run/apache2/apache2.pid (pid=6985)
+[Sun Mar 16 15:15:23.925127 2014] [mpm_prefork:notice] [pid 6985] AH00169: caught SIGTERM, shutting down
+[Sun Mar 16 15:15:24.991245 2014] [mpm_prefork:notice] [pid 7063] AH00163: Apache/2.4.6 (Ubuntu) PHP/5.5.7-1+sury.org~precise+1 configured -- resuming normal operations
+[Sun Mar 16 15:15:24.991301 2014] [mpm_prefork:info] [pid 7063] AH00164: Server built: Sep 23 2013 07:21:56
+[Sun Mar 16 15:15:24.991318 2014] [core:notice] [pid 7063] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Mar 16 15:15:24.991327 2014] [mpm_prefork:debug] [pid 7063] prefork.c(995): AH00165: Accept mutex: fcntl (default: sysvsem)
+[Sun Mar 16 15:15:28.084879 2014] [authz_core:debug] [pid 7070] mod_authz_core.c(802): [client 207.245.236.158:56348] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:15:28.084965 2014] [authz_core:debug] [pid 7070] mod_authz_core.c(802): [client 207.245.236.158:56348] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:15:28.084977 2014] [authz_core:error] [pid 7070] [client 207.245.236.158:56348] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:15:28.744061 2014] [authz_core:debug] [pid 7070] mod_authz_core.c(802): [client 207.245.236.158:56348] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:15:28.744101 2014] [authz_core:debug] [pid 7070] mod_authz_core.c(802): [client 207.245.236.158:56348] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:15:28.744107 2014] [authz_core:error] [pid 7070] [client 207.245.236.158:56348] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:15:29.015807 2014] [authz_core:debug] [pid 7070] mod_authz_core.c(802): [client 207.245.236.158:56348] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:15:29.015850 2014] [authz_core:debug] [pid 7070] mod_authz_core.c(802): [client 207.245.236.158:56348] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:15:29.015856 2014] [authz_core:error] [pid 7070] [client 207.245.236.158:56348] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:15:29.465038 2014] [authz_core:debug] [pid 7071] mod_authz_core.c(802): [client 207.245.236.158:56604] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:15:29.465116 2014] [authz_core:debug] [pid 7071] mod_authz_core.c(802): [client 207.245.236.158:56604] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:15:29.465126 2014] [authz_core:error] [pid 7071] [client 207.245.236.158:56604] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:15:29.594150 2014] [authz_core:debug] [pid 7071] mod_authz_core.c(802): [client 207.245.236.158:56604] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:15:29.594192 2014] [authz_core:debug] [pid 7071] mod_authz_core.c(802): [client 207.245.236.158:56604] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:15:29.594203 2014] [authz_core:error] [pid 7071] [client 207.245.236.158:56604] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:15:38.283668 2014] [core:info] [pid 7069] [client 207.245.236.158:57566] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:15:38.423502 2014] [core:info] [pid 7067] [client 207.245.236.158:57580] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:15:38.563331 2014] [core:info] [pid 7068] [client 207.245.236.158:57599] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:15:48.900293 2014] [core:info] [pid 7070] [client 127.0.0.1:59856] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:17:22.529701 2014] [core:info] [pid 7069] [client 127.0.0.1:59858] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:18:25.543468 2014] [core:info] [pid 7068] [client 127.0.0.1:59859] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:19:20.923334 2014] [core:info] [pid 7071] [client 173.236.176.118:46913] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:19:36.981609 2014] [core:info] [pid 7070] [client 91.212.12.91:34009] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:19:37.172374 2014] [core:info] [pid 7068] [client 91.212.12.91:34010] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:31.358140 2014] [core:info] [pid 7069] [client 135.23.250.207:6779] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:31.361781 2014] [core:info] [pid 7076] [client 135.23.250.207:6778] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:31.464790 2014] [core:info] [pid 7068] [client 135.23.250.207:6780] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:31.569373 2014] [core:info] [pid 7067] [client 135.23.250.207:6781] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:31.677954 2014] [core:info] [pid 7071] [client 135.23.250.207:6782] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:52.212027 2014] [authz_core:debug] [pid 7069] mod_authz_core.c(802): [client 135.23.250.207:6808] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:21:52.212083 2014] [authz_core:debug] [pid 7069] mod_authz_core.c(802): [client 135.23.250.207:6808] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:21:52.212090 2014] [authz_core:error] [pid 7069] [client 135.23.250.207:6808] AH01630: client denied by server configuration: /var/www/
+[Sun Mar 16 15:21:52.425266 2014] [authz_core:debug] [pid 7069] mod_authz_core.c(802): [client 135.23.250.207:6808] AH01626: authorization result of Require all denied: denied
+[Sun Mar 16 15:21:52.425313 2014] [authz_core:debug] [pid 7069] mod_authz_core.c(802): [client 135.23.250.207:6808] AH01626: authorization result of <RequireAny>: denied
+[Sun Mar 16 15:21:52.425322 2014] [authz_core:error] [pid 7069] [client 135.23.250.207:6808] AH01630: client denied by server configuration: /var/www/favicon.ico
+[Sun Mar 16 15:21:55.281560 2014] [core:info] [pid 7076] [client 135.23.250.207:6810] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:55.281792 2014] [core:info] [pid 7068] [client 135.23.250.207:6811] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:55.381652 2014] [core:info] [pid 7067] [client 135.23.250.207:6812] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:55.491792 2014] [core:info] [pid 7091] [client 135.23.250.207:6813] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:55.592699 2014] [core:info] [pid 7071] [client 135.23.250.207:6814] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.404274 2014] [core:info] [pid 7068] [client 135.23.250.207:6815] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.413343 2014] [core:info] [pid 7076] [client 135.23.250.207:6816] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.503271 2014] [core:info] [pid 7071] [client 135.23.250.207:6817] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.618567 2014] [core:info] [pid 7067] [client 135.23.250.207:6818] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.721897 2014] [core:info] [pid 7068] [client 135.23.250.207:6819] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.871343 2014] [core:info] [pid 7071] [client 135.23.250.207:6820] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.871611 2014] [core:info] [pid 7091] [client 135.23.250.207:6821] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:58.973637 2014] [core:info] [pid 7067] [client 135.23.250.207:6822] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:59.074744 2014] [core:info] [pid 7069] [client 135.23.250.207:6823] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:21:59.178810 2014] [core:info] [pid 7076] [client 135.23.250.207:6824] AH00566: request failed: invalid characters in URI
+[Sun Mar 16 15:24:17.693675 2014] [core:info] [pid 7063] AH00096: removed PID file /var/run/apache2/apache2.pid (pid=7063)
+[Sun Mar 16 15:24:17.693725 2014] [mpm_prefork:notice] [pid 7063] AH00169: caught SIGTERM, shutting down

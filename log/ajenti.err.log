@@ -1,0 +1,30 @@
+/usr/lib/pymodules/python2.7/ajenti/feedback.py:8: UserWarning: libevent version mismatch: system version is '2.0.19-stable' but this gevent is compiled against '2.0.16-stable'
+  import gevent
+Traceback (most recent call last):
+  File "/usr/bin/ajenti-panel", line 88, in <module>
+    core.run()
+  File "/usr/lib/python2.7/dist-packages/daemon/daemon.py", line 384, in __exit__
+    self.close()
+  File "/usr/lib/python2.7/dist-packages/daemon/daemon.py", line 378, in close
+    self.pidfile.__exit__(None, None, None)
+  File "/usr/lib/pymodules/python2.7/ajenti/util.py", line 192, in __exit__
+    os.remove(self.path)
+OSError: [Errno 2] No such file or directory: '/var/run/ajenti.pid'
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/usr/lib/python2.7/dist-packages/daemon/daemon.py", line 378, in close
+    self.pidfile.__exit__(None, None, None)
+  File "/usr/lib/pymodules/python2.7/ajenti/util.py", line 192, in __exit__
+    try:
+OSError: [Errno 2] No such file or directory: '/var/run/ajenti.pid'
+Error in sys.exitfunc:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/atexit.py", line 24, in _run_exitfuncs
+    func(*targs, **kargs)
+  File "/usr/lib/python2.7/dist-packages/daemon/daemon.py", line 378, in close
+    self.pidfile.__exit__(None, None, None)
+  File "/usr/lib/pymodules/python2.7/ajenti/util.py", line 192, in __exit__
+    try:
+OSError: [Errno 2] No such file or directory: '/var/run/ajenti.pid'

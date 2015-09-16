@@ -1,0 +1,351 @@
+2014-01-02 20:59:49: -- ConnectNow: ANALYSIS started by User on 'KEVIN-DESKTOP' (GoodSync 9.6.2.5)
+2014-01-02 20:59:49: C:\xampp\htdocs\connectnow (C:/xampp/htdocs/connectnow) <-> sftp://192.241.154.149/var
+2014-01-02 20:59:49: L: Files: 144 (excluded 20). Folders: 27 (excluded 8). C: NTFS, Free: 334 GB, Total: 339 GB
+2014-01-02 20:59:55: R: Files: 130 (excluded 22). Folders: 27 (excluded 19). SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1.1
+2014-01-02 20:59:55: /public/.htaccess: Conflict: New files that differ
+2014-01-02 20:59:55: /public/.htaccess.old: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/bootstrap.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/bootstrap.min - Copy.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/bootstrap.min.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/dmitryf-elements-191754c.zip: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/elements.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/elements.less: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/explore.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/explore.less: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/glyphicons-ie7.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/home.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/home.less: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/main.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/main.less: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/mixins.css: Conflict: New files that differ
+2014-01-02 20:59:55: /public/css/mixins.less: Conflict: New files that differ
+2014-01-02 20:59:55: /public/favicon-128.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/favicon-32.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/favicon-64.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/favicon.ico: Conflict: New files that differ
+2014-01-02 20:59:55: /public/fonts/glyphicons-halflings-regular.eot: Conflict: New files that differ
+2014-01-02 20:59:55: /public/fonts/glyphicons-halflings-regular.svg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/fonts/glyphicons-halflings-regular.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/fonts/glyphicons-halflings-regular.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/30perc.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/70perc.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/80perc.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/banner/banner1-light.jpg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/banner/banner1.jpg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/banner/banner2-light.jpg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/banner/banner2.jpg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/banner/banner3-light.jpg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/banner/banner3.jpg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/banner/gcn.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/bg/explore.jpg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/cat.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/connectnow.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/blue70.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/bluebottom.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/icons/contest.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/icons/organization.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/icons/volunteering.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/red70.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/redbottom.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/stripe.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/yellow70.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/explore/yellowbottom.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/footer/logo.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/footer/social/fb.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/footer/social/twitter.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/home/bubbles/handshake.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/home/bubbles/hiking.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/home/bubbles/jump.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/home/bubbles/keyboard.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/logo.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/img/trans.png: Conflict: New files that differ
+2014-01-02 20:59:55: /public/index.php: Conflict: New files that differ
+2014-01-02 20:59:55: /public/js/bootstrap.js: Conflict: New files that differ
+2014-01-02 20:59:55: /public/js/bootstrap.min.js: Conflict: New files that differ
+2014-01-02 20:59:55: /public/MyFontsWebfontsKit.zip: Conflict: New files that differ
+2014-01-02 20:59:55: /public/packages/.gitkeep: Conflict: New files that differ
+2014-01-02 20:59:55: /public/robots.txt: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_0_0.eot: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_0_0.svg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_0_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_0_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_0_unhinted_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_0_unhinted_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_1_0.eot: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_1_0.svg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_1_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_1_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_1_unhinted_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_1_unhinted_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_2_0.eot: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_2_0.svg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_2_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_2_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_2_unhinted_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_2_unhinted_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_3_0.eot: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_3_0.svg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_3_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_3_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_3_unhinted_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_3_unhinted_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_4_0.eot: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_4_0.svg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_4_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_4_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_4_unhinted_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_4_unhinted_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_5_0.eot: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_5_0.svg: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_5_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_5_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_5_unhinted_0.ttf: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/2964B3_5_unhinted_0.woff: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts/svg_test.html: Conflict: New files that differ
+2014-01-02 20:59:55: /public/webfonts.js: Conflict: New files that differ
+2014-01-02 20:59:55: Analyze has finished with Conflicts. Resolve Conflicts by selecting the correct sync direction, then click Sync
+2014-01-02 20:59:55: Changes: 128, Conflicts: 101, CopyTime: 0, CopyState: 0/0, Errors: 0
+2014-01-02 20:59:55: Left to Right: Copy File: 24 
+2014-01-02 20:59:55: Right to Left: Copy File: 3 
+2014-01-02 20:59:55: -- Analysis Completed. Time 00:00:09, Speed: 24 files/s
+2014-01-02 20:59:55: 
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/.htaccess
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/.htaccess.old
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/bootstrap.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/bootstrap.min - Copy.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/bootstrap.min.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/dmitryf-elements-191754c.zip
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/elements.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/elements.less
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/explore.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/explore.less
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/glyphicons-ie7.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/home.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/home.less
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/main.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/main.less
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/mixins.css
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/css/mixins.less
+2014-01-02 21:00:20: === User Changed Action from 'COPY_RIGHT_TO_LEFT' to 'COPY_LEFT_TO_RIGHT' on item /public/Explore page.ai
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/favicon-128.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/favicon-32.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/favicon-64.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/favicon.ico
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/fonts/glyphicons-halflings-regular.eot
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/fonts/glyphicons-halflings-regular.svg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/fonts/glyphicons-halflings-regular.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/fonts/glyphicons-halflings-regular.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/30perc.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/70perc.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/80perc.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/banner/banner1-light.jpg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/banner/banner1.jpg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/banner/banner2-light.jpg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/banner/banner2.jpg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/banner/banner3-light.jpg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/banner/banner3.jpg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/banner/gcn.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/bg/explore.jpg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/cat.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/connectnow.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/blue70.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/bluebottom.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/icons/contest.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/icons/organization.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/icons/volunteering.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/red70.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/redbottom.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/stripe.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/yellow70.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/explore/yellowbottom.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/footer/logo.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/footer/social/fb.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/footer/social/twitter.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/home/bubbles/handshake.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/home/bubbles/hiking.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/home/bubbles/jump.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/home/bubbles/keyboard.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/logo.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/img/trans.png
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/index.php
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/js/bootstrap.js
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/js/bootstrap.min.js
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/MyFontsWebfontsKit.zip
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/packages/.gitkeep
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/robots.txt
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_0_0.eot
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_0_0.svg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_0_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_0_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_0_unhinted_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_0_unhinted_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_1_0.eot
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_1_0.svg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_1_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_1_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_1_unhinted_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_1_unhinted_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_2_0.eot
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_2_0.svg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_2_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_2_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_2_unhinted_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_2_unhinted_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_3_0.eot
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_3_0.svg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_3_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_3_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_3_unhinted_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_3_unhinted_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_4_0.eot
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_4_0.svg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_4_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_4_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_4_unhinted_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_4_unhinted_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_5_0.eot
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_5_0.svg
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_5_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_5_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_5_unhinted_0.ttf
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/2964B3_5_unhinted_0.woff
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts/svg_test.html
+2014-01-02 21:00:20: === User Changed Action from 'CONFLICT' to 'COPY_LEFT_TO_RIGHT' on item /public/webfonts.js
+2014-01-02 21:00:20: === User Changed Action from 'COPY_RIGHT_TO_LEFT' to 'COPY_LEFT_TO_RIGHT' on item /public/WEBSITE HOMEPAGE 1.ai
+2014-01-02 21:00:20: === User Changed Action from 'COPY_RIGHT_TO_LEFT' to 'COPY_LEFT_TO_RIGHT' on item /public/WEBSITE HOMEPAGE 1.psd
+2014-01-02 21:00:20: Done.
+2014-01-02 21:00:21: Done.
+2014-01-02 21:00:28: == ConnectNow: SYNC started by User on 'KEVIN-DESKTOP'
+2014-01-02 21:00:28: C:\xampp\htdocs\connectnow (C:/xampp/htdocs/connectnow) <-> sftp://192.241.154.149/var
+2014-01-02 21:00:29: Delete File 'sftp://192.241.154.149/var/public/Explore page.ai' (User Action)
+2014-01-02 21:00:29: Delete File 'sftp://192.241.154.149/var/public/WEBSITE HOMEPAGE 1.ai' (User Action)
+2014-01-02 21:00:29: Delete File 'sftp://192.241.154.149/var/public/WEBSITE HOMEPAGE 1.psd' (User Action)
+2014-01-02 21:00:29: Copy New 'C:/xampp/htdocs/connectnow/app/controllers/CaptchaController.php' -> 'sftp://192.241.154.149/var/app/controllers/CaptchaController.php'
+2014-01-02 21:00:30: Copy Over 'C:/xampp/htdocs/connectnow/app/controllers/PageController.php' -> 'sftp://192.241.154.149/var/app/controllers/PageController.php'
+2014-01-02 21:00:30: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/content.php' -> 'sftp://192.241.154.149/var/app/lang/en/content.php'
+2014-01-02 21:00:31: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/en/navigation.php' -> 'sftp://192.241.154.149/var/app/lang/en/navigation.php'
+2014-01-02 21:00:31: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/content.php' -> 'sftp://192.241.154.149/var/app/lang/fr/content.php'
+2014-01-02 21:00:32: Copy Over 'C:/xampp/htdocs/connectnow/app/lang/fr/navigation.php' -> 'sftp://192.241.154.149/var/app/lang/fr/navigation.php'
+2014-01-02 21:00:32: Copy New 'C:/xampp/htdocs/connectnow/app/views/error.php' -> 'sftp://192.241.154.149/var/app/views/error.php'
+2014-01-02 21:00:32: Copy Over 'C:/xampp/htdocs/connectnow/app/views/home.blade.php' -> 'sftp://192.241.154.149/var/app/views/home.blade.php'
+2014-01-02 21:00:33: Copy Over 'C:/xampp/htdocs/connectnow/app/views/layout.blade.php' -> 'sftp://192.241.154.149/var/app/views/layout.blade.php'
+2014-01-02 21:00:33: Copy New 'C:/xampp/htdocs/connectnow/app/views/signup.blade.php' -> 'sftp://192.241.154.149/var/app/views/signup.blade.php'
+2014-01-02 21:00:34: Copy New 'C:/xampp/htdocs/connectnow/app/views/terms.blade.php' -> 'sftp://192.241.154.149/var/app/views/terms.blade.php'
+2014-01-02 21:00:34: Copy Over 'C:/xampp/htdocs/connectnow/public/.htaccess' -> 'sftp://192.241.154.149/var/public/.htaccess' (User Action)
+2014-01-02 21:00:35: Copy Over 'C:/xampp/htdocs/connectnow/public/.htaccess.old' -> 'sftp://192.241.154.149/var/public/.htaccess.old' (User Action)
+2014-01-02 21:00:36: Copy Over 'C:/xampp/htdocs/connectnow/public/css/bootstrap.css' -> 'sftp://192.241.154.149/var/public/css/bootstrap.css' (User Action)
+2014-01-02 21:00:37: Copy Over 'C:/xampp/htdocs/connectnow/public/css/bootstrap.min - Copy.css' -> 'sftp://192.241.154.149/var/public/css/bootstrap.min - Copy.css' (User Action)
+2014-01-02 21:00:37: Copy Over 'C:/xampp/htdocs/connectnow/public/css/bootstrap.min.css' -> 'sftp://192.241.154.149/var/public/css/bootstrap.min.css' (User Action)
+2014-01-02 21:00:38: Copy Over 'C:/xampp/htdocs/connectnow/public/css/dmitryf-elements-191754c.zip' -> 'sftp://192.241.154.149/var/public/css/dmitryf-elements-191754c.zip' (User Action)
+2014-01-02 21:00:38: Copy Over 'C:/xampp/htdocs/connectnow/public/css/elements.css' -> 'sftp://192.241.154.149/var/public/css/elements.css' (User Action)
+2014-01-02 21:00:38: Copy Over 'C:/xampp/htdocs/connectnow/public/css/elements.less' -> 'sftp://192.241.154.149/var/public/css/elements.less' (User Action)
+2014-01-02 21:00:39: Copy Over 'C:/xampp/htdocs/connectnow/public/css/explore.css' -> 'sftp://192.241.154.149/var/public/css/explore.css' (User Action)
+2014-01-02 21:00:39: Copy Over 'C:/xampp/htdocs/connectnow/public/css/explore.less' -> 'sftp://192.241.154.149/var/public/css/explore.less' (User Action)
+2014-01-02 21:00:40: Copy Over 'C:/xampp/htdocs/connectnow/public/css/glyphicons-ie7.css' -> 'sftp://192.241.154.149/var/public/css/glyphicons-ie7.css' (User Action)
+2014-01-02 21:00:40: Copy Over 'C:/xampp/htdocs/connectnow/public/css/home.css' -> 'sftp://192.241.154.149/var/public/css/home.css' (User Action)
+2014-01-02 21:00:40: Copy Over 'C:/xampp/htdocs/connectnow/public/css/home.less' -> 'sftp://192.241.154.149/var/public/css/home.less' (User Action)
+2014-01-02 21:00:41: Copy New 'C:/xampp/htdocs/connectnow/public/css/login.css' -> 'sftp://192.241.154.149/var/public/css/login.css'
+2014-01-02 21:00:41: Copy Over 'C:/xampp/htdocs/connectnow/public/css/main.css' -> 'sftp://192.241.154.149/var/public/css/main.css' (User Action)
+2014-01-02 21:00:41: Copy Over 'C:/xampp/htdocs/connectnow/public/css/main.less' -> 'sftp://192.241.154.149/var/public/css/main.less' (User Action)
+2014-01-02 21:00:42: Copy Over 'C:/xampp/htdocs/connectnow/public/css/mixins.css' -> 'sftp://192.241.154.149/var/public/css/mixins.css' (User Action)
+2014-01-02 21:00:42: Copy Over 'C:/xampp/htdocs/connectnow/public/css/mixins.less' -> 'sftp://192.241.154.149/var/public/css/mixins.less' (User Action)
+2014-01-02 21:00:43: Copy New 'C:/xampp/htdocs/connectnow/public/css/signup.css' -> 'sftp://192.241.154.149/var/public/css/signup.css'
+2014-01-02 21:00:43: Copy New 'C:/xampp/htdocs/connectnow/public/css/signup.less' -> 'sftp://192.241.154.149/var/public/css/signup.less'
+2014-01-02 21:00:43: Copy Over 'C:/xampp/htdocs/connectnow/public/favicon-128.png' -> 'sftp://192.241.154.149/var/public/favicon-128.png' (User Action)
+2014-01-02 21:00:44: Copy Over 'C:/xampp/htdocs/connectnow/public/favicon-32.png' -> 'sftp://192.241.154.149/var/public/favicon-32.png' (User Action)
+2014-01-02 21:00:44: Copy Over 'C:/xampp/htdocs/connectnow/public/favicon-64.png' -> 'sftp://192.241.154.149/var/public/favicon-64.png' (User Action)
+2014-01-02 21:00:45: Copy Over 'C:/xampp/htdocs/connectnow/public/favicon.ico' -> 'sftp://192.241.154.149/var/public/favicon.ico' (User Action)
+2014-01-02 21:00:46: Copy New 'C:/xampp/htdocs/connectnow/public/fonts/blackout.ttf' -> 'sftp://192.241.154.149/var/public/fonts/blackout.ttf'
+2014-01-02 21:00:46: Copy Over 'C:/xampp/htdocs/connectnow/public/fonts/glyphicons-halflings-regular.eot' -> 'sftp://192.241.154.149/var/public/fonts/glyphicons-halflings-regular.eot' (User Action)
+2014-01-02 21:00:47: Copy Over 'C:/xampp/htdocs/connectnow/public/fonts/glyphicons-halflings-regular.svg' -> 'sftp://192.241.154.149/var/public/fonts/glyphicons-halflings-regular.svg' (User Action)
+2014-01-02 21:00:47: Copy Over 'C:/xampp/htdocs/connectnow/public/fonts/glyphicons-halflings-regular.ttf' -> 'sftp://192.241.154.149/var/public/fonts/glyphicons-halflings-regular.ttf' (User Action)
+2014-01-02 21:00:48: Copy Over 'C:/xampp/htdocs/connectnow/public/fonts/glyphicons-halflings-regular.woff' -> 'sftp://192.241.154.149/var/public/fonts/glyphicons-halflings-regular.woff' (User Action)
+2014-01-02 21:00:48: Copy New 'C:/xampp/htdocs/connectnow/public/fonts/knewave.ttf' -> 'sftp://192.241.154.149/var/public/fonts/knewave.ttf'
+2014-01-02 21:00:49: Copy New 'C:/xampp/htdocs/connectnow/public/fonts/linden.ttf' -> 'sftp://192.241.154.149/var/public/fonts/linden.ttf'
+2014-01-02 21:00:50: Copy New 'C:/xampp/htdocs/connectnow/public/fonts/open.ttf' -> 'sftp://192.241.154.149/var/public/fonts/open.ttf'
+2014-01-02 21:00:51: Copy New 'C:/xampp/htdocs/connectnow/public/fonts/ostrich.ttf' -> 'sftp://192.241.154.149/var/public/fonts/ostrich.ttf'
+2014-01-02 21:00:51: Copy Over 'C:/xampp/htdocs/connectnow/public/img/30perc.png' -> 'sftp://192.241.154.149/var/public/img/30perc.png' (User Action)
+2014-01-02 21:00:52: Copy Over 'C:/xampp/htdocs/connectnow/public/img/70perc.png' -> 'sftp://192.241.154.149/var/public/img/70perc.png' (User Action)
+2014-01-02 21:00:52: Copy Over 'C:/xampp/htdocs/connectnow/public/img/80perc.png' -> 'sftp://192.241.154.149/var/public/img/80perc.png' (User Action)
+2014-01-02 21:01:00: Copy Over 'C:/xampp/htdocs/connectnow/public/img/banner/banner1-light.jpg' -> 'sftp://192.241.154.149/var/public/img/banner/banner1-light.jpg' (User Action)
+2014-01-02 21:01:05: Copy Over 'C:/xampp/htdocs/connectnow/public/img/banner/banner1.jpg' -> 'sftp://192.241.154.149/var/public/img/banner/banner1.jpg' (User Action)
+2014-01-02 21:01:09: Copy Over 'C:/xampp/htdocs/connectnow/public/img/banner/banner2-light.jpg' -> 'sftp://192.241.154.149/var/public/img/banner/banner2-light.jpg' (User Action)
+2014-01-02 21:01:13: Copy Over 'C:/xampp/htdocs/connectnow/public/img/banner/banner2.jpg' -> 'sftp://192.241.154.149/var/public/img/banner/banner2.jpg' (User Action)
+2014-01-02 21:01:19: Copy Over 'C:/xampp/htdocs/connectnow/public/img/banner/banner3-light.jpg' -> 'sftp://192.241.154.149/var/public/img/banner/banner3-light.jpg' (User Action)
+2014-01-02 21:01:23: Copy Over 'C:/xampp/htdocs/connectnow/public/img/banner/banner3.jpg' -> 'sftp://192.241.154.149/var/public/img/banner/banner3.jpg' (User Action)
+2014-01-02 21:01:23: Copy Over 'C:/xampp/htdocs/connectnow/public/img/banner/gcn.png' -> 'sftp://192.241.154.149/var/public/img/banner/gcn.png' (User Action)
+2014-01-02 21:01:24: Copy Over 'C:/xampp/htdocs/connectnow/public/img/bg/explore.jpg' -> 'sftp://192.241.154.149/var/public/img/bg/explore.jpg' (User Action)
+2014-01-02 21:01:25: Copy Over 'C:/xampp/htdocs/connectnow/public/img/cat.png' -> 'sftp://192.241.154.149/var/public/img/cat.png' (User Action)
+2014-01-02 21:01:26: Copy Over 'C:/xampp/htdocs/connectnow/public/img/connectnow.png' -> 'sftp://192.241.154.149/var/public/img/connectnow.png' (User Action)
+2014-01-02 21:01:26: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/blue70.png' -> 'sftp://192.241.154.149/var/public/img/explore/blue70.png' (User Action)
+2014-01-02 21:01:27: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/bluebottom.png' -> 'sftp://192.241.154.149/var/public/img/explore/bluebottom.png' (User Action)
+2014-01-02 21:01:27: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/icons/contest.png' -> 'sftp://192.241.154.149/var/public/img/explore/icons/contest.png' (User Action)
+2014-01-02 21:01:28: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/icons/organization.png' -> 'sftp://192.241.154.149/var/public/img/explore/icons/organization.png' (User Action)
+2014-01-02 21:01:28: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/icons/volunteering.png' -> 'sftp://192.241.154.149/var/public/img/explore/icons/volunteering.png' (User Action)
+2014-01-02 21:01:29: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/red70.png' -> 'sftp://192.241.154.149/var/public/img/explore/red70.png' (User Action)
+2014-01-02 21:01:29: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/redbottom.png' -> 'sftp://192.241.154.149/var/public/img/explore/redbottom.png' (User Action)
+2014-01-02 21:01:30: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/stripe.png' -> 'sftp://192.241.154.149/var/public/img/explore/stripe.png' (User Action)
+2014-01-02 21:01:30: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/yellow70.png' -> 'sftp://192.241.154.149/var/public/img/explore/yellow70.png' (User Action)
+2014-01-02 21:01:31: Copy Over 'C:/xampp/htdocs/connectnow/public/img/explore/yellowbottom.png' -> 'sftp://192.241.154.149/var/public/img/explore/yellowbottom.png' (User Action)
+2014-01-02 21:01:32: Copy Over 'C:/xampp/htdocs/connectnow/public/img/footer/logo.png' -> 'sftp://192.241.154.149/var/public/img/footer/logo.png' (User Action)
+2014-01-02 21:01:32: Copy Over 'C:/xampp/htdocs/connectnow/public/img/footer/social/fb.png' -> 'sftp://192.241.154.149/var/public/img/footer/social/fb.png' (User Action)
+2014-01-02 21:01:33: Copy Over 'C:/xampp/htdocs/connectnow/public/img/footer/social/twitter.png' -> 'sftp://192.241.154.149/var/public/img/footer/social/twitter.png' (User Action)
+2014-01-02 21:01:34: Copy Over 'C:/xampp/htdocs/connectnow/public/img/home/bubbles/handshake.png' -> 'sftp://192.241.154.149/var/public/img/home/bubbles/handshake.png' (User Action)
+2014-01-02 21:01:35: Copy Over 'C:/xampp/htdocs/connectnow/public/img/home/bubbles/hiking.png' -> 'sftp://192.241.154.149/var/public/img/home/bubbles/hiking.png' (User Action)
+2014-01-02 21:01:36: Copy Over 'C:/xampp/htdocs/connectnow/public/img/home/bubbles/jump.png' -> 'sftp://192.241.154.149/var/public/img/home/bubbles/jump.png' (User Action)
+2014-01-02 21:01:37: Copy Over 'C:/xampp/htdocs/connectnow/public/img/home/bubbles/keyboard.png' -> 'sftp://192.241.154.149/var/public/img/home/bubbles/keyboard.png' (User Action)
+2014-01-02 21:01:42: Copy New 'C:/xampp/htdocs/connectnow/public/img/homepage.png' -> 'sftp://192.241.154.149/var/public/img/homepage.png'
+2014-01-02 21:01:43: Copy Over 'C:/xampp/htdocs/connectnow/public/img/logo.png' -> 'sftp://192.241.154.149/var/public/img/logo.png' (User Action)
+2014-01-02 21:01:43: Copy New 'C:/xampp/htdocs/connectnow/public/img/navlogo.png' -> 'sftp://192.241.154.149/var/public/img/navlogo.png'
+2014-01-02 21:01:44: Copy New 'C:/xampp/htdocs/connectnow/public/img/searchbg.png' -> 'sftp://192.241.154.149/var/public/img/searchbg.png'
+2014-01-02 21:01:44: Copy Over 'C:/xampp/htdocs/connectnow/public/img/trans.png' -> 'sftp://192.241.154.149/var/public/img/trans.png' (User Action)
+2014-01-02 21:01:44: Copy Over 'C:/xampp/htdocs/connectnow/public/index.php' -> 'sftp://192.241.154.149/var/public/index.php' (User Action)
+2014-01-02 21:01:45: Copy Over 'C:/xampp/htdocs/connectnow/public/js/bootstrap.js' -> 'sftp://192.241.154.149/var/public/js/bootstrap.js' (User Action)
+2014-01-02 21:01:46: Copy Over 'C:/xampp/htdocs/connectnow/public/js/bootstrap.min.js' -> 'sftp://192.241.154.149/var/public/js/bootstrap.min.js' (User Action)
+2014-01-02 21:01:46: Copy New 'C:/xampp/htdocs/connectnow/public/js/jquery.min.js' -> 'sftp://192.241.154.149/var/public/js/jquery.min.js'
+2014-01-02 21:01:47: Copy New 'C:/xampp/htdocs/connectnow/public/js/transit.js' -> 'sftp://192.241.154.149/var/public/js/transit.js'
+2014-01-02 21:01:53: Copy Over 'C:/xampp/htdocs/connectnow/public/MyFontsWebfontsKit.zip' -> 'sftp://192.241.154.149/var/public/MyFontsWebfontsKit.zip' (User Action)
+2014-01-02 21:01:54: Copy Over 'C:/xampp/htdocs/connectnow/public/packages/.gitkeep' -> 'sftp://192.241.154.149/var/public/packages/.gitkeep' (User Action)
+2014-01-02 21:01:54: Copy Over 'C:/xampp/htdocs/connectnow/public/robots.txt' -> 'sftp://192.241.154.149/var/public/robots.txt' (User Action)
+2014-01-02 21:01:55: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_0_0.eot' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_0_0.eot' (User Action)
+2014-01-02 21:01:56: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_0_0.svg' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_0_0.svg' (User Action)
+2014-01-02 21:01:57: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_0_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_0_0.ttf' (User Action)
+2014-01-02 21:01:57: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_0_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_0_0.woff' (User Action)
+2014-01-02 21:01:58: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_0_unhinted_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_0_unhinted_0.ttf' (User Action)
+2014-01-02 21:01:59: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_0_unhinted_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_0_unhinted_0.woff' (User Action)
+2014-01-02 21:01:59: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_1_0.eot' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_1_0.eot' (User Action)
+2014-01-02 21:02:00: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_1_0.svg' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_1_0.svg' (User Action)
+2014-01-02 21:02:01: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_1_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_1_0.ttf' (User Action)
+2014-01-02 21:02:02: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_1_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_1_0.woff' (User Action)
+2014-01-02 21:02:03: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_1_unhinted_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_1_unhinted_0.ttf' (User Action)
+2014-01-02 21:02:03: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_1_unhinted_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_1_unhinted_0.woff' (User Action)
+2014-01-02 21:02:04: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_2_0.eot' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_2_0.eot' (User Action)
+2014-01-02 21:02:05: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_2_0.svg' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_2_0.svg' (User Action)
+2014-01-02 21:02:06: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_2_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_2_0.ttf' (User Action)
+2014-01-02 21:02:07: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_2_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_2_0.woff' (User Action)
+2014-01-02 21:02:07: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_2_unhinted_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_2_unhinted_0.ttf' (User Action)
+2014-01-02 21:02:08: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_2_unhinted_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_2_unhinted_0.woff' (User Action)
+2014-01-02 21:02:09: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_3_0.eot' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_3_0.eot' (User Action)
+2014-01-02 21:02:09: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_3_0.svg' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_3_0.svg' (User Action)
+2014-01-02 21:02:11: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_3_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_3_0.ttf' (User Action)
+2014-01-02 21:02:11: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_3_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_3_0.woff' (User Action)
+2014-01-02 21:02:12: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_3_unhinted_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_3_unhinted_0.ttf' (User Action)
+2014-01-02 21:02:12: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_3_unhinted_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_3_unhinted_0.woff' (User Action)
+2014-01-02 21:02:13: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_4_0.eot' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_4_0.eot' (User Action)
+2014-01-02 21:02:14: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_4_0.svg' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_4_0.svg' (User Action)
+2014-01-02 21:02:15: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_4_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_4_0.ttf' (User Action)
+2014-01-02 21:02:16: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_4_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_4_0.woff' (User Action)
+2014-01-02 21:02:17: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_4_unhinted_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_4_unhinted_0.ttf' (User Action)
+2014-01-02 21:02:17: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_4_unhinted_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_4_unhinted_0.woff' (User Action)
+2014-01-02 21:02:18: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_5_0.eot' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_5_0.eot' (User Action)
+2014-01-02 21:02:19: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_5_0.svg' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_5_0.svg' (User Action)
+2014-01-02 21:02:20: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_5_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_5_0.ttf' (User Action)
+2014-01-02 21:02:20: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_5_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_5_0.woff' (User Action)
+2014-01-02 21:02:21: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_5_unhinted_0.ttf' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_5_unhinted_0.ttf' (User Action)
+2014-01-02 21:02:22: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/2964B3_5_unhinted_0.woff' -> 'sftp://192.241.154.149/var/public/webfonts/2964B3_5_unhinted_0.woff' (User Action)
+2014-01-02 21:02:22: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts/svg_test.html' -> 'sftp://192.241.154.149/var/public/webfonts/svg_test.html' (User Action)
+2014-01-02 21:02:23: Copy Over 'C:/xampp/htdocs/connectnow/public/webfonts.js' -> 'sftp://192.241.154.149/var/public/webfonts.js' (User Action)
+2014-01-02 21:02:23: Save State File sftp://192.241.154.149/var/_gsdata_/_file_state_v4._gs
+2014-01-02 21:02:24: Items Synced OK: 128, Errors: 0
+2014-01-02 21:02:24: == Sync Completed. Time: 00:01:59, Speed: 104 KB/s (122 KB/s)
+2014-01-02 21:02:24: 

@@ -1,0 +1,32 @@
+2014-03-16 15:25:36,951 INFO     registry.register_crypt_handler(): registered crypt handler 'sha512_crypt': <class 'passlib.handlers.sha2_crypt.sha512_crypt'>
+2014-03-16 15:25:37,065 INFO     core.run(): Ajenti 1.2.11.2 running on platform: debian
+2014-03-16 15:25:37,166 WARNING  __init__.load():  *** [hddtemp] skipping due to BinaryDependency (hddtemp)
+2014-03-16 15:25:37,177 WARNING  __init__.load():  *** [megaraid] skipping due to FileDependency (/opt/MegaRAID/MegaCli/MegaCli)
+2014-03-16 15:25:37,183 WARNING  __init__.load():  *** [dhcpd] skipping due to BinaryDependency (dhcpd)
+2014-03-16 15:25:37,190 WARNING  __init__.load():  *** [smartctl] skipping due to BinaryDependency (smartctl)
+2014-03-16 15:25:37,196 WARNING  __init__.load():  *** [ctdb] skipping due to BinaryDependency (ctdb)
+2014-03-16 15:25:37,201 WARNING  __init__.load():  *** [memcache] skipping due to BinaryDependency (memcached)
+2014-03-16 15:25:37,204 WARNING  __init__.load():  *** [netatalk] skipping due to BinaryDependency (afpd)
+2014-03-16 15:25:37,208 WARNING  __init__.load():  *** [bind9] skipping due to BinaryDependency (named)
+2014-03-16 15:25:37,214 WARNING  __init__.load():  *** [openvpn] skipping due to BinaryDependency (openvpn)
+2014-03-16 15:25:37,230 WARNING  __init__.load():  *** [apcups] skipping due to BinaryDependency (apcaccess)
+2014-03-16 15:25:37,238 WARNING  __init__.load():  *** [nginx] skipping due to BinaryDependency (nginx)
+2014-03-16 15:25:37,253 WARNING  __init__.load():  *** [exports] skipping due to BinaryDependency (nfsstat)
+2014-03-16 15:25:37,307 WARNING  __init__.load():  *** [munin] skipping due to BinaryDependency (munin-cron)
+2014-03-16 15:25:37,315 WARNING  __init__.load():  *** [psql] skipping due to BinaryDependency (psql)
+2014-03-16 15:25:37,323 WARNING  __init__.load():  *** [squid] skipping due to BinaryDependency (squid3)
+2014-03-16 15:25:37,344 WARNING  __init__.load():  *** [ipmi] skipping due to BinaryDependency (ipmitool)
+2014-03-16 15:25:37,349 WARNING  __init__.load():  *** [lm_sensors] skipping due to BinaryDependency (sensors)
+2014-03-16 15:25:37,363 WARNING  __init__.load():  *** [samba] skipping due to BinaryDependency (smbd)
+2014-03-16 15:25:37,366 WARNING  __init__.load():  *** [raid] skipping due to BinaryDependency (mdadm)
+2014-03-16 15:25:37,367 WARNING  __init__.load():  *** [elements] Plugin error: format error
+2014-03-16 15:25:37,372 WARNING  __init__.load():  *** [nsd] skipping due to BinaryDependency (nsd)
+2014-03-16 15:25:37,376 WARNING  __init__.load():  *** [supervisor] skipping due to BinaryDependency (supervisord)
+2014-03-16 15:25:37,392 INFO     core.start(): Starting SSL tunnel for port 56942
+2014-03-16 15:25:37,899 INFO     core.run(): SSL tunnel running fine
+2014-03-16 15:25:37,900 INFO     core.run(): Starting server on (u'127.0.0.1', 56942)
+2014-03-16 15:25:38,147 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
+2014-03-17 03:25:39,638 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
+2014-03-17 15:25:40,981 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
+2014-03-18 03:25:42,326 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org
+2014-03-18 15:25:43,701 INFO     connectionpool._new_conn(): Starting new HTTP connection (1): meta.ajenti.org

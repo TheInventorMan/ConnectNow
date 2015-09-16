@@ -1,0 +1,6 @@
+I:3405251
+E:ID_BUS=pci
+E:ID_MODEL_FROM_DATABASE=Virtio network device
+E:ID_MODEL_ID=/sys/devices/pci0000:00/0000:00:03.0/virtio0
+E:ID_VENDOR_FROM_DATABASE=Red Hat, Inc
+E:ID_VENDOR_ID=0x1af4

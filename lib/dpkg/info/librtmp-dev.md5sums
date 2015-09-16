@@ -1,0 +1,7 @@
+ee3a54c0b09a4c72085f3cf233677cee  usr/include/librtmp/amf.h
+385bb830eb202ea4a884a09065b11875  usr/include/librtmp/http.h
+26066e5a58cc2bb2d3308e674e36bd8b  usr/include/librtmp/log.h
+c42650e77215cdd1feed0f6d1fefd6ba  usr/include/librtmp/rtmp.h
+badb6fb8728b1fc9cbe9a3232f0ce614  usr/lib/i386-linux-gnu/librtmp.a
+2e70c14b0fa617f79141f448d00b092e  usr/lib/i386-linux-gnu/pkgconfig/librtmp.pc
+79bad274b70075d8e97c7dd7b79f841f  usr/share/doc/librtmp-dev/copyright

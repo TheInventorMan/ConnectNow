@@ -1,0 +1,64 @@
+Package: nginx
+Binary: nginx, nginx-doc, nginx-common, nginx-full, nginx-full-dbg, nginx-light, nginx-light-dbg, nginx-extras, nginx-extras-dbg, nginx-naxsi, nginx-naxsi-dbg, nginx-naxsi-ui
+Version: 1.4.6-1+precise0
+Section: httpd
+Maintainer: Kartik Mistry <kartik@debian.org>
+Build-Depends: autotools-dev, debhelper (>= 9), dh-systemd (>= 1.5), dpkg-dev (>= 1.15.5), libexpat-dev, libgd2-dev | libgd2-noxpm-dev, libgeoip-dev, liblua5.1-dev, libmhash-dev, libpam0g-dev, libpcre3-dev, libperl-dev, libssl-dev, libxslt1-dev, po-debconf, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/n/nginx
+Files:
+ dee0fc2151cebde709c93ca20d8f239f 768828 nginx_1.4.6.orig.tar.gz
+ 70810f71766a07970927add1172b44c2 1564466 nginx_1.4.6-1+precise0.debian.tar.gz
+ f3cca4d4b5fb92a2c1b96cac6f921905 2845 nginx_1.4.6-1+precise0.dsc
+Checksums-Sha1:
+ 1d790fd2b403b0b694a8dbbc28f7e34dbc3ca863 768828 nginx_1.4.6.orig.tar.gz
+ cf93f1a2f328659b6ebc4a596249a33835e62a0a 1564466 nginx_1.4.6-1+precise0.debian.tar.gz
+ 458a12ea5bbd443ff14a8faf6a4f4e9e3c6f3258 2845 nginx_1.4.6-1+precise0.dsc
+Checksums-Sha256:
+ 7a8b5b15d708b5b9c61e723bd93faa247b06c8b90babb76f612c128edb5812c6 768828 nginx_1.4.6.orig.tar.gz
+ 886a467b50d41e4e0695d0b56d78ade9c74ccc1f7405dea05d2fc78a416c558b 1564466 nginx_1.4.6-1+precise0.debian.tar.gz
+ d6657f78f0b11db9479967b651fd27fedb8842dfc362d1d26e3efe1a2c9243d6 2845 nginx_1.4.6-1+precise0.dsc
+Homepage: http://nginx.net
+Uploaders: Jose Parrella <bureado@debian.org>, Fabio Tranchitella <kobold@debian.org>, Michael Lustfield <michael@lustfield.net>, Dmitry E. Oboukhov <unera@debian.org>, Cyril Lavier <cyril.lavier@davromaniak.eu>, Christos Trochalakis <yatiohi@ideopolis.gr>
+Package-List: nginx deb httpd optional
+ nginx-common deb httpd optional
+ nginx-doc deb doc optional
+ nginx-extras deb httpd extra
+ nginx-extras-dbg deb debug extra
+ nginx-full deb httpd optional
+ nginx-full-dbg deb debug extra
+ nginx-light deb httpd extra
+ nginx-light-dbg deb debug extra
+ nginx-naxsi deb httpd extra
+ nginx-naxsi-dbg deb debug extra
+ nginx-naxsi-ui deb httpd extra
+Vcs-Git: git://anonscm.debian.org/collab-maint/nginx.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/nginx.git;a=summary
+
+Package: init-system-helpers
+Binary: init-system-helpers, dh-systemd
+Version: 1.7~precise1~ppa1
+Section: admin
+Maintainer: pkg-systemd-maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8.0.0), perl
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/main/i/init-system-helpers
+Files:
+ 2656c4aa2443755f7982d05461aec104 11913 init-system-helpers_1.7~precise1~ppa1.tar.gz
+ e649bae13fd16debdd8466a2ac195ff4 1882 init-system-helpers_1.7~precise1~ppa1.dsc
+Checksums-Sha1:
+ a42c7e0a5fd3de2a3217b9aa5b9c8ce12d862671 11913 init-system-helpers_1.7~precise1~ppa1.tar.gz
+ 413a9a2ebef488f41e5f6131a658cbdc692dbf00 1882 init-system-helpers_1.7~precise1~ppa1.dsc
+Checksums-Sha256:
+ ca5cba5c646b0451629338cd10588ff9b65da4c75f61da51473bfddc14947eaf 11913 init-system-helpers_1.7~precise1~ppa1.tar.gz
+ 53ce49d2606e3a05969c45d261826caa8235ebe0e4b9c8e1a6f21b9a4728e540 1882 init-system-helpers_1.7~precise1~ppa1.dsc
+Uploaders: Michael Stapelberg <stapelberg@debian.org>, Tollef Fog Heen <tfheen@debian.org>, Michael Biebl <biebl@debian.org>
+Package-List: dh-systemd deb admin extra
+ init-system-helpers deb admin extra
+Vcs-Git: git://anonscm.debian.org/collab-maint/init-system-helpers.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/init-system-helpers.git;a=summary
+

@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+
+php5_enable() { return 0; }
+
+if [ -e /usr/share/php5/php5-maintscript-helper ]; then
+    . /usr/share/php5/php5-maintscript-helper
+
+    mods=$(php5query -M)
+    for mod in $mods; do
+	php5_invoke dismod fpm $mod
+    done
+fi
+
+# Automatically added by dh_installinit
+if [ -e "/etc/init/php5-fpm.conf" ]; then
+	invoke-rc.d php5-fpm stop || exit $?
+fi
+# End automatically added section
+
+
+exit 0

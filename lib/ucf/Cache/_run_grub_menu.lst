@@ -1,0 +1,33 @@
+## ## End Default Options ##
+
+title		Ubuntu 12.04.4 LTS, kernel 3.2.0-60-virtual
+root		(hd0,0)
+kernel		/boot/vmlinuz-3.2.0-60-virtual root=/dev/xvda ro quiet splash 
+initrd		/boot/initrd.img-3.2.0-60-virtual
+
+title		Ubuntu 12.04.4 LTS, kernel 3.2.0-60-virtual (recovery mode)
+root		(hd0,0)
+kernel		/boot/vmlinuz-3.2.0-60-virtual root=/dev/xvda ro  single
+initrd		/boot/initrd.img-3.2.0-60-virtual
+
+title		Ubuntu 12.04.4 LTS, kernel 3.2.0-48-virtual
+root		(hd0,0)
+kernel		/boot/vmlinuz-3.2.0-48-virtual root=/dev/xvda ro quiet splash 
+initrd		/boot/initrd.img-3.2.0-48-virtual
+
+title		Ubuntu 12.04.4 LTS, kernel 3.2.0-48-virtual (recovery mode)
+root		(hd0,0)
+kernel		/boot/vmlinuz-3.2.0-48-virtual root=/dev/xvda ro  single
+initrd		/boot/initrd.img-3.2.0-48-virtual
+
+title		Ubuntu 12.04.4 LTS, kernel 3.2.0-24-virtual
+root		(hd0,0)
+kernel		/boot/vmlinuz-3.2.0-24-virtual root=/dev/xvda ro quiet splash 
+initrd		/boot/initrd.img-3.2.0-24-virtual
+
+title		Ubuntu 12.04.4 LTS, kernel 3.2.0-24-virtual (recovery mode)
+root		(hd0,0)
+kernel		/boot/vmlinuz-3.2.0-24-virtual root=/dev/xvda ro  single
+initrd		/boot/initrd.img-3.2.0-24-virtual
+
+### END DEBIAN AUTOMAGIC KERNELS LIST

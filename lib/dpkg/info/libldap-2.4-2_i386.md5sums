@@ -1,0 +1,7 @@
+d7ed61bc086f598804711b75b2e4a0c6  usr/lib/i386-linux-gnu/liblber-2.4.so.2.8.1
+5c771bfd398e7aab60ca2714f5946fde  usr/lib/i386-linux-gnu/libldap_r-2.4.so.2.8.1
+542ca9165ae50bfad3f099545c392531  usr/share/doc/libldap-2.4-2/README.Debian
+a7645f5bb04c690a9b1dee5d619d7a8d  usr/share/doc/libldap-2.4-2/changelog.Debian.gz
+4ef1d2e2f5e29c2ab2dcc748d01f525b  usr/share/doc/libldap-2.4-2/copyright
+a21c4230e6af07b56cf328c8b16c0765  usr/share/lintian/overrides/libldap-2.4-2
+56d2ed1e227341d7933a21a98f418ed3  usr/share/man/man5/ldap.conf.5.gz

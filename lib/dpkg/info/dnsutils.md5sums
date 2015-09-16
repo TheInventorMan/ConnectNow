@@ -1,0 +1,7 @@
+ba53f1c0d22aca7fabbeda0864efbd94  usr/bin/dig
+aeabd5bac7cc92cda16825ccb1242a71  usr/bin/nslookup
+fe5a0790486a80d71d0306f6309a2e55  usr/bin/nsupdate
+892bf811938a6b4767f4dc54c8dd1d2d  usr/share/doc/dnsutils/copyright
+9cbd1b8a3656c825fcbf847119e3dda0  usr/share/man/man1/dig.1.gz
+026e208ad95d6561fe5d8b64b68c1187  usr/share/man/man1/nslookup.1.gz
+75c37df6be72e73116e5f7186ac61782  usr/share/man/man1/nsupdate.1.gz

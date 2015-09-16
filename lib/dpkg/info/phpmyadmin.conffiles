@@ -1,0 +1,7 @@
+/etc/phpmyadmin/config.header.inc.php
+/etc/phpmyadmin/lighttpd.conf
+/etc/phpmyadmin/config.inc.php
+/etc/phpmyadmin/phpmyadmin.desktop
+/etc/phpmyadmin/phpmyadmin.service
+/etc/phpmyadmin/config.footer.inc.php
+/etc/phpmyadmin/apache.conf

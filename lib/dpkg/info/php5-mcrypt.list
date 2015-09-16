@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/php5
+/usr/share/php5/mcrypt
+/usr/share/php5/mcrypt/mcrypt.ini
+/usr/share/doc
+/usr/share/bug
+/usr/share/bug/php5-mcrypt
+/usr/share/bug/php5-mcrypt/control
+/usr/share/bug/php5-mcrypt/script
+/usr/lib
+/usr/lib/php5
+/usr/lib/php5/20121212
+/usr/lib/php5/20121212/mcrypt.so
+/usr/share/doc/php5-mcrypt

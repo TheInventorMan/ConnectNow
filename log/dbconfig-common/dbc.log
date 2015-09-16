@@ -1,0 +1,7 @@
+granting access to database phpmyadmin for phpmyadmin@localhost: success.
+verifying access for phpmyadmin@localhost: success.
+creating database phpmyadmin: success.
+verifying database phpmyadmin exists: success.
+populating database via sql...  done.
+creating database backup in /var/cache/dbconfig-common/backups/phpmyadmin_4:3.4.10.1-1.mysql.
+applying upgrade sql for 4:3.4.10.1-1 -> 4:3.5.6-1.

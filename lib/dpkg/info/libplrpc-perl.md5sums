@@ -1,0 +1,14 @@
+92f59800115e0f30077d4c3c12fb03e8  usr/share/man/man3/Bundle::PlRPC.3pm.gz
+779a2d3c32fbf933f996aa74a67e8a63  usr/share/man/man3/RPC::PlClient.3pm.gz
+879dc612209bf4742867243ca8538ee1  usr/share/man/man3/RPC::PlServer.3pm.gz
+cf0156e6dc668bb1142186e9463469e3  usr/share/perl5/Bundle/PlRPC.pm
+373cb722e3a028e20464f6fbcf426ff7  usr/share/perl5/RPC/PlClient/Comm.pm
+1945f55d18a5fd9f304131da6cf9de20  usr/share/perl5/RPC/PlServer/Comm.pm
+2ebc135e834b7006e93fe565b49d02ad  usr/share/perl5/RPC/PlServer/Test.pm
+d81faded6cd026d66e180ef9e38c624c  usr/share/perl5/RPC/PlServer.pm
+b0ca8b21f213f2d8a7a012f953c1f007  usr/share/perl5/RPC/PlClient.pm
+04a447b3c9afe90091c9d83226800906  usr/share/doc/libplrpc-perl/changelog.gz
+8ca5bc8659800d1cf203588ad2eca1f6  usr/share/doc/libplrpc-perl/README.gz
+e5145f42a28a2f3a0544bc2f38fbfeb6  usr/share/doc/libplrpc-perl/MANIFEST
+85014b4f5b63ff7d06cc2c9c0858ecc9  usr/share/doc/libplrpc-perl/copyright
+f8f4503e5370d3e7f4ce42cb2f73190b  usr/share/doc/libplrpc-perl/changelog.Debian.gz

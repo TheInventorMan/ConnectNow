@@ -1,0 +1,13 @@
+ea902bd790fab6d9f8620ae079416454  usr/bin/apt-file
+9e8723fbcb9c6b6a1789bafd5142ff8e  usr/bin/diffindex-download
+51e590f326f2ff725e8aeee5e94b428c  usr/bin/diffindex-rred
+88a44f65ff849e61dae2df46ad8e633c  usr/bin/rapt-file
+e4f432be9cadd0fd0122b15ab904fd21  usr/share/apt-file/apt-file-update.update-notifier
+bf238089743acd6a5765073ae0b86467  usr/share/apt-file/do-apt-file-update
+0793470bea4464a73e830aad25b2a661  usr/share/apt-file/is-cache-empty
+c63ddc15324d57785cacbeccaacf6b0b  usr/share/doc/apt-file/README
+16300a861d09ed99ff15db9bae598586  usr/share/doc/apt-file/changelog.gz
+36df379e72fb62b23a68e6e06873497b  usr/share/doc/apt-file/copyright
+7ec7abe0aff57e05363f2a861552fa51  usr/share/man/man1/apt-file.1.gz
+f5048db19d449a596f81599f9f8094fa  usr/share/man/man1/diffindex-download.1.gz
+d8aef352923edd36b3c0ddb03a3f282f  usr/share/man/man1/diffindex-rred.1.gz

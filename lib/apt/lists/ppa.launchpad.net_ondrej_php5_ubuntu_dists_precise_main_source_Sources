@@ -1,0 +1,853 @@
+Package: apache2
+Binary: apache2, apache2-data, apache2-bin, apache2-mpm-worker, apache2-mpm-prefork, apache2-mpm-event, apache2-mpm-itk, apache2.2-bin, libapache2-mod-proxy-html, libapache2-mod-macro, apache2-utils, apache2-suexec, apache2-suexec-pristine, apache2-suexec-custom, apache2-doc, apache2-dev, apache2-dbg
+Version: 2.4.7-1+sury.org~precise+1
+Section: httpd
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Build-Depends: debhelper (>= 8.9.7~), lsb-release, dpkg-dev (>= 1.16.1~), libaprutil1-dev (>= 1.5.0), libapr1-dev (>= 1.5.0), libpcre3-dev, zlib1g-dev, libssl-dev (>= 0.9.8m), libcap-dev [linux-any], perl, liblua5.1-0-dev, libxml2-dev, autotools-dev, gawk | awk
+Build-Conflicts: autoconf2.13
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/a/apache2
+Files:
+ 170d7fb6fe5f28b87d1878020a9ab94e 5004719 apache2_2.4.7.orig.tar.bz2
+ 0b628448b5c597547ca2b684d3833d84 479631 apache2_2.4.7-1+sury.org~precise+1.debian.tar.gz
+ b7da93014877fe5cf9e142e0d9e35b59 2484 apache2_2.4.7-1+sury.org~precise+1.dsc
+Checksums-Sha1:
+ 19ed9ee56462e44d61a093ea57e964cf0af05c0e 5004719 apache2_2.4.7.orig.tar.bz2
+ fb30e86c35f3619ae9667e90824f872b3f1b1f76 479631 apache2_2.4.7-1+sury.org~precise+1.debian.tar.gz
+ 9c901438c17cc64923e2ebf7bef1063f3fc133cb 2484 apache2_2.4.7-1+sury.org~precise+1.dsc
+Checksums-Sha256:
+ 64368d8301836815ae237f2b62d909711c896c1bd34573771e0ee5ad808ce71b 5004719 apache2_2.4.7.orig.tar.bz2
+ f614aacb6c2a7ad4cc39a0a79cc3c72571a48c308b63cfe3a87a65a1f157bfb4 479631 apache2_2.4.7-1+sury.org~precise+1.debian.tar.gz
+ 2b752ced998640ff552ec85ee69e0f1b512da04a220397d5e026d90cb263645a 2484 apache2_2.4.7-1+sury.org~precise+1.dsc
+Homepage: http://httpd.apache.org/
+Uploaders: Stefan Fritsch <sf@debian.org>, Arno Töll <arno@debian.org>
+Package-List: apache2 deb httpd optional
+ apache2-bin deb httpd optional
+ apache2-data deb httpd optional
+ apache2-dbg deb debug extra
+ apache2-dev deb httpd optional
+ apache2-doc deb doc optional
+ apache2-mpm-event deb oldlibs extra
+ apache2-mpm-itk deb oldlibs extra
+ apache2-mpm-prefork deb oldlibs extra
+ apache2-mpm-worker deb oldlibs extra
+ apache2-suexec deb oldlibs extra
+ apache2-suexec-custom deb httpd extra
+ apache2-suexec-pristine deb httpd optional
+ apache2-utils deb httpd optional
+ apache2.2-bin deb oldlibs extra
+ libapache2-mod-macro deb oldlibs extra
+ libapache2-mod-proxy-html deb oldlibs extra
+Vcs-Git: git://anonscm.debian.org/pkg-apache/apache2.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-apache/apache2.git
+
+Package: libgd2
+Binary: libgd-tools, libgd-dev, libgd3, libgd-dbg, libgd2-xpm-dev, libgd2-noxpm-dev
+Version: 2.1.0-2~precise+1
+Section: graphics
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Build-Depends: autotools-dev, debhelper (>= 9), libpng-dev, libz-dev, libjpeg-dev, libfreetype6-dev, libxpm-dev, libx11-dev, libxt-dev, libfontconfig-dev, libvpx-dev, libtiff-dev, dh-autoreconf, html2text
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/libg/libgd2
+Files:
+ 03588159bf4faab9079849c8d709acc6 2004304 libgd2_2.1.0.orig.tar.xz
+ abec9601e7172a241ed8aa3d2412cc4a 51491 libgd2_2.1.0-2~precise+1.debian.tar.gz
+ 0abd5d7267a58536cf8210fed9b47c3d 1714 libgd2_2.1.0-2~precise+1.dsc
+Checksums-Sha1:
+ 66c56fc07246b66ba649c83e996fd2085ea2f9e2 2004304 libgd2_2.1.0.orig.tar.xz
+ 785da286c03b5afbf9e95f61f5b97d1e59b9ea43 51491 libgd2_2.1.0-2~precise+1.debian.tar.gz
+ 4f5e0ada09cf095e500106fa10347a6fcc442ba2 1714 libgd2_2.1.0-2~precise+1.dsc
+Checksums-Sha256:
+ fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a 2004304 libgd2_2.1.0.orig.tar.xz
+ 97fdc7f974b332da9bdfa6d44cca0aaba910a0627344af0a25758e13152324bb 51491 libgd2_2.1.0-2~precise+1.debian.tar.gz
+ 5d9356e62eee0af72d9fdab0ce834061cd4a9ff3985b63a5102339589fe73dc7 1714 libgd2_2.1.0-2~precise+1.dsc
+Homepage: http://www.libgd.org/
+Uploaders: Ondřej Surý <ondrej@debian.org>, Sean Finney <seanius@debian.org>
+Package-List: libgd-dbg deb debug extra
+ libgd-dev deb libdevel optional
+ libgd-tools deb graphics optional
+ libgd2-noxpm-dev deb oldlibs extra
+ libgd2-xpm-dev deb oldlibs extra
+ libgd3 deb libs optional
+Vcs-Git: git://anonscm.debian.org/git/collab-maint/libgd
+Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/libgd.git;a=summary
+
+Package: icu
+Binary: libicu52, libicu52-dbg, libicu-dev, icu-devtools, icu-doc
+Version: 52.1-1+debphp.org~precise+1
+Section: libs
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Build-Depends: cdbs (>= 0.4.93~), debhelper (>> 9~), dpkg-dev (>= 1.16.1~), autotools-dev, hardening-wrapper
+Build-Depends-Indep: doxygen (>= 1.7.1)
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/i/icu
+Files:
+ 9e96ed4c1d99c0d14ac03c140f9f346c 23875368 icu_52.1.orig.tar.gz
+ 7b54a726b81a1475709465fca4cd20c2 18447 icu_52.1-1+debphp.org~precise+1.debian.tar.gz
+ 6b0d6bda57c77d6dc156f98dad17caf6 1401 icu_52.1-1+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 6de440b71668f1a65a9344cdaf7a437291416781 23875368 icu_52.1.orig.tar.gz
+ 50a12a28f5d38064928c64265df41888ccd8c6ee 18447 icu_52.1-1+debphp.org~precise+1.debian.tar.gz
+ 2a072cc3a50579ba1ddf347dee745ef7aa97eb4a 1401 icu_52.1-1+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092 23875368 icu_52.1.orig.tar.gz
+ 36f3d6449542aca50f8e83da7502b6c41fab7f750244cfc597ef48e0bb9cd24e 18447 icu_52.1-1+debphp.org~precise+1.debian.tar.gz
+ 34b2c1fbb5b8f485f94374de46d7b818a02b2ab3bf50626f85a1a7305cef770e 1401 icu_52.1-1+debphp.org~precise+1.dsc
+Homepage: http://www.icu-project.org
+Package-List: icu-devtools deb libdevel optional
+ icu-doc deb doc optional
+ libicu-dev deb libdevel optional
+ libicu52 deb libs optional
+ libicu52-dbg deb debug extra
+
+Package: php5
+Binary: php5, php5-common, libapache2-mod-php5, libapache2-mod-php5filter, php5-cgi, php5-cli, php5-fpm, libphp5-embed, php5-dev, php5-dbg, php-pear, php5-curl, php5-enchant, php5-gd, php5-gmp, php5-imap, php5-interbase, php5-intl, php5-ldap, php5-mcrypt, php5-readline, php5-mysql, php5-mysqlnd, php5-odbc, php5-pgsql, php5-pspell, php5-recode, php5-snmp, php5-sqlite, php5-sybase, php5-tidy, php5-xmlrpc, php5-xsl
+Version: 5.5.9+dfsg-1+sury.org~precise+1
+Section: php
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Build-Depends: apache2-dev (>= 2.4), dh-apache2, autoconf (>= 2.63), automake (>= 1.11) | automake1.11, bison, chrpath, debhelper (>= 5), dpkg-dev (>= 1.16.1~), firebird-dev [!hurd-any !m68k !hppa !ppc64] | firebird2.5-dev [!hurd-any !m68k !hppa !ppc64] | firebird2.1-dev [!hurd-any !m68k !hppa !ppc64], flex, freetds-dev, libapr1-dev (>= 1.2.7-8), libbz2-dev, libc-client-dev, libcurl4-openssl-dev | libcurl-dev, libdb-dev, libedit-dev (>= 2.11-20080614-4), libenchant-dev, libevent-dev (>= 1.4.11), libexpat1-dev (>= 1.95.2-2.1), libfreetype6-dev, libgcrypt11-dev, libgd-dev | libgd2-dev, libglib2.0-dev, libgmp3-dev, libicu-dev, libjpeg-dev | libjpeg62-dev, libkrb5-dev, libldap2-dev, libmagic-dev, libmcrypt-dev, libmhash-dev (>= 0.8.8), libmysqlclient-dev | libmysqlclient15-dev, libonig-dev, libpam0g-dev, libpcre3-dev (>= 6.6), libpng-dev | libpng12-dev, libpq-dev, libpspell-dev, libqdbm-dev, librecode-dev, libsasl2-dev, libsnmp-dev, libsqlite3-dev, libssl-dev, libtidy-dev, libtool (>= 2.2), libwrap0-dev, libxmltok1-dev, libxml2-dev, libxslt1-dev (>= 1.0.18), systemtap-sdt-dev [amd64 i386 powerpc armel armhf ia64], locales-all | language-pack-de, mysql-server, netbase, netcat-traditional, re2c, unixodbc-dev, zlib1g-dev, tzdata
+Build-Conflicts: bind-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php5
+Files:
+ b4053e1584151428dc5f371caa0bd048 10833076 php5_5.5.9+dfsg.orig.tar.xz
+ 8f1d324d6f7e4c9dadf51fbd7ce628b3 136507 php5_5.5.9+dfsg-1+sury.org~precise+1.debian.tar.gz
+ 1c89049816e84d1adcb8381ee478198b 4014 php5_5.5.9+dfsg-1+sury.org~precise+1.dsc
+Checksums-Sha1:
+ 6ceeb6054d1ab4551c5c1b0485ec002356e34930 10833076 php5_5.5.9+dfsg.orig.tar.xz
+ 4f676cce8b8f26a3f2bf4d2dcbb09e5ceb679ad1 136507 php5_5.5.9+dfsg-1+sury.org~precise+1.debian.tar.gz
+ 7736a0b7734fd86c4717a16ba8b2e5758ee7890d 4014 php5_5.5.9+dfsg-1+sury.org~precise+1.dsc
+Checksums-Sha256:
+ c109138997d0e14dd5bc6de482ea6d77b9da24f2b5a5377287d100a10e529411 10833076 php5_5.5.9+dfsg.orig.tar.xz
+ 4886f10d379b6f3b21ccebf8b4141d8ee03d633ad1e7133090952fb534a6543f 136507 php5_5.5.9+dfsg-1+sury.org~precise+1.debian.tar.gz
+ 26681a3c659d6089f62faae361a17bc6edcbe0e74c484af788bfe1cc1330cd42 4014 php5_5.5.9+dfsg-1+sury.org~precise+1.dsc
+Homepage: http://www.php.net/
+Uploaders: Ondřej Surý <ondrej@debian.org>, Sean Finney <seanius@debian.org>, Thijs Kinkhorst <thijs@debian.org>, Lior Kaplan <kaplan@debian.org>
+Package-List: libapache2-mod-php5 deb httpd optional
+ libapache2-mod-php5filter deb httpd extra
+ libphp5-embed deb php optional
+ php-pear deb php optional
+ php5 deb php optional
+ php5-cgi deb php optional
+ php5-cli deb php optional
+ php5-common deb php optional
+ php5-curl deb php optional
+ php5-dbg deb debug extra
+ php5-dev deb php optional
+ php5-enchant deb php optional
+ php5-fpm deb php optional
+ php5-gd deb php optional
+ php5-gmp deb php optional
+ php5-imap deb php optional
+ php5-interbase deb php optional
+ php5-intl deb php optional
+ php5-ldap deb php optional
+ php5-mcrypt deb php optional
+ php5-mysql deb php optional
+ php5-mysqlnd deb php extra
+ php5-odbc deb php optional
+ php5-pgsql deb php optional
+ php5-pspell deb php optional
+ php5-readline deb php optional
+ php5-recode deb php optional
+ php5-snmp deb php optional
+ php5-sqlite deb php optional
+ php5-sybase deb php optional
+ php5-tidy deb php optional
+ php5-xmlrpc deb php optional
+ php5-xsl deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/php.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/php.git
+
+Package: apr-util
+Binary: libaprutil1, libaprutil1-ldap, libaprutil1-dbd-mysql, libaprutil1-dbd-sqlite3, libaprutil1-dbd-odbc, libaprutil1-dbd-pgsql, libaprutil1-dev, libaprutil1-dbg
+Version: 1.5.3-1+sury.org~precise+1
+Section: libs
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Build-Depends: debhelper (>> 9~), autoconf, autotools-dev, mawk, libldap2-dev, libexpat1-dev, libdb-dev, libpcre3-dev, binutils, libapr1-dev (>> 1.4.8-2~), libsqlite3-dev, libpq-dev, python, libmysqlclient-dev, unixodbc-dev, doxygen, libssl-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/a/apr-util
+Files:
+ 6f3417691c7a27090f36e7cf4d94b36e 695303 apr-util_1.5.3.orig.tar.bz2
+ 72f5dab8d80d9a227cbb4f4504f66ae1 17318 apr-util_1.5.3-1+sury.org~precise+1.debian.tar.gz
+ c82e66f75be1c521640e3f89bb175576 2003 apr-util_1.5.3-1+sury.org~precise+1.dsc
+Checksums-Sha1:
+ de0184ee03dfdc6dec4d013970d1862251e86925 695303 apr-util_1.5.3.orig.tar.bz2
+ e0a6b9b8c83a1db39045a6e9254788d50636878d 17318 apr-util_1.5.3-1+sury.org~precise+1.debian.tar.gz
+ 31a0546739100589e5d0f254c7c423ed72b5b823 2003 apr-util_1.5.3-1+sury.org~precise+1.dsc
+Checksums-Sha256:
+ 78edb174f13e25ee15ded2b849b741a248b879a93a77a2d31c20f7e225be3968 695303 apr-util_1.5.3.orig.tar.bz2
+ 415db3a1addf555d24202667a4cb97664ab3b0956726812bf25a2374b6a3dc24 17318 apr-util_1.5.3-1+sury.org~precise+1.debian.tar.gz
+ ebd186e46e61c4d34310a35c22faee21588f9237dc4e9d700aaacf8667c14929 2003 apr-util_1.5.3-1+sury.org~precise+1.dsc
+Homepage: http://apr.apache.org/
+Uploaders: Stefan Fritsch <sf@debian.org>, Peter Samuelson <peter@p12n.org>
+Package-List: libaprutil1 deb libs optional
+ libaprutil1-dbd-mysql deb libs optional
+ libaprutil1-dbd-odbc deb libs optional
+ libaprutil1-dbd-pgsql deb libs optional
+ libaprutil1-dbd-sqlite3 deb libs optional
+ libaprutil1-dbg deb debug extra
+ libaprutil1-dev deb libdevel optional
+ libaprutil1-ldap deb libs optional
+Vcs-Git: git://git.debian.org/git/pkg-apache/apr-util.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-apache/apr-util.git
+
+Package: apr
+Binary: libapr1, libapr1-dev, libapr1-dbg
+Version: 1.5.0-1+sury.org~precise+1
+Section: libs
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Build-Depends: debhelper (>= 9), autoconf, autotools-dev, mawk, uuid-dev, doxygen, netbase, net-tools, libtool (>= 2), python, libsctp-dev [linux-any]
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/a/apr
+Files:
+ cc93bd2c12d0d037f68e21cc6385dc31 813976 apr_1.5.0.orig.tar.bz2
+ a4430a6772bf3cc549553d87048f3c5f 27878 apr_1.5.0-1+sury.org~precise+1.debian.tar.gz
+ b48d308812a9977a776fed084aab7a36 1528 apr_1.5.0-1+sury.org~precise+1.dsc
+Checksums-Sha1:
+ cae122be79070645a7ab36a53148487c84ce8bf0 813976 apr_1.5.0.orig.tar.bz2
+ 5bd84ff9bb9ce047968372f130e9f08e8ef4f7b1 27878 apr_1.5.0-1+sury.org~precise+1.debian.tar.gz
+ 5dc0f1a4be965b4753d57dfbf5b49636cdad3779 1528 apr_1.5.0-1+sury.org~precise+1.dsc
+Checksums-Sha256:
+ 17287d36a5917e27281e60d47e7b147bd5ddcd1ca832702c2318f5e0724f1221 813976 apr_1.5.0.orig.tar.bz2
+ bc5e7e796791453e592c4aa46964b4de383a4d2dd55288d2b94f79f9d3019811 27878 apr_1.5.0-1+sury.org~precise+1.debian.tar.gz
+ 2df219522ec0fd37d1f9aeb50cbd51846f5d104eea4af4983a9c0ab689378bb8 1528 apr_1.5.0-1+sury.org~precise+1.dsc
+Homepage: http://apr.apache.org/
+Uploaders: Peter Samuelson <peter@p12n.org>, Stefan Fritsch <sf@debian.org>
+Package-List: libapr1 deb libs optional
+ libapr1-dbg deb debug extra
+ libapr1-dev deb libdevel optional
+Vcs-Git: git://git.debian.org/git/pkg-apache/apr.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-apache/apr.git
+
+Package: php-imagick
+Binary: php5-imagick
+Version: 3.1.2-1+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), php5-dev (>= 5.5), dh-php5, pkg-php-tools, libmagickwand-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-imagick
+Files:
+ f2fd71b026debe056e0ec8d76c2ffe94 94657 php-imagick_3.1.2.orig.tar.gz
+ f255a6cb64a19536453feb685e3d3e62 7682 php-imagick_3.1.2-1+debphp.org~precise+1.debian.tar.gz
+ 96f9ca665bff8fddc3f3b094ef025a1c 1480 php-imagick_3.1.2-1+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 7cee88bc8f6f178165c9d43e302d99cedfbb3dff 94657 php-imagick_3.1.2.orig.tar.gz
+ f35fd7007cf23e032b50e4373ffc0a08017e8026 7682 php-imagick_3.1.2-1+debphp.org~precise+1.debian.tar.gz
+ 1751edaca01d8f3af8fac05a38714a820489bead 1480 php-imagick_3.1.2-1+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 528769ac304a0bbe9a248811325042188c9d16e06de16f111fee317c85a36c93 94657 php-imagick_3.1.2.orig.tar.gz
+ 1b0be14d02d9b1ef8c47a6aafc77cd0d7c7e5110a8c04abb993fc43d5947b43d 7682 php-imagick_3.1.2-1+debphp.org~precise+1.debian.tar.gz
+ 8248f9c1066bfb9e598cf79c69269e6077f41845572a25dcaa27607472037f43 1480 php-imagick_3.1.2-1+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/imagick
+Uploaders: Guillaume Delacour <gui@iroqwa.org>, Lior Kaplan <kaplan@debian.org>
+Package-List: php5-imagick deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-imagick.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/php-imagick.git
+
+Package: php-memcache
+Binary: php5-memcache
+Version: 3.0.8-2+debphp.org~precise+1
+Section: php
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Build-Depends: debhelper (>= 9), php5-dev (>= 5.4.1), pkg-php-tools (>= 1.6), zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-memcache
+Files:
+ 24505e9b263d2c77f8ae5e9b4725e7d1 70523 php-memcache_3.0.8.orig.tar.gz
+ 7968ecdee6d1cce476d87ff9cb75dcb1 5361 php-memcache_3.0.8-2+debphp.org~precise+1.debian.tar.gz
+ d4a14112b7f58aec867216bf1ff2017b 1387 php-memcache_3.0.8-2+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 681ece0258958d60902d6bbf0cf1f2171a0cc47c 70523 php-memcache_3.0.8.orig.tar.gz
+ 78fec24d7b693d09cf9032f16027f0cb5ffdf581 5361 php-memcache_3.0.8-2+debphp.org~precise+1.debian.tar.gz
+ 00a100513ce731969e93b0eb4b499d85168c8540 1387 php-memcache_3.0.8-2+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 2cae5b423ffbfd33a259829849f6000d4db018debe3e29ecf3056f06642e8311 70523 php-memcache_3.0.8.orig.tar.gz
+ 4f2cd3040825a201d8ae0a96928b282bd6896e589bc549af9e7a9edc65f48690 5361 php-memcache_3.0.8-2+debphp.org~precise+1.debian.tar.gz
+ 42b7b19573c6762587f137fa4c57c79ad08418cdc1206363adccdedd9628b70e 1387 php-memcache_3.0.8-2+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/memcache
+Package-List: php5-memcache deb php optional
+Vcs-Git: git://git.debian.org/collab-maint/php-memcache.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/php-memcache.git;a=summary
+
+Package: ming
+Binary: libming1, libming-dev, ming-fonts-dejavu, ming-fonts-opensymbol, libswf-perl, libming-util, python-ming, php5-ming
+Version: 1:0.4.5-1~precise+1
+Section: libs
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Build-Depends: debhelper (>= 5.0.37.2), docbook-to-man, swig, python-all-dev (>= 2.7.3), libgif-dev, libpng-dev, libz-dev, perl (>= 5.10.0), autotools-dev, flex, bison, libfreetype6-dev, ttf-dejavu, ttf-opensymbol, php5-dev, php5-cli, automake1.10, autoconf2.59, quilt, chrpath
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/m/ming
+Files:
+ a35735a1c4f51681b96bcbfba58db2a0 15029578 ming_0.4.5.orig.tar.gz
+ 7ed319af24aee40d0c6e886342224216 19025 ming_0.4.5-1~precise+1.diff.gz
+ 4d1ac66ad0a1d52441b5e445fb8df610 1651 ming_0.4.5-1~precise+1.dsc
+Checksums-Sha1:
+ 97c201040729917bf7c62da9616a87f4a920f473 15029578 ming_0.4.5.orig.tar.gz
+ 54cd358fd1679475666d10cfb80db01bcc4bcebb 19025 ming_0.4.5-1~precise+1.diff.gz
+ da165d6cbbcf7c1668b65845367f5362162e45d4 1651 ming_0.4.5-1~precise+1.dsc
+Checksums-Sha256:
+ f73f171424b5907efbba0be0824ab9dd425c61544229c1825c32bff565e65143 15029578 ming_0.4.5.orig.tar.gz
+ 9599366ed5fbda614178de1c28791da2c59fb8bae25d55bfedf5765ac6e97a7e 19025 ming_0.4.5-1~precise+1.diff.gz
+ 7fe510accf06f6c789903ce8b8925a0e02db54857e854dabe484e0286211ba1d 1651 ming_0.4.5-1~precise+1.dsc
+Homepage: http://www.libming.net/
+Package-List: libming-dev deb libdevel optional
+ libming-util deb devel optional
+ libming1 deb libs optional
+ libswf-perl deb perl optional
+ ming-fonts-dejavu deb web optional
+ ming-fonts-opensymbol deb web optional
+ php5-ming deb web optional
+ python-ming deb python optional
+
+Package: xcache
+Binary: php5-xcache
+Version: 3.1.0-1+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), php5-dev (>= 5.5), dh-php5, php5-cli
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/x/xcache
+Files:
+ 76fe4bfc45b53f01dbd9d349024a27a3 171379 xcache_3.1.0.orig.tar.gz
+ b4480a312f6f2a02ad654ba0e3789782 8190 xcache_3.1.0-1+debphp.org~precise+1.debian.tar.gz
+ 9dc94c3b9c994fccafb35b4b401b1244 1369 xcache_3.1.0-1+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ c4be21ba18178819321fe59af60f0825802b57ba 171379 xcache_3.1.0.orig.tar.gz
+ f3df8c8ef1e14bdaa66b2552800a7c7b1f12047d 8190 xcache_3.1.0-1+debphp.org~precise+1.debian.tar.gz
+ 885ac96d946313c886e753e77d6dc2409f16ad6a 1369 xcache_3.1.0-1+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 42ddefb97306932983cb63f9a03264ce441827e72d3d1322d5ddba20457f02c3 171379 xcache_3.1.0.orig.tar.gz
+ 60ad129c7ab0cdbf084e6521d0a1fd3b583878f8a3e0af501dec73908beeb253 8190 xcache_3.1.0-1+debphp.org~precise+1.debian.tar.gz
+ 1c5fd8268000426b76e0a315b2f3cb3c7746e14ca67cb88c264da8c12e4dc608 1369 xcache_3.1.0-1+debphp.org~precise+1.dsc
+Homepage: http://xcache.lighttpd.net/
+Uploaders: Michal Čihař <nijel@debian.org>
+Package-List: php5-xcache deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/xcache.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/xcache.git
+
+Package: mod-wsgi
+Binary: libapache2-mod-wsgi, libapache2-mod-wsgi-py3
+Version: 3.4-4+debphp.org~precise+1
+Section: httpd
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 5), dpkg-dev (>= 1.16.1~), python-all-dev, python3-all-dev, apache2-dev (>= 2.4), dh-autoreconf
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/m/mod-wsgi
+Files:
+ f42d69190ea0c337ef259cbe8d94d985 122739 mod-wsgi_3.4.orig.tar.gz
+ f1787974c897e35750576429cb1ae0b1 10849 mod-wsgi_3.4-4+debphp.org~precise+1.debian.tar.gz
+ 1209d5cd8f6c9eeade964685925c00dd 1586 mod-wsgi_3.4-4+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 92ebc48e60ab658a984f97fd40cb71e0ae895469 122739 mod-wsgi_3.4.orig.tar.gz
+ 756d139834ed49d7228fd1c93e0bd615ad0c4c5f 10849 mod-wsgi_3.4-4+debphp.org~precise+1.debian.tar.gz
+ 527f30c9f86ffdd88a595991358f09901f68be02 1586 mod-wsgi_3.4-4+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ ae85c98e9e146840ab3c3e4490e6774f9bef0f99b9f679fca786b2adb5b4b6e8 122739 mod-wsgi_3.4.orig.tar.gz
+ c663d15c15781e2610fa98c306f466b45c2fd6b1be451ffaab5c879686629cae 10849 mod-wsgi_3.4-4+debphp.org~precise+1.debian.tar.gz
+ 97d3b50bd8b01e6f768b7fc9289aa27085ba01704ff5804f6070b0c523bae5b9 1586 mod-wsgi_3.4-4+debphp.org~precise+1.dsc
+Homepage: http://www.modwsgi.org/
+Uploaders: Bernd Zeimetz <bzed@debian.org>, Felix Geyer <fgeyer@debian.org>
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/mod-wsgi/trunk/
+Package-List: libapache2-mod-wsgi deb httpd optional
+ libapache2-mod-wsgi-py3 deb httpd optional
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/mod-wsgi/trunk/
+
+Package: libapache2-mod-xsendfile
+Binary: libapache2-mod-xsendfile
+Version: 0.12-2+debphp.org~precise+1
+Section: web
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), apache2-dev (>= 2.4)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/liba/libapache2-mod-xsendfile
+Files:
+ 4b83b0e1a0c043c4e76ee99685c35110 9345 libapache2-mod-xsendfile_0.12.orig.tar.bz2
+ 6faf4e3547cb3684a4aa8c7ea3452eec 3009 libapache2-mod-xsendfile_0.12-2+debphp.org~precise+1.debian.tar.gz
+ 2ffbfa1b3aa2ef299c3230ff7b7dc7ad 1474 libapache2-mod-xsendfile_0.12-2+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ c01fa85101c73313a8f870a8fc7e57da503c6eb0 9345 libapache2-mod-xsendfile_0.12.orig.tar.bz2
+ f70716d33d336581dcfd4b633270147b1d523efe 3009 libapache2-mod-xsendfile_0.12-2+debphp.org~precise+1.debian.tar.gz
+ 5305d239f9365a75b27b60b38a5ccda67420c19e 1474 libapache2-mod-xsendfile_0.12-2+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 6184d3f7535b34f08ea4e665b55498d5f76673d2a816cf2ee3eaae203c2d780b 9345 libapache2-mod-xsendfile_0.12.orig.tar.bz2
+ 86246491d7ab10fb00a597efc1d9b9aa410af71e3a3ad0672e39c0bc51badf63 3009 libapache2-mod-xsendfile_0.12-2+debphp.org~precise+1.debian.tar.gz
+ 12796c5fc41c2a158f10d1c403361ddaff9a09160bacac3799d0d3b8a42f8af7 1474 libapache2-mod-xsendfile_0.12-2+debphp.org~precise+1.dsc
+Homepage: http://tn123.org/mod_xsendfile/
+Package-List: libapache2-mod-xsendfile deb web extra
+Vcs-Git: git://anonscm.debian.org/collab-maint/libapache2-mod-xsendfile.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/libapache2-mod-xsendfile.git
+
+Package: libmemcached
+Binary: libmemcached11, libmemcached-dev, libmemcached-dbg, libmemcachedutil2, libhashkit2, libhashkit-dev, libmemcached-tools
+Version: 1.0.17-2+precise+1
+Section: libs
+Maintainer: Michael Fladischer <FladischerMichael@fladi.at>
+Build-Depends: autoconf, automake (>= 1.10), debhelper (>= 9), dh-autoreconf, libcloog-ppl-dev, libevent-dev, libsasl2-dev, libtool
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/libm/libmemcached
+Files:
+ d1a34be4d65b5e12dffcbb7763003056 1023177 libmemcached_1.0.17.orig.tar.gz
+ 7ca3d8f6d7550f778d0295b82715df48 11963 libmemcached_1.0.17-2+precise+1.debian.tar.gz
+ 35f7d148154b28e9c752297ce00e397d 1699 libmemcached_1.0.17-2+precise+1.dsc
+Checksums-Sha1:
+ 1023bc8c738b1f5b8ea2cd16d709ec6b47c3efa8 1023177 libmemcached_1.0.17.orig.tar.gz
+ 2be8cf14375f0c79162e3b4d5db8336ade5de81e 11963 libmemcached_1.0.17-2+precise+1.debian.tar.gz
+ 3b6c771761080f111aebdf7ff7afd6c752206a1a 1699 libmemcached_1.0.17-2+precise+1.dsc
+Checksums-Sha256:
+ 7bb27b2589400f918df1cf5002cb01ef7ccac6e23f818604e2386de62c80bba5 1023177 libmemcached_1.0.17.orig.tar.gz
+ db5cba4a92b33b76e28c027342fa245df81e442be2703ec66ab9eb1b363554d8 11963 libmemcached_1.0.17-2+precise+1.debian.tar.gz
+ ae2ac6c2a0f7832a4dcaf8823a1d4c6813f34305133f15183472c14d6a71a5e4 1699 libmemcached_1.0.17-2+precise+1.dsc
+Homepage: http://libmemcached.org/libMemcached.html
+Package-List: libhashkit-dev deb libdevel optional
+ libhashkit2 deb libs optional
+ libmemcached-dbg deb debug extra
+ libmemcached-dev deb libdevel optional
+ libmemcached-tools deb utils optional
+ libmemcached11 deb libs optional
+ libmemcachedutil2 deb libs optional
+Vcs-Git: http://git.fladi.at/libmemcached.git/
+Vcs-Browser: http://git.fladi.at/libmemcached.git/
+
+Package: php-ps
+Binary: php5-ps
+Version: 1.3.7-1+precise+1
+Section: php
+Maintainer: Uwe Steinmann <steinm@debian.org>
+Build-Depends: debhelper (>> 5.0.0), xsltproc, php5-dev, pslib-dev (>= 0.2.3), libgd2-xpm-dev (>> 2.0.0)
+Architecture: any
+Standards-Version: 3.7.2
+Format: 1.0
+Directory: pool/main/p/php-ps
+Files:
+ b501aa4375b374b2b07d5e1b80fcaefa 634038 php-ps_1.3.7.orig.tar.gz
+ a63de8e4b3f668ae5fdf112fcc19049c 7776 php-ps_1.3.7-1+precise+1.diff.gz
+ 986b3775c8614c68cc48a2d8a2983bc4 1089 php-ps_1.3.7-1+precise+1.dsc
+Checksums-Sha1:
+ b252422cbc7d44e06d4246fcc11f7989a8729a04 634038 php-ps_1.3.7.orig.tar.gz
+ 13a7e8818619dd11f1912532a91c1c8ac8f2d262 7776 php-ps_1.3.7-1+precise+1.diff.gz
+ c4006d9f9fb7359c671058734005f079c970aeb5 1089 php-ps_1.3.7-1+precise+1.dsc
+Checksums-Sha256:
+ aa318e2daad1e9efe90c6503e379c67c9b38fde9400723c0b446fd0ddee8f5ed 634038 php-ps_1.3.7.orig.tar.gz
+ ce61c49233e873bc9ee3df54621816e05bd6afc5d07b9a8691fc07264bebaaf6 7776 php-ps_1.3.7-1+precise+1.diff.gz
+ 9119a57cad0b9b7b5eb410a03d34f968d79274489efc45fea23dbea14fabb851 1089 php-ps_1.3.7-1+precise+1.dsc
+Package-List: php5-ps deb php optional
+
+Package: xdebug
+Binary: php5-xdebug
+Version: 2.2.3-1+debphp.org~precise+1
+Section: php
+Maintainer: Martin Meredith <mez@debian.org>
+Build-Depends: debhelper (>= 6), php5-dev (>= 5.1)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/x/xdebug
+Files:
+ e49cec9861b45dc0b36eae33bf8a14fa 250543 xdebug_2.2.3.orig.tar.gz
+ bb5ef9d5493a3dcf3bdd5736bf0529cc 6965 xdebug_2.2.3-1+debphp.org~precise+1.debian.tar.gz
+ 4b9050bb29984ba1c631d22dded0de72 1184 xdebug_2.2.3-1+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 045dee86f69051d7944da594db648b337a97f48a 250543 xdebug_2.2.3.orig.tar.gz
+ 5b45d78db3ef1fdcdb5ca16ecacb68d086fbd2af 6965 xdebug_2.2.3-1+debphp.org~precise+1.debian.tar.gz
+ 479bc8d12115ae804b55f1be985093308c50a4ee 1184 xdebug_2.2.3-1+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ b351872da46ed8378dff90a87673f5ec1e0bdd94324558ebc898e1d115e9d71c 250543 xdebug_2.2.3.orig.tar.gz
+ 5174003948188e8f35306c1afac3cb5df35f7eac7821fac56507c6a31c20ad5f 6965 xdebug_2.2.3-1+debphp.org~precise+1.debian.tar.gz
+ 1975a4a7c250a86be3b922ae908b5696f44c6d60d99e1a99c66bb4c73f82cf61 1184 xdebug_2.2.3-1+debphp.org~precise+1.dsc
+Homepage: http://xdebug.org/
+Uploaders: Lior Kaplan <kaplan@debian.org>
+Package-List: php5-xdebug deb php optional
+
+Package: php-geoip
+Binary: php5-geoip
+Version: 1.0.8-3+debphp.org~precise+1
+Section: php
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Build-Depends: debhelper (>= 9), php5-dev (>= 5.4.1), pkg-php-tools (>= 1.6), libgeoip-dev (>= 1.4.0)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-geoip
+Files:
+ 65263ac6d1c335f22ce818b3253912a5 10061 php-geoip_1.0.8.orig.tar.gz
+ 6ca1e0585607f5c29cecfa04ea30744f 4477 php-geoip_1.0.8-3+debphp.org~precise+1.debian.tar.gz
+ b136186582b695d0e71917a7891ade5d 1365 php-geoip_1.0.8-3+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ f8d17da3e192002332ab54b9b4ab0f5deeaf9f15 10061 php-geoip_1.0.8.orig.tar.gz
+ 2881a9cb4ab24f9c80eab72223bad0d98e7e2658 4477 php-geoip_1.0.8-3+debphp.org~precise+1.debian.tar.gz
+ d1cabbe783718a171c39e7fef887012c5c5ca8da 1365 php-geoip_1.0.8-3+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 08beeb2cbe9ab729d06b026795f5b9084aead6a1762493b0be53c4393d68d08a 10061 php-geoip_1.0.8.orig.tar.gz
+ 844fe80331f39b9da792af232f2fab565e6c751f1ce667d8a01f2d98f6122343 4477 php-geoip_1.0.8-3+debphp.org~precise+1.debian.tar.gz
+ a84c09538c858accfd97e7af965d73b3d094e879368557c05f240acf8c6c1eda 1365 php-geoip_1.0.8-3+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/geoip/
+Package-List: php5-geoip deb php optional
+Vcs-Git: git://git.debian.org/collab-maint/php-geoip.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/php-geoip.git;a=summary
+
+Package: php-svn
+Binary: php5-svn
+Version: 1.0.2-2+sury.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), php5-dev, dh-php5, pkg-php-tools (>= 1.9), chrpath, libsvn-dev (>= 1.6), libsasl2-dev, libneon27-gnutls-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-svn
+Files:
+ 45407d43f1055eb72e149d1862f3daa1 25226 php-svn_1.0.2.orig.tar.gz
+ 4fbf56ade6a76b002b2283bacd00b2af 3820 php-svn_1.0.2-2+sury.org~precise+1.debian.tar.gz
+ 3f7ead3441648de51e6baac975d70f06 1474 php-svn_1.0.2-2+sury.org~precise+1.dsc
+Checksums-Sha1:
+ 32c3da0844f04921482225d01e8eaf7acfcf0e94 25226 php-svn_1.0.2.orig.tar.gz
+ 2e2b2c445d244cf3526fb43db256afd68bfe47b9 3820 php-svn_1.0.2-2+sury.org~precise+1.debian.tar.gz
+ 044a2e61b782abebe0f8811f9fec06ac88ec7db6 1474 php-svn_1.0.2-2+sury.org~precise+1.dsc
+Checksums-Sha256:
+ ca0ea834e745a1aae65b456800bb5c5cfd7c4eceff281f7a8e317d30726e48cd 25226 php-svn_1.0.2.orig.tar.gz
+ d8d5cfa57aa5ffee7ba557d8c44ac8aa61c7d1ba22f949f803b60a0013f0bae6 3820 php-svn_1.0.2-2+sury.org~precise+1.debian.tar.gz
+ 206c6a9145e37372f69e94f82b278aa8d9976b6250a491f1096c390f63e466db 1474 php-svn_1.0.2-2+sury.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/svn
+Uploaders: Martin Meredith <mez@debian.org>, Ondřej Surý <ondrej@sury.org>
+Package-List: php5-svn deb php extra
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-svn.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-php/php-svn.git;a=summary
+
+Package: php-ssh2
+Binary: libssh2-php
+Version: 0.12-1+sury.org~precise+1
+Section: devel
+Maintainer: Martin Meredith <mez@debian.org>
+Build-Depends: debhelper (>= 7), php5-dev, libssh2-1-dev, libtool
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-ssh2
+Files:
+ 409b91678a842bb0ff56f2cf018b9160 26223 php-ssh2_0.12.orig.tar.gz
+ f7b519f25154fabeb99d62afafbde384 5520 php-ssh2_0.12-1+sury.org~precise+1.debian.tar.gz
+ b6b3e6d36626c29b451e72a4fbfedeb6 1208 php-ssh2_0.12-1+sury.org~precise+1.dsc
+Checksums-Sha1:
+ b86a25bdd3f3558bbcaaa6d876309fbbb5ae134d 26223 php-ssh2_0.12.orig.tar.gz
+ a4eded5e52b0f752001030d8db4dda12f220bc39 5520 php-ssh2_0.12-1+sury.org~precise+1.debian.tar.gz
+ f94fae5e0c08eba37149167240b507eec31b5f40 1208 php-ssh2_0.12-1+sury.org~precise+1.dsc
+Checksums-Sha256:
+ 600c82d2393acf3642f19914f06a7afea57ee05cb8c10e8a5510b32188b97f99 26223 php-ssh2_0.12.orig.tar.gz
+ 768f55752eb71ba377b727673f7f9a2eb7bcb51699140fc359095a74901e353b 5520 php-ssh2_0.12-1+sury.org~precise+1.debian.tar.gz
+ 5d4422e60e1285e197c6e562f3fcfc95e37c695191b6f7dfba34ce4d82b77541 1208 php-ssh2_0.12-1+sury.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/ssh2
+Uploaders: Lior Kaplan <kaplan@debian.org>
+Package-List: libssh2-php deb devel extra
+
+Package: json-c
+Binary: libjson-c2, libjson-c-dev, libjson-c2-dbg, libjson-c-doc, libjson0-dev, libjson0
+Version: 0.11-3+debphp.org~precise+1
+Section: libs
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Build-Depends: debhelper (>= 9), dh-exec, dh-autoreconf
+Architecture: any all
+Standards-Version: 3.9.3.0
+Format: 3.0 (quilt)
+Directory: pool/main/j/json-c
+Files:
+ aa02367d2f7a830bf1e3376f77881e98 557263 json-c_0.11.orig.tar.gz
+ 6b58a9970f047be2b6f21ad6fb1ba0c9 387937 json-c_0.11-3+debphp.org~precise+1.debian.tar.gz
+ e7f12483d68e06fb83c845c13aaa6380 1583 json-c_0.11-3+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 5d0377d2cc4a1af324d5aeb5b63032d1d026aacd 557263 json-c_0.11.orig.tar.gz
+ 76b41303cb50b0ad32ce575a8a9c630b1c2daf3b 387937 json-c_0.11-3+debphp.org~precise+1.debian.tar.gz
+ 57c420277cfe1caaad94d07efae6abf1e75b4622 1583 json-c_0.11-3+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 28dfc65145dc0d4df1dfe7701ac173c4e5f9347176c8983edbfac9149494448c 557263 json-c_0.11.orig.tar.gz
+ cd575ed4e8649e922a6128d0eefa4e2ab98b49874c4b525c180d510dd72b1840 387937 json-c_0.11-3+debphp.org~precise+1.debian.tar.gz
+ 8ed3fcc0a134135dacc8f370ff5ffd77b4aff32286d6ab81ca3932c65257c068 1583 json-c_0.11-3+debphp.org~precise+1.dsc
+Homepage: https://github.com/json-c/json-c/wiki
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Package-List: libjson-c-dev deb libdevel extra
+ libjson-c-doc deb doc extra
+ libjson-c2 deb libs extra
+ libjson-c2-dbg deb debug extra
+ libjson0 deb oldlibs extra
+ libjson0-dev deb oldlibs extra
+Vcs-Git: git://anonscm.debian.org/git/collab-maint/json-c
+Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/json-c.git;a=summary
+
+Package: php-memcached
+Binary: php5-memcached
+Version: 2.1.0-3.1+precise+1
+Section: php
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Build-Depends: debhelper (>= 9), php5-dev (>= 5.4.1), libmemcached-dev (>= 1.0.17)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-memcached
+Files:
+ daf070aad13bebffdff50acf6e93043c 39095 php-memcached_2.1.0.orig.tar.gz
+ 3d7b4613c51fa8299170294057313062 5725 php-memcached_2.1.0-3.1+precise+1.debian.tar.gz
+ 6144c1e9bb3ebee938fe7a072df0e2ed 1357 php-memcached_2.1.0-3.1+precise+1.dsc
+Checksums-Sha1:
+ 16fac6bfae8ec7e2367fda588b74df88c6f11a8e 39095 php-memcached_2.1.0.orig.tar.gz
+ 8b00fd3c10de3fc3ba9e32d1fa4473b939144b25 5725 php-memcached_2.1.0-3.1+precise+1.debian.tar.gz
+ 8f569f645ab5944d51e16b40bff009148461818d 1357 php-memcached_2.1.0-3.1+precise+1.dsc
+Checksums-Sha256:
+ bc4940015be74f47908d410d7b55e10a3d5bf65674036d944c73558227fcc4af 39095 php-memcached_2.1.0.orig.tar.gz
+ 631f42fd6bceade61040c2ff35453f1dd3e3d36cb2242c899d1235896d9f4b4a 5725 php-memcached_2.1.0-3.1+precise+1.debian.tar.gz
+ 39ad6260757521974999427d5322b0af1bad7cbb66919dcda657ec3985302e3f 1357 php-memcached_2.1.0-3.1+precise+1.dsc
+Homepage: http://pecl.php.net/package/memcached
+Package-List: php5-memcached deb php optional
+Vcs-Git: git://git.debian.org/collab-maint/php-memcached.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/php-memcached.git;a=summary
+
+Package: php-gearman
+Binary: php5-gearman
+Version: 1.1.2-1+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), php5-dev, pkg-php-tools (>= 1.6~), dh-php5, libgearman-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-gearman
+Files:
+ fb3bc8df2d017048726d5654459e8433 30961 php-gearman_1.1.2.orig.tar.gz
+ 7ad16225b9125df5482b232147833c76 3178 php-gearman_1.1.2-1+debphp.org~precise+1.debian.tar.gz
+ a5f2047172fcc9e7567e86eec821298f 1452 php-gearman_1.1.2-1+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 4b4d92b0dec9aabf8cd1ed6eba1f0cf8414117c9 30961 php-gearman_1.1.2.orig.tar.gz
+ 044b5e22361c937c771f40e013a43a916c4aa542 3178 php-gearman_1.1.2-1+debphp.org~precise+1.debian.tar.gz
+ 5cf8f6c10aac27037ae293da0b1e322ef1b0df17 1452 php-gearman_1.1.2-1+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ c30a68145b4e33f4da929267f7b5296376ca81d76dd801fc77a261696a8a5965 30961 php-gearman_1.1.2.orig.tar.gz
+ 8093cd0fc57f347174a3bad8e2fc67e427f3ab255c840ae70d277245e5f2b610 3178 php-gearman_1.1.2-1+debphp.org~precise+1.debian.tar.gz
+ 97f02a1c6138c2d50530d386bebe6f89827ba18bee1750923c77eccb2274b1b2 1452 php-gearman_1.1.2-1+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/gearman
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Package-List: php5-gearman deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-gearman.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-php/php-gearman.git;a=summary
+
+Package: pkg-php-tools
+Binary: pkg-php-tools
+Version: 1.9+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), perl, php5-cli, php-pear, php5-json | php5-cli (<< 5.5.0~rc1+dfsg-1~)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/main/p/pkg-php-tools
+Files:
+ eb61a36d77348bec2ade6eaa70ded30e 22159 pkg-php-tools_1.9+debphp.org~precise+1.tar.gz
+ 4cd46d57b08d2e9534418b27054374c2 1188 pkg-php-tools_1.9+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ fe1da3ec500859408a2c2e475b8168871de53b56 22159 pkg-php-tools_1.9+debphp.org~precise+1.tar.gz
+ 07302b30fb0f84787f93a3082693049054ded374 1188 pkg-php-tools_1.9+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 1d1e44d08deabc7972666681801ccccea932b65235918cf3d4b08be8a7b9f51d 22159 pkg-php-tools_1.9+debphp.org~precise+1.tar.gz
+ 61d57f7fd65b772c1177a895a0496abd57f1ed827659130b816985d8bda90e94 1188 pkg-php-tools_1.9+debphp.org~precise+1.dsc
+Uploaders: Mathieu Parent <sathieu@debian.org>, Thomas Goirand <zigo@debian.org>
+Package-List: pkg-php-tools deb php extra
+Vcs-Git: git://anonscm.debian.org/pkg-php/pkg-php-tools.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/pkg-php-tools.git;a=summary
+
+Package: ruby-passenger
+Binary: ruby-passenger, libapache2-mod-passenger, ruby-passenger-doc
+Version: 4.0.35-2+sury.org~precise+1
+Section: ruby
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.12~), apache2 (>= 2.4), apache2-dev (>= 2.4), libapr1-dev, doxygen, asciidoc (>= 8.2), graphviz, rake, source-highlight, libcurl4-openssl-dev, libev-dev, dh-autoreconf, ruby-mizuho
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/r/ruby-passenger
+Files:
+ 7a90dc196158df28e664d8acd5aa7983 4039531 ruby-passenger_4.0.35.orig.tar.gz
+ f9370f0e64c58502557c90382586f506 15243 ruby-passenger_4.0.35-2+sury.org~precise+1.debian.tar.gz
+ 604fcbfe1411b812d714b3d60dee66c4 1913 ruby-passenger_4.0.35-2+sury.org~precise+1.dsc
+Checksums-Sha1:
+ 78bb92f51035b574d59bb292f198864f7d63a86c 4039531 ruby-passenger_4.0.35.orig.tar.gz
+ ccd289cb34b0f0ec41635c93527dc2f20141026c 15243 ruby-passenger_4.0.35-2+sury.org~precise+1.debian.tar.gz
+ e7f5d1bb5ba584288276f6c6d9547b966d97c589 1913 ruby-passenger_4.0.35-2+sury.org~precise+1.dsc
+Checksums-Sha256:
+ a8b7eeed2ef12e8137d36418a11c928969aaf6b13a91e81445de2a156245f774 4039531 ruby-passenger_4.0.35.orig.tar.gz
+ 70080f36b3b0f34be424a9e505b0408cb4b81024b13ad8ceb8e82f6a22b9e102 15243 ruby-passenger_4.0.35-2+sury.org~precise+1.debian.tar.gz
+ 75d3b70c1e49a0339e8e0cbd49cf9f15ef59e87e1f1ad02fb62dfd6e85b6ecac 1913 ruby-passenger_4.0.35-2+sury.org~precise+1.dsc
+Homepage: http://www.modrails.com/
+Uploaders: Filipe Lautert <filipe@debian.org>, Micah Anderson <micah@debian.org>, David Moreno <damog@debian.org>, Felix Geyer <fgeyer@debian.org>
+Package-List: libapache2-mod-passenger deb httpd optional
+ ruby-passenger deb ruby optional
+ ruby-passenger-doc deb doc optional
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-passenger.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-passenger.git;a=summary
+Ruby-Versions: all
+
+Package: php-apcu
+Binary: php5-apcu, php-apc
+Version: 4.0.2-2+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 5), php5-dev (>= 5.5), dh-php5, pkg-php-tools (>= 1.9~), libpcre3-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-apcu
+Files:
+ c8a5c246b787eec81847017823099884 120325 php-apcu_4.0.2.orig.tar.gz
+ 0c09eac2637d8b0ba9f4fef606b98c0c 4874 php-apcu_4.0.2-2+debphp.org~precise+1.debian.tar.gz
+ d1ec871f4c093a5a61b42354695a3b62 1483 php-apcu_4.0.2-2+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ dd8a2ed00304501318f678a7f5b7364af4fc7dcf 120325 php-apcu_4.0.2.orig.tar.gz
+ 249016daa8cdb5eb4551c39da829de4742658bfb 4874 php-apcu_4.0.2-2+debphp.org~precise+1.debian.tar.gz
+ 11b819a541780d3013c0752bad78c4da083ee0a9 1483 php-apcu_4.0.2-2+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 83fdcc0505522414e4785c86e62e20fe3643ff4790c035f86de35fc7339021aa 120325 php-apcu_4.0.2.orig.tar.gz
+ 5cdbacd8c627d6c2c6656c4e94d6be6f0a1a1376c7f1a1f7121285d6aace9eed 4874 php-apcu_4.0.2-2+debphp.org~precise+1.debian.tar.gz
+ 3815567a974ed4699fc8fb84251664182754c8c48367d6485aef6c3e686d587d 1483 php-apcu_4.0.2-2+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/APCu
+Uploaders: Lior Kaplan <kaplan@debian.org>, Ondřej Surý <ondrej@debian.org>
+Package-List: php-apc deb oldlibs extra
+ php5-apcu deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-apcu.git
+Vcs-Browser: http://anonscm.debian.org/?p=pkg-php/php-apcu.git
+
+Package: php-json
+Binary: php5-json
+Version: 1.3.2-3+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), php5-dev (>= 5.5.0~rc1+dfsg-1), php5-cli (>= 5.5.0~rc1+dfsg-1), dh-php5, pkg-config, pkg-php-tools, libjson-c-dev (>= 0.11-3~)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-json
+Files:
+ f8fecce787bc281d94fe014d8b25c465 52244 php-json_1.3.2.orig.tar.xz
+ cbfa32ec9b47b95a3a6a310872a22cf1 5344 php-json_1.3.2-3+debphp.org~precise+1.debian.tar.gz
+ 951f30a6311e1f14a477706ebfff96e4 1469 php-json_1.3.2-3+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 8b40c64883e7c5540b43ba8484cdcb7c65452d1c 52244 php-json_1.3.2.orig.tar.xz
+ d4230d07d0a3a2e33c31fc81e8e765b7dc112399 5344 php-json_1.3.2-3+debphp.org~precise+1.debian.tar.gz
+ 2b97643948774bc1e0795417af6f2371ee91ef81 1469 php-json_1.3.2-3+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ a3e9a5aaea477700b119939e0f5e782ad46433d19be667126280f8d8b3636721 52244 php-json_1.3.2.orig.tar.xz
+ bb967b7ffa12b693225af14572443af4fcc1c850c5c6a965c13dcd994e44490b 5344 php-json_1.3.2-3+debphp.org~precise+1.debian.tar.gz
+ 77d25c868ed8050ff2ad9fa37dde221a6b0dfa8a427eb4fec9532097843e2af7 1469 php-json_1.3.2-3+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/jsonc
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Package-List: php5-json deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-json.git
+Vcs-Browser: http://anonscm.debian.org/?p=pkg-php/php-json.git
+
+Package: php-mysqlnd-ms
+Binary: php5-mysqlnd-ms
+Version: 1.5.2-3+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 5), php5-dev (>= 5.5), php5-json (>= 1.3.1+dfsg-2~), dh-php5, pkg-php-tools
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-mysqlnd-ms
+Files:
+ a4f207e1b977daf3ae845b22e354b49c 385916 php-mysqlnd-ms_1.5.2.orig.tar.gz
+ 570c3a83b7a88d555ec18c28a184419d 3851 php-mysqlnd-ms_1.5.2-3+debphp.org~precise+1.debian.tar.gz
+ 60c2c6a6782579430d8cf07eefbe0b15 1488 php-mysqlnd-ms_1.5.2-3+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ b7b3ddd1f40ffec75a48456edf053c28fc5aad83 385916 php-mysqlnd-ms_1.5.2.orig.tar.gz
+ 2a777bb1ffbcb6669dfd3233e3faf2d9bc48b9d8 3851 php-mysqlnd-ms_1.5.2-3+debphp.org~precise+1.debian.tar.gz
+ a3301d7fc700cb178bbba073f179b671d9302f86 1488 php-mysqlnd-ms_1.5.2-3+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 22b9ba1afb36b3df11c1051c813bc07889c815d1d9993bb07ffda182665b472f 385916 php-mysqlnd-ms_1.5.2.orig.tar.gz
+ 5345778c6ec26ab846353def91cb0998a31349b54cfa59c4826dec51f810a131 3851 php-mysqlnd-ms_1.5.2-3+debphp.org~precise+1.debian.tar.gz
+ fa56c9cfb9ed2ddd694bf74535e6a2c964dd00eabd82a16614d5a56a6b988c0a 1488 php-mysqlnd-ms_1.5.2-3+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/mysqlnd_ms
+Uploaders: Ondřej Surý <ondrej@debian.org>
+Package-List: php5-mysqlnd-ms deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-mysqlnd-ms.git
+Vcs-Browser: http://anonscm.debian.org/?p=pkg-php/php-mysqlnd-ms.git
+
+Package: php-redis
+Binary: php5-redis
+Version: 2.2.4-1+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), php5-dev, pkg-php-tools (>= 1.6~), dh-php5
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-redis
+Files:
+ ad7bdb20322833897472b8ee05f3d319 90982 php-redis_2.2.4.orig.tar.gz
+ eaa91e95274d637e481c3b2ea5cbaa5f 3742 php-redis_2.2.4-1+debphp.org~precise+1.debian.tar.gz
+ fb68170391973e6e77054b57b5cb881b 1489 php-redis_2.2.4-1+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ 7bc63063e43950aa13eee32589952655202f8850 90982 php-redis_2.2.4.orig.tar.gz
+ c615bd26c897ec4ee6e5f0287d353c2255327a34 3742 php-redis_2.2.4-1+debphp.org~precise+1.debian.tar.gz
+ c93553c70d5aff369dd5277d225fd8adf6ee9bae 1489 php-redis_2.2.4-1+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ caf8e3ea5f04e5a393e0d98c1dffdcef5f581c90614c5c91cabff23532579126 90982 php-redis_2.2.4.orig.tar.gz
+ 535891e1a549af8fa56ed26a27098362ddd0fdb8eec4c1973078882110bd2b9e 3742 php-redis_2.2.4-1+debphp.org~precise+1.debian.tar.gz
+ 9ba0a3c93c3dd73de3d81d88be62dcf09d5904bfc9430414b3e0a4abbeec7b2c 1489 php-redis_2.2.4-1+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/redis
+Uploaders: Jonas Genannt <jonas.genannt@capi2name.de>, Cyril Bouthors <cyb@debian.org>, Ondřej Surý <ondrej@debian.org>
+Package-List: php5-redis deb php optional
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-redis.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-php/php-redis.git;a=summary
+
+Package: php-oauth
+Binary: php5-oauth
+Version: 1.2.3-1+debphp.org~precise+1
+Section: php
+Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9~), libpcre3-dev, php5-dev (>= 5.5), dh-php5, pkg-php-tools (>= 1.5~)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/p/php-oauth
+Files:
+ 99838d9a04b78058c7360dfd69c8593b 45531 php-oauth_1.2.3.orig.tar.gz
+ 7f696d39ebc723a42f383d58744a8bab 2426 php-oauth_1.2.3-1+debphp.org~precise+1.debian.tar.gz
+ 80123bf292ef59700d34c07de452ae0e 1463 php-oauth_1.2.3-1+debphp.org~precise+1.dsc
+Checksums-Sha1:
+ e2a42961c8134746fc0cd8ef9bd433f760b94975 45531 php-oauth_1.2.3.orig.tar.gz
+ 51b72c2b7859ba3a5443843e7ef0e5588bfe4b00 2426 php-oauth_1.2.3-1+debphp.org~precise+1.debian.tar.gz
+ 2c14f11fae3d1e76d2213f8414f37c3fb0dc5d89 1463 php-oauth_1.2.3-1+debphp.org~precise+1.dsc
+Checksums-Sha256:
+ 86bb5ee37afe672d4532ad784c7f711855c79f0dabf0acacafd5344ab6cf0195 45531 php-oauth_1.2.3.orig.tar.gz
+ 53e1d216df5067e9ed5ba9ecb54a8e72bd928df136b99a3eef5a4f4b429d3b6d 2426 php-oauth_1.2.3-1+debphp.org~precise+1.debian.tar.gz
+ 5a42382af340cb176f69baab18b302e958fee545147d0b02f9f59f56de66e8fe 1463 php-oauth_1.2.3-1+debphp.org~precise+1.dsc
+Homepage: http://pecl.php.net/package/oauth
+Uploaders: Prach Pongpanich <prachpub@gmail.com>, Ondřej Surý <ondrej@debian.org>
+Package-List: php5-oauth deb php extra
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-oauth.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-php/php-oauth.git
+

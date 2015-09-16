@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/dh_apparmor.1.gz
+/usr/share/doc
+/usr/share/doc/dh-apparmor
+/usr/share/doc/dh-apparmor/changelog.Debian.gz
+/usr/share/doc/dh-apparmor/copyright
+/usr/share/debhelper
+/usr/share/debhelper/autoscripts
+/usr/share/debhelper/autoscripts/postinst-apparmor
+/usr/share/debhelper/autoscripts/postrm-apparmor
+/usr/bin
+/usr/bin/dh_apparmor

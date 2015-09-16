@@ -1,0 +1,64 @@
+@import 'mixins.less';
+#banner-carousel .carousel-inner .item{
+    height:100%;
+    background-size:cover;
+    background-position:center center;
+    background-color:#222;
+}
+#banner-carousel{
+    height:500px;
+}
+#banner-carousel .carousel-inner{
+    height:100%;
+}
+#banner-text{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    color:#FFF;
+    background:transparent url('@{root}img/30perc.png') top left repeat;
+    height:100%;
+    text-align:center;
+}
+#banner-text #banner-gcn{
+    margin-top:126px;
+}
+#banner-carousel #banner-white-bar{
+    border-style:none;
+    padding:0px;
+    margin:0px;
+    width:114px;
+    height:6px;
+    background:#FFF;
+    *display:inline;
+    zoom:1;
+    display:inline-block;
+}
+#banner-carousel #banner-text-group .text-item{
+    font-family:'Novecentosanswide-Bold', Helvetica, Arial, sans-serif;
+    font-size:40px;
+    margin:0px 0px 30px 0px;
+    display:none;
+}
+#banner-carousel #banner-text-group .text-item.active{
+    display:block;
+}
+#banner-signup{
+    margin-top:28px;   
+}
+.carousel-control{
+    width:8%;
+}
+.how-it-works img{
+    width:70%;
+    margin:10px 15%;
+}
+.how-it-works{
+    margin-top:20px;
+}
+.how-it-works div{
+    text-align:center;
+    font-size:15px;
+    font-family:'Novecentosanswide-Medium', Helvetica, Arial, sans-serif;
+}

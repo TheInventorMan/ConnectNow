@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+dpkg-maintscript-helper mv_conffile /etc/php5/fpm/main.conf /etc/php5/fpm/php-fpm.conf 5.3.5-1 -- "$@"
+
+# Automatically added by dh_installinit
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/init.d/php5-fpm" ] && [ ! -L "/etc/init.d/php5-fpm" ]; then
+		if [ "`md5sum \"/etc/init.d/php5-fpm\" | sed -e \"s/ .*//\"`" != \
+		     "`dpkg-query -W -f='${Conffiles}' php5-fpm | sed -n -e \"\\\\' /etc/init.d/php5-fpm '{s/ obsolete$//;s/.* //p}\"`" ]
+		then
+			echo "Obsolete conffile /etc/init.d/php5-fpm has been modified by you, renaming to .dpkg-bak"
+			mv -f "/etc/init.d/php5-fpm" "/etc/init.d/php5-fpm.dpkg-bak"
+		else
+			rm -f "/etc/init.d/php5-fpm"
+		fi
+	fi
+fi
+# End automatically added section
+
+
+exit 0

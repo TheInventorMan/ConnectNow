@@ -1,0 +1,37 @@
+[
+    {
+        "name": "William Yang",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue nisi. Quisque non elementum augue. Suspendisse ut placerat eros, eget volutpat tortor. Cras at lorem consequat, sollicitudin enim ac, rutrum leo. Vestibulum malesuada quis lectus et porttitor. Curabitur lectus justo, vulputate sed interdum eu, elementum imperdiet urna. Quisque turpis ipsum, volutpat non felis sit amet, elementum rutrum mauris.",
+        "position": "Co-Founder"
+    },
+    {
+        "name": "Gordon Sun",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue nisi. Quisque non elementum augue. Suspendisse ut placerat eros, eget volutpat tortor. Cras at lorem consequat, sollicitudin enim ac, rutrum leo. Vestibulum malesuada quis lectus et porttitor. Curabitur lectus justo, vulputate sed interdum eu, elementum imperdiet urna. Quisque turpis ipsum, volutpat non felis sit amet, elementum rutrum mauris.",
+        "position": "Co-Founder & Media Production"
+    },
+    {
+        "name": "Abhishek Wagle",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue nisi. Quisque non elementum augue. Suspendisse ut placerat eros, eget volutpat tortor. Cras at lorem consequat, sollicitudin enim ac, rutrum leo. Vestibulum malesuada quis lectus et porttitor. Curabitur lectus justo, vulputate sed interdum eu, elementum imperdiet urna. Quisque turpis ipsum, volutpat non felis sit amet, elementum rutrum mauris.",
+        "position": "Public Relations & Sanity Controller"
+    },
+    {
+        "name": "Gladys Ng",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue nisi. Quisque non elementum augue. Suspendisse ut placerat eros, eget volutpat tortor. Cras at lorem consequat, sollicitudin enim ac, rutrum leo. Vestibulum malesuada quis lectus et porttitor. Curabitur lectus justo, vulputate sed interdum eu, elementum imperdiet urna. Quisque turpis ipsum, volutpat non felis sit amet, elementum rutrum mauris.",
+        "position": "Chief of Design & Chief of Spirit"
+    },
+    {
+        "name": "Kevin Pei",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue nisi. Quisque non elementum augue. Suspendisse ut placerat eros, eget volutpat tortor. Cras at lorem consequat, sollicitudin enim ac, rutrum leo. Vestibulum malesuada quis lectus et porttitor. Curabitur lectus justo, vulputate sed interdum eu, elementum imperdiet urna. Quisque turpis ipsum, volutpat non felis sit amet, elementum rutrum mauris.",
+        "position": "Systems Administrator & Sillyness Admin"
+    },
+    {
+        "name": "Rehaab Refidi",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue nisi. Quisque non elementum augue. Suspendisse ut placerat eros, eget volutpat tortor. Cras at lorem consequat, sollicitudin enim ac, rutrum leo. Vestibulum malesuada quis lectus et porttitor. Curabitur lectus justo, vulputate sed interdum eu, elementum imperdiet urna. Quisque turpis ipsum, volutpat non felis sit amet, elementum rutrum mauris.",
+        "position": "Systems Support & Conversation Starter"
+    },
+    {
+        "name": "Kush Thaker",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae augue nisi. Quisque non elementum augue. Suspendisse ut placerat eros, eget volutpat tortor. Cras at lorem consequat, sollicitudin enim ac, rutrum leo. Vestibulum malesuada quis lectus et porttitor. Curabitur lectus justo, vulputate sed interdum eu, elementum imperdiet urna. Quisque turpis ipsum, volutpat non felis sit amet, elementum rutrum mauris.",
+        "position": "Internal Advisory & Being Awesome"
+    }
+]
